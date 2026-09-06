@@ -122,19 +122,19 @@ with tab1:
                         final_estimate = (prediction + comp_estimate) / 2 # 50/50 weighting for now
                         comp_display = format_indian_currency(comp_estimate)
                         final_display = format_indian_currency(final_estimate)
-                        status_msg = f"Current comparable listings: {comp_result['count']} | Median ₹/sq.ft.: ₹{comp_result['median_sqft_price']:,.2f}"
+                        status_msg = f"🟢 **Current market data available**\n\nListings analyzed: {comp_result['count']} | Median ₹/sq.ft.: ₹{comp_result['median_sqft_price']:,.2f}"
                     elif comp_result['status'] == 'LIVE DATA PROVIDER NOT CONFIGURED':
                         comp_estimate = None
                         final_estimate = prediction
                         comp_display = "Not available (API Not Configured)"
                         final_display = format_indian_currency(final_estimate)
-                        status_msg = "Current comparable listings: 0"
+                        status_msg = "🟡 **Current market data unavailable (LIVE DATA PROVIDER NOT CONFIGURED)**\n\nUsing historical ML estimate."
                     else:
                         comp_estimate = None
                         final_estimate = prediction
                         comp_display = "Not available (Insufficient listings)"
                         final_display = format_indian_currency(final_estimate)
-                        status_msg = f"Current comparable listings: {comp_result['count']}"
+                        status_msg = f"🟡 **Current market data unavailable (Insufficient listings: {comp_result['count']})**\n\nUsing historical ML estimate."
                         
                     # Display the estimate table
                     st.markdown(f"""
