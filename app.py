@@ -106,7 +106,16 @@ with tab1:
                     input_processed = preprocessor.transform(input_data)
                     prediction = model.predict(input_processed)[0]
                     
-                    st.markdown("### Current Market Estimate")
+                    
+                    st.markdown("## Property Details")
+                    st.markdown(f"""
+                    * **City:** {city}
+                    * **Location:** {location}
+                    * **Property Type:** {property_type}
+                    * **BHK:** {bhk}
+                    * **Area:** {area} sq.ft.
+                    * **Bathrooms:** {bathrooms}
+                    """)
                     
                     # Fetch live market data
                     live_listings_df = fetch_live_market_data(city, location, property_type, bhk)
@@ -115,61 +124,47 @@ with tab1:
                     analyzer = ComparableAnalyzer(live_listings_df)
                     comp_result = analyzer.find_comparables(city, location, property_type, bhk, area)
                     
-                    st.markdown("#### Comparison Summary")
-                    
                     if comp_result['status'] == 'SUCCESS':
                         comp_estimate = comp_result['estimate']
-                        final_estimate = (prediction + comp_estimate) / 2 # 50/50 weighting for now
-                        comp_display = format_indian_currency(comp_estimate)
-                        final_display = format_indian_currency(final_estimate)
-                        status_msg = f"🟢 **Current market data available**\n\nListings analyzed: {comp_result['count']} | Median ₹/sq.ft.: ₹{comp_result['median_sqft_price']:,.2f}"
+                        final_estimate = (prediction + comp_estimate) / 2
+                        comp_display = f"`{format_indian_currency(comp_estimate)}`"
+                        final_display = f"`{format_indian_currency(final_estimate)}`"
+                        comp_listings = comp_result['count']
+                        comp_median = f"₹{comp_result['median_sqft_price']:,.2f}"
                     elif comp_result['status'] == 'LIVE DATA PROVIDER NOT CONFIGURED':
-                        comp_estimate = None
-                        final_estimate = prediction
-                        comp_display = "Not available (API Not Configured)"
-                        final_display = format_indian_currency(final_estimate)
-                        status_msg = "🟡 **Current market data unavailable (LIVE DATA PROVIDER NOT CONFIGURED)**\n\nUsing historical ML estimate."
+                        comp_display = "`Not available (API Not Configured)`"
+                        final_display = f"`{format_indian_currency(prediction)}`"
+                        comp_listings = 0
+                        comp_median = "N/A"
                     else:
-                        comp_estimate = None
-                        final_estimate = prediction
-                        comp_display = "Not available (Insufficient listings)"
-                        final_display = format_indian_currency(final_estimate)
-                        status_msg = f"🟡 **Current market data unavailable (Insufficient listings: {comp_result['count']})**\n\nUsing historical ML estimate."
+                        comp_display = "`Not available (Insufficient listings)`"
+                        final_display = f"`{format_indian_currency(prediction)}`"
+                        comp_listings = comp_result['count']
+                        comp_median = "N/A"
                         
-                    # Display the estimate table
-                    st.markdown(f"""
-                    | Estimate Type | Value |
-                    | --- | --- |
-                    | Historical ML Estimate | **{format_indian_currency(prediction)}** |
-                    | Current Comparable Estimate | **{comp_display}** |
-                    | **Final Market Estimate** | **{final_display}** |
-                    """)
+                    st.markdown("## Historical ML Estimate")
+                    st.markdown(f"`{format_indian_currency(prediction)}`")
                     
-                    st.info(f"{status_msg} | Data retrieved: {datetime.now().strftime('%d-%m-%Y %H:%M')}")
+                    st.markdown("## Current Comparable Estimate")
+                    st.markdown(comp_display)
+                    
+                    st.markdown("## Final Current Market Estimate")
+                    st.markdown(final_display)
+                    
+                    st.markdown("## Current Market Data")
+                    st.markdown(f"""
+                    * **Comparable listings:** {comp_listings}
+                    * **Median ₹/sq.ft.:** {comp_median}
+                    * **Data retrieved:** {datetime.now().strftime('%d-%m-%Y %H:%M')}
+                    * **Source:** ConfiguredAPIDataProvider (Mock)
+                    """)
                     
                     if st.button("🔄 Refresh Current Market Data"):
                         fetch_live_market_data.clear()
                         st.rerun()
 
-                    st.markdown("#### Prediction Context")
-                    st.markdown(f"""
-                    * **Model Used:** `{best_model_name}`
-                    * **City:** {city}
-                    * **Location:** {location}
-                    * **Property Type:** {property_type}
-                    * **BHK:** {bhk}
-                    * **Area:** {area} sq.ft.
-                    """)
-                    
-                    st.markdown("#### Current Data Source")
-                    st.markdown(f"""
-                    * **Provider:** ConfiguredAPIDataProvider (Mock)
-                    * **Retrieval Time:** {datetime.now().strftime('%d-%m-%Y %H:%M')}
-                    * **Search Location:** {city}, {location}
-                    * **Listings Retrieved:** {comp_result['count']}
-                    """)
-                    
-                    st.warning("**Important Note**: This is an estimated market value based on current property listings and historical machine-learning data. Listing prices are asking prices and may differ from actual negotiated or registered transaction prices. This estimate is not a legal property valuation or guaranteed sale price.")
+                    st.warning("**Important Note**: This is an estimated market value based on recently retrieved property listings and historical machine-learning data. Listing prices are asking prices and may differ from actual negotiated or registered transaction prices. This is not a legal valuation or guaranteed sale price.")
+
 
 
                     
