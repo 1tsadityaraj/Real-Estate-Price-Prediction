@@ -69,3 +69,25 @@ This guarantees that missing coordinates passed from Streamlit are safely mapped
 - **Mumbai Prediction Test:** Passed. Predictions successfully returned valid formatting without NaN trace.
 - **Indore Prediction Test:** Passed. Selecting previously-failing Indore locations successfully returned predictions using imputed coordinates.
 - **City-Switching Test:** Passed. Location dropdowns accurately cleared and repopulated based on the active City.
+
+## Prediction Sanity and Model Behavior Testing
+
+### Original 4 BHK vs 2 BHK Issue
+A controlled test revealed an anomalous prediction inversion:
+- **Test 1:** Indore, Ab Road, Apartment, 4 BHK, 1300 sq.ft. -> Predicted: ₹14.52 Lakhs
+- **Test 2:** Indore, Ab Road, Apartment, 2 BHK, 1000 sq.ft. -> Predicted: ₹94.30 Lakhs
+The model predicted the larger 4 BHK property to be substantially cheaper than the smaller 2 BHK property.
+
+### Root-Cause Investigation
+- **Feature Consistency Test:** Verified via python script that the model preprocessing pipeline properly constructs all features and passes them in the correct `Numerical` + `Categorical` order. No bugs or data leakage were found in the Streamlit or Scikit-Learn logic.
+- **Model Evidence:** The `LinearRegression` model coefficients were extracted. The model mathematically assigned a coefficient of `-4,254,859.57 INR` to the `BHK` feature, and a coefficient of `+1,774.08 INR` to `Area_sqft`.
+- **Dataset Evidence:** Calculating the Pearson correlation matrix for the underlying mock dataset revealed a weak **negative** correlation between BHK and Price (Mumbai = -0.108, Indore = -0.004). 
+
+### Sensitivity Tests
+To isolate the behavior, variables were held constant while altering single inputs:
+- **BHK Sensitivity (Indore, 1000 sqft):** 2 BHK (₹94 Lakhs) -> 3 BHK (₹51 Lakhs) -> 4 BHK (₹9 Lakhs).
+- **Area Sensitivity (Indore, 2 BHK):** 600 sqft (₹87 Lakhs) -> 1000 sqft (₹94 Lakhs) -> 1400 sqft (₹1.01 Cr).
+- **Mumbai BHK Sensitivity (1000 sqft):** 2 BHK (₹4.73 Cr) -> 3 BHK (₹4.30 Cr) -> 4 BHK (₹3.88 Cr).
+
+### Final Conclusion
+The bizarre prediction is **not a software bug**, but an artifact of the simulated, proxy training dataset. Because the underlying data assigned random price nodes without strict multidimensional real-estate coherence, the model correctly learned the negative BHK correlation present in the data it was fed. To maintain scientific integrity, the mathematically correct model is preserved. Instead of artificially forcing coefficients, a **Data Disclaimer** and **Prediction Context** breakdown have been added to the Streamlit UI to transparently communicate that predictions are estimations based on limited historical simulated data, not live market valuations.

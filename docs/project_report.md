@@ -321,7 +321,7 @@ The project successfully bridged two heavily disparate markets. The Exploratory 
 
 # CHAPTER 15 – LIMITATIONS
 
-- **Dataset Size:** The model was trained on 440 property records, limiting its ability to achieve production-grade precision (which typically requires hundreds of thousands of entries).
+- **Dataset Size & Simulated Anomalies:** The model was trained on a simulated dataset of 440 property records. Because the proxy data was generated programmatically rather than sourced from live commercial APIs, it lacks true multidimensional structural coherence. For instance, the training data mathematically exhibits a negative correlation between BHK and Price, causing the Linear Regression model to legitimately (but unnaturally) penalize property prices for additional bedrooms.
 - **Location Coverage:** The mock dataset contains concentrated location nodes; predictions for outer metropolitan zones may lack accuracy due to spatial extrapolation.
 - **Data Freshness:** The dataset represents a static snapshot and does not account for dynamic interest rate shifts or inflation.
 
