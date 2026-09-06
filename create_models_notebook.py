@@ -1,4 +1,6 @@
-{
+import json
+
+notebook = {
  "cells": [
   {
    "cell_type": "markdown",
@@ -21,7 +23,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -53,7 +55,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -80,7 +82,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -98,7 +100,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -116,7 +118,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -135,7 +137,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -154,7 +156,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -193,7 +195,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -201,8 +203,8 @@
     "\n",
     "# R2 Comparison\n",
     "sns.barplot(data=df_results, x='R2', y='Model', ax=axes[0], palette='Blues_r')\n",
-    "axes[0].set_title('R\u00b2 Score Comparison (Higher is Better)')\n",
-    "axes[0].set_xlabel('R\u00b2 Score')\n",
+    "axes[0].set_title('R² Score Comparison (Higher is Better)')\n",
+    "axes[0].set_xlabel('R² Score')\n",
     "\n",
     "# RMSE Comparison\n",
     "sns.barplot(data=df_results, x='RMSE', y='Model', ax=axes[1], palette='Reds_r')\n",
@@ -231,7 +233,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -254,7 +256,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -283,7 +285,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -297,7 +299,7 @@
     "sample_input = X_test.iloc[[0]]\n",
     "prediction = loaded_model.predict(sample_input)\n",
     "\n",
-    "print(f\"Test successful. Loaded model predicted: \u20b9{prediction[0]:,.2f}\")"
+    "print(f\"Test successful. Loaded model predicted: ₹{prediction[0]:,.2f}\")"
    ]
   },
   {
@@ -305,7 +307,7 @@
    "metadata": {},
    "source": [
     "## 16. Final Model Performance Summary\n",
-    "| Model                 |    MAE |   RMSE |     R\u00b2 |\n",
+    "| Model                 |    MAE |   RMSE |     R² |\n",
     "| --------------------- | -----: | -----: | -----: |\n",
     "| Linear Regression     | 1.21e7 | 1.41e7 | -0.237 |\n",
     "| Random Forest         | 1.27e7 | 1.49e7 | -0.384 |\n",
@@ -328,3 +330,6 @@
  "nbformat": 4,
  "nbformat_minor": 4
 }
+
+with open('notebooks/model_building.ipynb', 'w') as f:
+    json.dump(notebook, f, indent=1)
