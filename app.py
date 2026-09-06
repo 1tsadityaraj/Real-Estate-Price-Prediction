@@ -223,7 +223,7 @@ with tab2:
                 st.markdown("##### 🏙️ Mumbai vs Indore (Median Price)")
                 comp_df = filtered_df.groupby('City')['Price_INR'].median().reset_index()
                 fig, ax = plt.subplots(figsize=(8, 4))
-                sns.barplot(data=comp_df, x='City', y='Price_INR', palette='viridis', ax=ax)
+                sns.barplot(data=comp_df, x='City', y='Price_INR', hue='City', palette='viridis', legend=False, ax=ax)
                 ax.set_yscale('log')
                 ax.set_ylabel('Median Price (INR) - Log Scale')
                 st.pyplot(fig)
@@ -231,7 +231,7 @@ with tab2:
                 st.markdown(f"##### 🏙️ Median Prices by Property Type in {f_city}")
                 ptype_df = filtered_df.groupby('Property_Type')['Price_INR'].median().reset_index()
                 fig, ax = plt.subplots(figsize=(8, 4))
-                sns.barplot(data=ptype_df, y='Property_Type', x='Price_INR', palette='Set2', ax=ax)
+                sns.barplot(data=ptype_df, y='Property_Type', x='Price_INR', hue='Property_Type', palette='Set2', legend=False, ax=ax)
                 ax.set_xlabel('Median Price (INR)')
                 st.pyplot(fig)
 
@@ -258,7 +258,7 @@ with tab2:
         if not loc_df.empty:
             loc_price = loc_df.groupby('Location')['Price_INR'].median().sort_values(ascending=False).reset_index()
             fig, ax = plt.subplots(figsize=(10, 5))
-            sns.barplot(data=loc_price, y='Location', x='Price_INR', palette='Reds_d', ax=ax)
+            sns.barplot(data=loc_price, y='Location', x='Price_INR', hue='Location', palette='Reds_d', legend=False, ax=ax)
             ax.set_xlabel('Median Price (INR)')
             ax.set_title('Median Price of Most Common Locations')
             st.pyplot(fig)

@@ -1,0 +1,251 @@
+Property_Name,Location,Property_Type,Price_INR,Area_sqft,BHK,Bathrooms,Listing_URL
+Luxury 4 BHK in South Mumbai,Lower Parel,Apartment,53100000.0,1479.0,2,2,https://www.sample-realestate.com/mumbai/property/0
+Luxury 5 BHK in Borivali West,Lower Parel,Apartment,63100000.0,2616.0,3,3,https://www.sample-realestate.com/mumbai/property/1
+Luxury 2 BHK in Juhu,Bandra East,Apartment,6700000.0,3578.0,3,4,https://www.sample-realestate.com/mumbai/property/2
+Luxury 3 BHK in South Mumbai,Juhu,Apartment,87900000.0,2579.0,2,2,https://www.sample-realestate.com/mumbai/property/3
+Luxury 5 BHK in Powai,Worli,Apartment,93600000.0,1162.0,1,2,https://www.sample-realestate.com/mumbai/property/4
+Luxury 3 BHK in Goregaon East,Malad West,Apartment,58700000.0,390.0,1,1,https://www.sample-realestate.com/mumbai/property/5
+Luxury 5 BHK in Bandra East,Powai,Apartment,71200000.0,3519.0,3,2,https://www.sample-realestate.com/mumbai/property/6
+Luxury 4 BHK in Goregaon East,Lower Parel,Villa,92600000.0,,3,3,https://www.sample-realestate.com/mumbai/property/7
+Luxury 2 BHK in Chembur,Borivali West,Apartment,72200000.0,3536.0,1,2,https://www.sample-realestate.com/mumbai/property/8
+Luxury 5 BHK in Andheri West,Bandra East,Studio,19500000.0,2257.0,4,4,https://www.sample-realestate.com/mumbai/property/9
+Luxury 4 BHK in Lower Parel,South Mumbai,Apartment,59700000.0,3775.0,1,2,https://www.sample-realestate.com/mumbai/property/10
+Luxury 5 BHK in Chembur,Kandivali East,Apartment,62600000.0,3255.0,2,3,https://www.sample-realestate.com/mumbai/property/11
+Luxury 1 BHK in Andheri West,Powai,Studio,45300000.0,3992.0,3,3,https://www.sample-realestate.com/mumbai/property/12
+Luxury 3 BHK in South Mumbai,Worli,Apartment,75000000.0,1598.0,4,4,https://www.sample-realestate.com/mumbai/property/13
+Luxury 2 BHK in Chembur,Borivali West,Apartment,93800000.0,3139.0,3,3,https://www.sample-realestate.com/mumbai/property/14
+Luxury 4 BHK in Juhu,Worli,Apartment,92900000.0,1787.0,3,3,https://www.sample-realestate.com/mumbai/property/15
+Luxury 4 BHK in Malad West,Powai,Villa,47800000.0,,2,3,https://www.sample-realestate.com/mumbai/property/16
+Luxury 4 BHK in Worli,Lower Parel,Apartment,15800000.0,2622.0,3,4,https://www.sample-realestate.com/mumbai/property/17
+Luxury 3 BHK in Borivali West,Borivali West,Apartment,98600000.0,3533.0,1,1,https://www.sample-realestate.com/mumbai/property/18
+Luxury 3 BHK in Malad West,Worli,Apartment,84700000.0,3941.0,4,4,https://www.sample-realestate.com/mumbai/property/19
+Luxury 5 BHK in Worli,Kandivali East,Apartment,16800000.0,3143.0,2,2,https://www.sample-realestate.com/mumbai/property/20
+Luxury 2 BHK in Powai,Juhu,Apartment,92500000.0,1846.0,3,3,https://www.sample-realestate.com/mumbai/property/21
+Luxury 1 BHK in Chembur,Andheri West,Apartment,87600000.0,1859.0,2,3,https://www.sample-realestate.com/mumbai/property/22
+Luxury 2 BHK in Lower Parel,Juhu,Apartment,54300000.0,3029.0,3,3,https://www.sample-realestate.com/mumbai/property/23
+Luxury 1 BHK in Lower Parel,Powai,Apartment,61200000.0,1183.0,2,2,https://www.sample-realestate.com/mumbai/property/24
+Luxury 5 BHK in Bandra East,Bandra East,Apartment,42900000.0,709.0,3,2,https://www.sample-realestate.com/mumbai/property/25
+Luxury 4 BHK in Chembur,Andheri West,Studio,10200000.0,1612.0,1,1,https://www.sample-realestate.com/mumbai/property/26
+Luxury 4 BHK in Malad West,Malad West,Apartment,36800000.0,1363.0,1,1,https://www.sample-realestate.com/mumbai/property/27
+Luxury 4 BHK in Kandivali East,Kandivali East,Apartment,81300000.0,1396.0,2,2,https://www.sample-realestate.com/mumbai/property/28
+Luxury 3 BHK in Andheri West,Malad West,Villa,5400000.0,1164.0,1,1,https://www.sample-realestate.com/mumbai/property/29
+Luxury 4 BHK in Bandra East,Borivali West,Apartment,36700000.0,456.0,4,4,https://www.sample-realestate.com/mumbai/property/30
+Luxury 4 BHK in Bandra East,Chembur,Apartment,42800000.0,366.0,2,3,https://www.sample-realestate.com/mumbai/property/31
+Luxury 2 BHK in Powai,Andheri West,Studio,56100000.0,3955.0,5,5,https://www.sample-realestate.com/mumbai/property/32
+Luxury 5 BHK in Bandra East,Malad West,Studio,92400000.0,1883.0,2,1,https://www.sample-realestate.com/mumbai/property/33
+Luxury 2 BHK in Chembur,Malad West,Apartment,37900000.0,1722.0,1,1,https://www.sample-realestate.com/mumbai/property/34
+Luxury 2 BHK in Lower Parel,Worli,Studio,38000000.0,2815.0,3,3,https://www.sample-realestate.com/mumbai/property/35
+Luxury 4 BHK in Kandivali East,Juhu,Apartment,75100000.0,1108.0,3,3,https://www.sample-realestate.com/mumbai/property/36
+Luxury 4 BHK in Worli,Worli,Apartment,48000000.0,3815.0,2,2,https://www.sample-realestate.com/mumbai/property/37
+Luxury 5 BHK in Bandra East,Andheri West,Apartment,26300000.0,3209.0,2,2,https://www.sample-realestate.com/mumbai/property/38
+Luxury 5 BHK in Kandivali East,Andheri West,Studio,48000000.0,631.0,3,3,https://www.sample-realestate.com/mumbai/property/39
+Luxury 2 BHK in Worli,Powai,Apartment,18400000.0,1845.0,2,2,https://www.sample-realestate.com/mumbai/property/40
+Luxury 4 BHK in Chembur,Worli,Apartment,21800000.0,3553.0,5,5,https://www.sample-realestate.com/mumbai/property/41
+Luxury 4 BHK in Worli,Goregaon East,Apartment,52300000.0,,5,6,https://www.sample-realestate.com/mumbai/property/42
+Luxury 5 BHK in Andheri West,South Mumbai,Apartment,44800000.0,2029.0,3,3,https://www.sample-realestate.com/mumbai/property/43
+Luxury 1 BHK in Malad West,Juhu,Apartment,91900000.0,2570.0,1,1,https://www.sample-realestate.com/mumbai/property/44
+Luxury 1 BHK in Kandivali East,Andheri West,Apartment,39400000.0,918.0,3,3,https://www.sample-realestate.com/mumbai/property/45
+Luxury 1 BHK in Chembur,Powai,Apartment,60200000.0,3967.0,1,1,https://www.sample-realestate.com/mumbai/property/46
+Luxury 3 BHK in Juhu,Chembur,Apartment,65100000.0,1157.0,1,1,https://www.sample-realestate.com/mumbai/property/47
+Luxury 1 BHK in Kandivali East,Worli,Apartment,6200000.0,3788.0,2,2,https://www.sample-realestate.com/mumbai/property/48
+Luxury 3 BHK in Juhu,Juhu,Apartment,68000000.0,2704.0,2,3,https://www.sample-realestate.com/mumbai/property/49
+Luxury 1 BHK in South Mumbai,Chembur,Apartment,21900000.0,2549.0,4,4,https://www.sample-realestate.com/mumbai/property/50
+Luxury 5 BHK in Lower Parel,Worli,Apartment,96300000.0,2197.0,3,3,https://www.sample-realestate.com/mumbai/property/51
+Luxury 2 BHK in Worli,Malad West,Studio,19100000.0,1153.0,3,3,https://www.sample-realestate.com/mumbai/property/52
+Luxury 4 BHK in Malad West,Chembur,Apartment,44400000.0,953.0,2,2,https://www.sample-realestate.com/mumbai/property/53
+Luxury 1 BHK in Kandivali East,Powai,Apartment,13100000.0,1116.0,2,2,https://www.sample-realestate.com/mumbai/property/54
+Luxury 4 BHK in Bandra East,Juhu,Apartment,99700000.0,990.0,2,1,https://www.sample-realestate.com/mumbai/property/55
+Luxury 1 BHK in Malad West,Lower Parel,Apartment,52700000.0,3184.0,5,4,https://www.sample-realestate.com/mumbai/property/56
+Luxury 5 BHK in Juhu,Borivali West,Apartment,61600000.0,1595.0,1,2,https://www.sample-realestate.com/mumbai/property/57
+Luxury 4 BHK in Kandivali East,Borivali West,Apartment,11400000.0,514.0,4,4,https://www.sample-realestate.com/mumbai/property/58
+Luxury 3 BHK in Juhu,Juhu,Apartment,76200000.0,3886.0,2,2,https://www.sample-realestate.com/mumbai/property/59
+Luxury 1 BHK in Juhu,Chembur,Apartment,24900000.0,3570.0,2,2,https://www.sample-realestate.com/mumbai/property/60
+Luxury 5 BHK in Juhu,Worli,Apartment,90300000.0,3733.0,3,3,https://www.sample-realestate.com/mumbai/property/61
+Luxury 1 BHK in Borivali West,Powai,Apartment,24500000.0,3981.0,2,1,https://www.sample-realestate.com/mumbai/property/62
+Luxury 2 BHK in Malad West,South Mumbai,Apartment,23100000.0,943.0,4,4,https://www.sample-realestate.com/mumbai/property/63
+Luxury 3 BHK in Worli,Borivali West,Apartment,8500000.0,1766.0,4,3,https://www.sample-realestate.com/mumbai/property/64
+Luxury 2 BHK in Lower Parel,Powai,Apartment,49800000.0,3105.0,2,3,https://www.sample-realestate.com/mumbai/property/65
+Luxury 4 BHK in Juhu,Borivali West,Apartment,58700000.0,2875.0,2,2,https://www.sample-realestate.com/mumbai/property/66
+Luxury 1 BHK in Powai,Malad West,Apartment,11200000.0,869.0,2,2,https://www.sample-realestate.com/mumbai/property/67
+Luxury 5 BHK in Powai,Worli,Apartment,78700000.0,3319.0,4,5,https://www.sample-realestate.com/mumbai/property/68
+Luxury 5 BHK in Malad West,Malad West,Villa,48100000.0,1130.0,2,2,https://www.sample-realestate.com/mumbai/property/69
+Luxury 5 BHK in South Mumbai,Borivali West,Apartment,54800000.0,1128.0,3,3,https://www.sample-realestate.com/mumbai/property/70
+Luxury 5 BHK in Powai,Lower Parel,Apartment,46900000.0,2287.0,3,3,https://www.sample-realestate.com/mumbai/property/71
+Luxury 5 BHK in Malad West,Lower Parel,Studio,43100000.0,2494.0,3,3,https://www.sample-realestate.com/mumbai/property/72
+Luxury 3 BHK in Juhu,Malad West,Studio,58200000.0,2446.0,1,1,https://www.sample-realestate.com/mumbai/property/73
+Luxury 4 BHK in Bandra East,Lower Parel,Apartment,19700000.0,639.0,3,4,https://www.sample-realestate.com/mumbai/property/74
+Luxury 2 BHK in Worli,Borivali West,Apartment,22300000.0,3547.0,4,4,https://www.sample-realestate.com/mumbai/property/75
+Luxury 5 BHK in Goregaon East,Juhu,Independent House,86900000.0,1283.0,1,1,https://www.sample-realestate.com/mumbai/property/76
+Luxury 4 BHK in Chembur,Malad West,Apartment,94900000.0,779.0,2,2,https://www.sample-realestate.com/mumbai/property/77
+Luxury 4 BHK in Chembur,South Mumbai,Apartment,40500000.0,3588.0,5,5,https://www.sample-realestate.com/mumbai/property/78
+Luxury 4 BHK in South Mumbai,South Mumbai,Apartment,30700000.0,3836.0,1,1,https://www.sample-realestate.com/mumbai/property/79
+Luxury 2 BHK in Malad West,Bandra East,Apartment,66200000.0,3490.0,4,4,https://www.sample-realestate.com/mumbai/property/80
+Luxury 4 BHK in Worli,Chembur,Apartment,43800000.0,3295.0,2,3,https://www.sample-realestate.com/mumbai/property/81
+Luxury 1 BHK in Andheri West,Worli,Apartment,7400000.0,2724.0,2,2,https://www.sample-realestate.com/mumbai/property/82
+Luxury 1 BHK in South Mumbai,Lower Parel,Apartment,19800000.0,2338.0,4,4,https://www.sample-realestate.com/mumbai/property/83
+Luxury 1 BHK in Powai,Lower Parel,Apartment,73000000.0,622.0,2,2,https://www.sample-realestate.com/mumbai/property/84
+Luxury 5 BHK in Worli,Chembur,Apartment,67600000.0,1811.0,2,2,https://www.sample-realestate.com/mumbai/property/85
+Luxury 3 BHK in Malad West,Andheri West,Apartment,7600000.0,,2,1,https://www.sample-realestate.com/mumbai/property/86
+Luxury 3 BHK in Worli,Goregaon East,Apartment,26100000.0,1261.0,2,2,https://www.sample-realestate.com/mumbai/property/87
+Luxury 5 BHK in Andheri West,Malad West,Apartment,27000000.0,2977.0,1,1,https://www.sample-realestate.com/mumbai/property/88
+Luxury 3 BHK in Lower Parel,Kandivali East,Studio,68800000.0,2135.0,2,2,https://www.sample-realestate.com/mumbai/property/89
+Luxury 4 BHK in Kandivali East,Lower Parel,Apartment,6900000.0,600.0,5,5,https://www.sample-realestate.com/mumbai/property/90
+Luxury 3 BHK in Goregaon East,Worli,Apartment,14900000.0,1115.0,2,2,https://www.sample-realestate.com/mumbai/property/91
+Luxury 1 BHK in Powai,Bandra East,Apartment,81000000.0,2828.0,3,4,https://www.sample-realestate.com/mumbai/property/92
+Luxury 1 BHK in Andheri West,South Mumbai,Apartment,22000000.0,582.0,2,2,https://www.sample-realestate.com/mumbai/property/93
+Luxury 2 BHK in Powai,Lower Parel,Apartment,67000000.0,3449.0,3,3,https://www.sample-realestate.com/mumbai/property/94
+Luxury 4 BHK in Malad West,Bandra East,Apartment,27600000.0,2132.0,1,1,https://www.sample-realestate.com/mumbai/property/95
+Luxury 2 BHK in Juhu,Borivali West,Apartment,14400000.0,2078.0,5,6,https://www.sample-realestate.com/mumbai/property/96
+Luxury 1 BHK in Borivali West,Borivali West,Apartment,28100000.0,2492.0,2,3,https://www.sample-realestate.com/mumbai/property/97
+Luxury 1 BHK in Kandivali East,Goregaon East,Apartment,73600000.0,3351.0,2,2,https://www.sample-realestate.com/mumbai/property/98
+Luxury 1 BHK in South Mumbai,Juhu,Apartment,86300000.0,1587.0,1,2,https://www.sample-realestate.com/mumbai/property/99
+Luxury 1 BHK in Bandra East,Kandivali East,Apartment,83900000.0,,1,1,https://www.sample-realestate.com/mumbai/property/100
+Luxury 2 BHK in Chembur,Andheri West,Apartment,42700000.0,2393.0,2,2,https://www.sample-realestate.com/mumbai/property/101
+Luxury 5 BHK in Andheri West,Goregaon East,Apartment,68500000.0,1288.0,2,1,https://www.sample-realestate.com/mumbai/property/102
+Luxury 1 BHK in Juhu,Powai,Studio,24500000.0,3551.0,3,3,https://www.sample-realestate.com/mumbai/property/103
+Luxury 2 BHK in Borivali West,Andheri West,Apartment,32800000.0,3250.0,2,2,https://www.sample-realestate.com/mumbai/property/104
+Luxury 4 BHK in Lower Parel,Malad West,Apartment,90200000.0,2736.0,2,3,https://www.sample-realestate.com/mumbai/property/105
+Luxury 4 BHK in Malad West,Worli,Villa,6200000.0,3447.0,3,3,https://www.sample-realestate.com/mumbai/property/106
+Luxury 3 BHK in Kandivali East,Powai,Apartment,13100000.0,3509.0,3,3,https://www.sample-realestate.com/mumbai/property/107
+Luxury 3 BHK in Andheri West,Powai,Apartment,24700000.0,,1,1,https://www.sample-realestate.com/mumbai/property/108
+Luxury 5 BHK in Powai,Goregaon East,Apartment,7500000.0,3397.0,1,1,https://www.sample-realestate.com/mumbai/property/109
+Luxury 2 BHK in Goregaon East,Chembur,Apartment,22200000.0,2881.0,1,1,https://www.sample-realestate.com/mumbai/property/110
+Luxury 3 BHK in Andheri West,Juhu,Apartment,60400000.0,2817.0,3,3,https://www.sample-realestate.com/mumbai/property/111
+Luxury 1 BHK in Chembur,Chembur,Apartment,45000000.0,2589.0,3,2,https://www.sample-realestate.com/mumbai/property/112
+Luxury 3 BHK in Goregaon East,Goregaon East,Apartment,89800000.0,3085.0,2,3,https://www.sample-realestate.com/mumbai/property/113
+Luxury 5 BHK in Juhu,Malad West,Apartment,82700000.0,887.0,3,3,https://www.sample-realestate.com/mumbai/property/114
+Luxury 4 BHK in Chembur,South Mumbai,Apartment,37500000.0,3559.0,3,3,https://www.sample-realestate.com/mumbai/property/115
+Luxury 3 BHK in Powai,Lower Parel,Apartment,29600000.0,3526.0,2,2,https://www.sample-realestate.com/mumbai/property/116
+Luxury 3 BHK in Lower Parel,Lower Parel,Apartment,41100000.0,408.0,4,4,https://www.sample-realestate.com/mumbai/property/117
+Luxury 3 BHK in Juhu,Juhu,Apartment,61100000.0,3356.0,2,2,https://www.sample-realestate.com/mumbai/property/118
+Luxury 4 BHK in Malad West,Malad West,Studio,30500000.0,777.0,1,1,https://www.sample-realestate.com/mumbai/property/119
+Luxury 4 BHK in Worli,Juhu,Apartment,64300000.0,1540.0,2,3,https://www.sample-realestate.com/mumbai/property/120
+Luxury 1 BHK in Kandivali East,Bandra East,Apartment,43900000.0,3051.0,1,1,https://www.sample-realestate.com/mumbai/property/121
+Luxury 2 BHK in Kandivali East,Chembur,Apartment,57400000.0,895.0,2,3,https://www.sample-realestate.com/mumbai/property/122
+Luxury 1 BHK in South Mumbai,Lower Parel,Apartment,46400000.0,3326.0,4,5,https://www.sample-realestate.com/mumbai/property/123
+Luxury 4 BHK in Worli,Powai,Apartment,33000000.0,3379.0,1,1,https://www.sample-realestate.com/mumbai/property/124
+Luxury 1 BHK in Bandra East,Chembur,Apartment,95100000.0,2178.0,1,2,https://www.sample-realestate.com/mumbai/property/125
+Luxury 2 BHK in Juhu,Kandivali East,Apartment,77500000.0,324.0,2,2,https://www.sample-realestate.com/mumbai/property/126
+Luxury 4 BHK in Lower Parel,Worli,Apartment,18300000.0,1362.0,4,5,https://www.sample-realestate.com/mumbai/property/127
+Luxury 1 BHK in Powai,Malad West,Apartment,87500000.0,2583.0,2,2,https://www.sample-realestate.com/mumbai/property/128
+Luxury 4 BHK in Andheri West,Andheri West,Studio,51300000.0,3930.0,2,3,https://www.sample-realestate.com/mumbai/property/129
+Luxury 2 BHK in Andheri West,Juhu,Apartment,90000000.0,2638.0,1,2,https://www.sample-realestate.com/mumbai/property/130
+Luxury 4 BHK in Borivali West,Chembur,Apartment,81000000.0,1261.0,1,2,https://www.sample-realestate.com/mumbai/property/131
+Luxury 5 BHK in South Mumbai,Worli,Apartment,45400000.0,,5,5,https://www.sample-realestate.com/mumbai/property/132
+Luxury 1 BHK in Worli,Chembur,Studio,7100000.0,2298.0,5,5,https://www.sample-realestate.com/mumbai/property/133
+Luxury 3 BHK in Juhu,Andheri West,Apartment,30500000.0,3185.0,1,1,https://www.sample-realestate.com/mumbai/property/134
+Luxury 3 BHK in Powai,Worli,Apartment,56500000.0,696.0,5,5,https://www.sample-realestate.com/mumbai/property/135
+Luxury 1 BHK in Kandivali East,Kandivali East,Studio,65200000.0,3116.0,3,3,https://www.sample-realestate.com/mumbai/property/136
+Luxury 4 BHK in South Mumbai,Andheri West,Studio,29500000.0,2303.0,4,4,https://www.sample-realestate.com/mumbai/property/137
+Luxury 1 BHK in Kandivali East,Goregaon East,Independent House,18200000.0,3863.0,2,2,https://www.sample-realestate.com/mumbai/property/138
+Luxury 4 BHK in Goregaon East,Borivali West,Apartment,84300000.0,1565.0,2,3,https://www.sample-realestate.com/mumbai/property/139
+Luxury 4 BHK in Juhu,Goregaon East,Apartment,98500000.0,2641.0,2,2,https://www.sample-realestate.com/mumbai/property/140
+Luxury 1 BHK in Juhu,Lower Parel,Apartment,54900000.0,3749.0,3,4,https://www.sample-realestate.com/mumbai/property/141
+Luxury 1 BHK in Bandra East,Chembur,Studio,21300000.0,679.0,1,1,https://www.sample-realestate.com/mumbai/property/142
+Luxury 2 BHK in Bandra East,Borivali West,Apartment,30900000.0,3768.0,1,2,https://www.sample-realestate.com/mumbai/property/143
+Luxury 3 BHK in Worli,Goregaon East,Apartment,6700000.0,2845.0,2,3,https://www.sample-realestate.com/mumbai/property/144
+Luxury 4 BHK in Andheri West,Borivali West,Apartment,91900000.0,551.0,3,3,https://www.sample-realestate.com/mumbai/property/145
+Luxury 4 BHK in Andheri West,South Mumbai,Villa,16200000.0,1414.0,2,2,https://www.sample-realestate.com/mumbai/property/146
+Luxury 5 BHK in Powai,Chembur,Apartment,59800000.0,,3,3,https://www.sample-realestate.com/mumbai/property/147
+Luxury 3 BHK in Andheri West,Borivali West,Apartment,31000000.0,549.0,5,5,https://www.sample-realestate.com/mumbai/property/148
+Luxury 1 BHK in Chembur,Powai,Apartment,57600000.0,2454.0,1,1,https://www.sample-realestate.com/mumbai/property/149
+Luxury 3 BHK in Juhu,Juhu,Apartment,66900000.0,1580.0,3,3,https://www.sample-realestate.com/mumbai/property/150
+Luxury 5 BHK in Juhu,Juhu,Apartment,83800000.0,,2,2,https://www.sample-realestate.com/mumbai/property/151
+Luxury 3 BHK in South Mumbai,Powai,Apartment,24600000.0,469.0,4,4,https://www.sample-realestate.com/mumbai/property/152
+Luxury 2 BHK in Borivali West,Worli,Apartment,6000000.0,3525.0,1,1,https://www.sample-realestate.com/mumbai/property/153
+Luxury 1 BHK in Chembur,Bandra East,Apartment,18000000.0,3902.0,3,2,https://www.sample-realestate.com/mumbai/property/154
+Luxury 1 BHK in Borivali West,Worli,Apartment,90500000.0,3885.0,3,3,https://www.sample-realestate.com/mumbai/property/155
+Luxury 4 BHK in Juhu,Andheri West,Apartment,88000000.0,3074.0,4,5,https://www.sample-realestate.com/mumbai/property/156
+Luxury 4 BHK in Juhu,Andheri West,Apartment,61800000.0,781.0,3,3,https://www.sample-realestate.com/mumbai/property/157
+Luxury 1 BHK in Andheri West,Borivali West,Apartment,62000000.0,3106.0,2,3,https://www.sample-realestate.com/mumbai/property/158
+Luxury 4 BHK in Chembur,Goregaon East,Apartment,68200000.0,391.0,3,3,https://www.sample-realestate.com/mumbai/property/159
+Luxury 5 BHK in Borivali West,Goregaon East,Apartment,21700000.0,382.0,4,4,https://www.sample-realestate.com/mumbai/property/160
+Luxury 3 BHK in Chembur,Juhu,Apartment,91900000.0,1497.0,2,2,https://www.sample-realestate.com/mumbai/property/161
+Luxury 1 BHK in Borivali West,Malad West,Apartment,44800000.0,2108.0,1,1,https://www.sample-realestate.com/mumbai/property/162
+Luxury 5 BHK in Andheri West,Worli,Studio,41400000.0,3151.0,4,4,https://www.sample-realestate.com/mumbai/property/163
+Luxury 5 BHK in Juhu,South Mumbai,Apartment,54300000.0,2828.0,3,3,https://www.sample-realestate.com/mumbai/property/164
+Luxury 4 BHK in Andheri West,Chembur,Independent House,9500000.0,1950.0,3,3,https://www.sample-realestate.com/mumbai/property/165
+Luxury 4 BHK in Borivali West,Lower Parel,Apartment,20800000.0,1312.0,2,2,https://www.sample-realestate.com/mumbai/property/166
+Luxury 1 BHK in Juhu,Kandivali East,Apartment,75100000.0,3989.0,3,3,https://www.sample-realestate.com/mumbai/property/167
+Luxury 2 BHK in Worli,Goregaon East,Villa,12900000.0,1877.0,2,2,https://www.sample-realestate.com/mumbai/property/168
+Luxury 2 BHK in Goregaon East,Chembur,Apartment,62300000.0,1970.0,3,2,https://www.sample-realestate.com/mumbai/property/169
+Luxury 2 BHK in Juhu,Kandivali East,Apartment,28300000.0,905.0,1,1,https://www.sample-realestate.com/mumbai/property/170
+Luxury 2 BHK in Goregaon East,Chembur,Apartment,42000000.0,3241.0,3,3,https://www.sample-realestate.com/mumbai/property/171
+Luxury 2 BHK in South Mumbai,Borivali West,Apartment,32400000.0,2867.0,5,4,https://www.sample-realestate.com/mumbai/property/172
+Luxury 2 BHK in Bandra East,Kandivali East,Studio,38800000.0,1117.0,1,2,https://www.sample-realestate.com/mumbai/property/173
+Luxury 2 BHK in Andheri West,Lower Parel,Independent House,73300000.0,605.0,5,4,https://www.sample-realestate.com/mumbai/property/174
+Luxury 1 BHK in Worli,Chembur,Studio,33200000.0,2818.0,2,2,https://www.sample-realestate.com/mumbai/property/175
+Luxury 3 BHK in Goregaon East,Powai,Apartment,58800000.0,2722.0,4,5,https://www.sample-realestate.com/mumbai/property/176
+Luxury 5 BHK in Lower Parel,Lower Parel,Apartment,50200000.0,1311.0,3,3,https://www.sample-realestate.com/mumbai/property/177
+Luxury 2 BHK in Juhu,Kandivali East,Studio,68000000.0,3818.0,2,2,https://www.sample-realestate.com/mumbai/property/178
+Luxury 2 BHK in Worli,Lower Parel,Apartment,94000000.0,859.0,3,3,https://www.sample-realestate.com/mumbai/property/179
+Luxury 5 BHK in Chembur,Chembur,Apartment,74600000.0,1900.0,4,4,https://www.sample-realestate.com/mumbai/property/180
+Luxury 2 BHK in Malad West,Bandra East,Apartment,25400000.0,3791.0,2,2,https://www.sample-realestate.com/mumbai/property/181
+Luxury 1 BHK in Powai,Chembur,Apartment,8000000.0,1853.0,2,2,https://www.sample-realestate.com/mumbai/property/182
+Luxury 5 BHK in Powai,Chembur,Independent House,29900000.0,2663.0,3,2,https://www.sample-realestate.com/mumbai/property/183
+Luxury 1 BHK in Kandivali East,Borivali West,Apartment,61500000.0,1771.0,3,3,https://www.sample-realestate.com/mumbai/property/184
+Luxury 4 BHK in Juhu,Worli,Villa,9900000.0,1315.0,3,4,https://www.sample-realestate.com/mumbai/property/185
+Luxury 4 BHK in Bandra East,Powai,Apartment,52200000.0,3941.0,3,4,https://www.sample-realestate.com/mumbai/property/186
+Luxury 2 BHK in Malad West,South Mumbai,Apartment,61700000.0,1815.0,2,2,https://www.sample-realestate.com/mumbai/property/187
+Luxury 3 BHK in Worli,Goregaon East,Apartment,36800000.0,3608.0,3,3,https://www.sample-realestate.com/mumbai/property/188
+Luxury 2 BHK in Goregaon East,Andheri West,Independent House,78200000.0,1151.0,1,1,https://www.sample-realestate.com/mumbai/property/189
+Luxury 2 BHK in Lower Parel,Worli,Apartment,15100000.0,1088.0,2,2,https://www.sample-realestate.com/mumbai/property/190
+Luxury 1 BHK in Powai,Andheri West,Apartment,12100000.0,415.0,1,1,https://www.sample-realestate.com/mumbai/property/191
+Luxury 2 BHK in Goregaon East,Borivali West,Apartment,74200000.0,2711.0,2,2,https://www.sample-realestate.com/mumbai/property/192
+Luxury 3 BHK in Chembur,Powai,Studio,52100000.0,1664.0,2,3,https://www.sample-realestate.com/mumbai/property/193
+Luxury 5 BHK in Andheri West,Chembur,Apartment,70400000.0,3498.0,2,2,https://www.sample-realestate.com/mumbai/property/194
+Luxury 5 BHK in Chembur,Juhu,Independent House,46300000.0,2051.0,3,3,https://www.sample-realestate.com/mumbai/property/195
+Luxury 4 BHK in Chembur,Goregaon East,Apartment,28400000.0,3882.0,2,2,https://www.sample-realestate.com/mumbai/property/196
+Luxury 5 BHK in Malad West,Bandra East,Apartment,82800000.0,986.0,2,2,https://www.sample-realestate.com/mumbai/property/197
+Luxury 4 BHK in Goregaon East,Juhu,Apartment,80900000.0,3514.0,2,3,https://www.sample-realestate.com/mumbai/property/198
+Luxury 5 BHK in Powai,Borivali West,Apartment,71000000.0,,2,2,https://www.sample-realestate.com/mumbai/property/199
+Luxury 3 BHK in Malad West,Worli,Apartment,30900000.0,3152.0,2,2,https://www.sample-realestate.com/mumbai/property/200
+Luxury 4 BHK in Bandra East,Bandra East,Apartment,61100000.0,3426.0,1,1,https://www.sample-realestate.com/mumbai/property/201
+Luxury 4 BHK in Lower Parel,Lower Parel,Apartment,39300000.0,3116.0,3,3,https://www.sample-realestate.com/mumbai/property/202
+Luxury 3 BHK in Andheri West,Kandivali East,Studio,13700000.0,2617.0,3,3,https://www.sample-realestate.com/mumbai/property/203
+Luxury 3 BHK in Chembur,Bandra East,Apartment,92100000.0,786.0,3,2,https://www.sample-realestate.com/mumbai/property/204
+Luxury 2 BHK in Malad West,South Mumbai,Apartment,18000000.0,420.0,2,2,https://www.sample-realestate.com/mumbai/property/205
+Luxury 2 BHK in Borivali West,Borivali West,Studio,95300000.0,3707.0,2,2,https://www.sample-realestate.com/mumbai/property/206
+Luxury 2 BHK in Borivali West,Malad West,Apartment,47400000.0,2582.0,4,4,https://www.sample-realestate.com/mumbai/property/207
+Luxury 1 BHK in Chembur,Kandivali East,Apartment,22600000.0,3247.0,2,2,https://www.sample-realestate.com/mumbai/property/208
+Luxury 5 BHK in Andheri West,Andheri West,Studio,56500000.0,2082.0,2,2,https://www.sample-realestate.com/mumbai/property/209
+Luxury 2 BHK in Lower Parel,Goregaon East,Apartment,87900000.0,734.0,1,1,https://www.sample-realestate.com/mumbai/property/210
+Luxury 1 BHK in Bandra East,Andheri West,Apartment,74600000.0,763.0,2,2,https://www.sample-realestate.com/mumbai/property/211
+Luxury 1 BHK in Kandivali East,Bandra East,Apartment,81600000.0,2837.0,2,3,https://www.sample-realestate.com/mumbai/property/212
+Luxury 5 BHK in Borivali West,Andheri West,Villa,67600000.0,1892.0,2,3,https://www.sample-realestate.com/mumbai/property/213
+Luxury 1 BHK in Malad West,South Mumbai,Apartment,70800000.0,1042.0,2,3,https://www.sample-realestate.com/mumbai/property/214
+Luxury 5 BHK in Goregaon East,Borivali West,Apartment,85700000.0,2119.0,2,2,https://www.sample-realestate.com/mumbai/property/215
+Luxury 5 BHK in Malad West,Lower Parel,Studio,28700000.0,538.0,3,3,https://www.sample-realestate.com/mumbai/property/216
+Luxury 3 BHK in Chembur,Worli,Villa,51500000.0,2453.0,3,3,https://www.sample-realestate.com/mumbai/property/217
+Luxury 2 BHK in Juhu,Goregaon East,Apartment,26000000.0,1295.0,3,3,https://www.sample-realestate.com/mumbai/property/218
+Luxury 5 BHK in Goregaon East,South Mumbai,Apartment,98800000.0,3251.0,3,4,https://www.sample-realestate.com/mumbai/property/219
+Luxury 1 BHK in Chembur,South Mumbai,Apartment,94700000.0,1448.0,5,4,https://www.sample-realestate.com/mumbai/property/220
+Luxury 5 BHK in Andheri West,Andheri West,Apartment,8700000.0,1984.0,1,1,https://www.sample-realestate.com/mumbai/property/221
+Luxury 4 BHK in Borivali West,Andheri West,Apartment,72000000.0,343.0,1,1,https://www.sample-realestate.com/mumbai/property/222
+Luxury 4 BHK in Lower Parel,Bandra East,Apartment,92900000.0,568.0,1,1,https://www.sample-realestate.com/mumbai/property/223
+Luxury 2 BHK in Borivali West,Worli,Villa,22200000.0,1752.0,3,3,https://www.sample-realestate.com/mumbai/property/224
+Luxury 4 BHK in Andheri West,Juhu,Studio,59000000.0,2076.0,4,4,https://www.sample-realestate.com/mumbai/property/225
+Luxury 5 BHK in Malad West,Andheri West,Apartment,92000000.0,2520.0,2,2,https://www.sample-realestate.com/mumbai/property/226
+Luxury 2 BHK in Lower Parel,Borivali West,Independent House,8200000.0,1379.0,4,4,https://www.sample-realestate.com/mumbai/property/227
+Luxury 5 BHK in Powai,Malad West,Apartment,71300000.0,2871.0,1,1,https://www.sample-realestate.com/mumbai/property/228
+Luxury 2 BHK in Powai,Goregaon East,Independent House,33200000.0,3482.0,4,4,https://www.sample-realestate.com/mumbai/property/229
+Luxury 2 BHK in Lower Parel,Chembur,Apartment,92800000.0,3185.0,2,3,https://www.sample-realestate.com/mumbai/property/230
+Luxury 3 BHK in Lower Parel,Andheri West,Apartment,97300000.0,,1,2,https://www.sample-realestate.com/mumbai/property/231
+Luxury 1 BHK in Kandivali East,Borivali West,Villa,94700000.0,2078.0,2,2,https://www.sample-realestate.com/mumbai/property/232
+Luxury 5 BHK in Powai,Borivali West,Apartment,50100000.0,688.0,2,2,https://www.sample-realestate.com/mumbai/property/233
+Luxury 2 BHK in Andheri West,Goregaon East,Apartment,86900000.0,1196.0,2,2,https://www.sample-realestate.com/mumbai/property/234
+Luxury 4 BHK in South Mumbai,Juhu,Apartment,85200000.0,3951.0,2,2,https://www.sample-realestate.com/mumbai/property/235
+Luxury 4 BHK in Kandivali East,Borivali West,Apartment,35300000.0,827.0,3,3,https://www.sample-realestate.com/mumbai/property/236
+Luxury 4 BHK in Bandra East,Malad West,Apartment,83700000.0,2146.0,2,3,https://www.sample-realestate.com/mumbai/property/237
+Luxury 3 BHK in Chembur,Borivali West,Apartment,8500000.0,2587.0,2,1,https://www.sample-realestate.com/mumbai/property/238
+Luxury 1 BHK in Andheri West,Borivali West,Apartment,61600000.0,2899.0,3,4,https://www.sample-realestate.com/mumbai/property/239
+Luxury 5 BHK in Juhu,Borivali West,Apartment,26900000.0,2371.0,3,3,https://www.sample-realestate.com/mumbai/property/240
+Luxury 3 BHK in Borivali West,Lower Parel,Apartment,16500000.0,336.0,2,2,https://www.sample-realestate.com/mumbai/property/241
+Luxury 4 BHK in Juhu,Lower Parel,Apartment,12300000.0,1508.0,2,2,https://www.sample-realestate.com/mumbai/property/242
+Luxury 1 BHK in Andheri West,Juhu,Studio,71100000.0,2216.0,1,2,https://www.sample-realestate.com/mumbai/property/243
+Luxury 2 BHK in South Mumbai,Andheri West,Apartment,37300000.0,625.0,1,1,https://www.sample-realestate.com/mumbai/property/244
+Luxury 4 BHK in Chembur,Borivali West,Apartment,73900000.0,1597.0,3,3,https://www.sample-realestate.com/mumbai/property/245
+Luxury 2 BHK in Juhu,Worli,Apartment,11200000.0,423.0,1,1,https://www.sample-realestate.com/mumbai/property/246
+Luxury 2 BHK in Juhu,Andheri West,Studio,35000000.0,591.0,2,2,https://www.sample-realestate.com/mumbai/property/247
+Luxury 1 BHK in Lower Parel,Juhu,Apartment,56300000.0,1769.0,3,3,https://www.sample-realestate.com/mumbai/property/248
+Luxury 5 BHK in Lower Parel,Powai,Apartment,80100000.0,791.0,1,1,https://www.sample-realestate.com/mumbai/property/249

@@ -1,0 +1,451 @@
+Property_Name,Location,Property_Type,Price_INR,Area_sqft,BHK,Bathrooms,Listing_URL,City
+Luxury 4 BHK in South Mumbai,Lower Parel,Apartment,53100000.0,1479.0,2,2.0,https://www.sample-realestate.com/mumbai/property/0,Mumbai
+Luxury 5 BHK in Borivali West,Lower Parel,Apartment,63100000.0,2616.0,3,3.0,https://www.sample-realestate.com/mumbai/property/1,Mumbai
+Luxury 2 BHK in Juhu,Bandra East,Apartment,6700000.0,3578.0,3,4.0,https://www.sample-realestate.com/mumbai/property/2,Mumbai
+Luxury 3 BHK in South Mumbai,Juhu,Apartment,87900000.0,2579.0,2,2.0,https://www.sample-realestate.com/mumbai/property/3,Mumbai
+Luxury 5 BHK in Powai,Worli,Apartment,93600000.0,1162.0,1,2.0,https://www.sample-realestate.com/mumbai/property/4,Mumbai
+Luxury 3 BHK in Goregaon East,Malad West,Apartment,58700000.0,390.0,1,1.0,https://www.sample-realestate.com/mumbai/property/5,Mumbai
+Luxury 5 BHK in Bandra East,Powai,Apartment,71200000.0,3519.0,3,2.0,https://www.sample-realestate.com/mumbai/property/6,Mumbai
+Luxury 4 BHK in Goregaon East,Lower Parel,Villa,92600000.0,,3,3.0,https://www.sample-realestate.com/mumbai/property/7,Mumbai
+Luxury 2 BHK in Chembur,Borivali West,Apartment,72200000.0,3536.0,1,2.0,https://www.sample-realestate.com/mumbai/property/8,Mumbai
+Luxury 5 BHK in Andheri West,Bandra East,Studio,19500000.0,2257.0,4,4.0,https://www.sample-realestate.com/mumbai/property/9,Mumbai
+Luxury 4 BHK in Lower Parel,South Mumbai,Apartment,59700000.0,3775.0,1,2.0,https://www.sample-realestate.com/mumbai/property/10,Mumbai
+Luxury 5 BHK in Chembur,Kandivali East,Apartment,62600000.0,3255.0,2,3.0,https://www.sample-realestate.com/mumbai/property/11,Mumbai
+Luxury 1 BHK in Andheri West,Powai,Studio,45300000.0,3992.0,3,3.0,https://www.sample-realestate.com/mumbai/property/12,Mumbai
+Luxury 3 BHK in South Mumbai,Worli,Apartment,75000000.0,1598.0,4,4.0,https://www.sample-realestate.com/mumbai/property/13,Mumbai
+Luxury 2 BHK in Chembur,Borivali West,Apartment,93800000.0,3139.0,3,3.0,https://www.sample-realestate.com/mumbai/property/14,Mumbai
+Luxury 4 BHK in Juhu,Worli,Apartment,92900000.0,1787.0,3,3.0,https://www.sample-realestate.com/mumbai/property/15,Mumbai
+Luxury 4 BHK in Malad West,Powai,Villa,47800000.0,,2,3.0,https://www.sample-realestate.com/mumbai/property/16,Mumbai
+Luxury 4 BHK in Worli,Lower Parel,Apartment,15800000.0,2622.0,3,4.0,https://www.sample-realestate.com/mumbai/property/17,Mumbai
+Luxury 3 BHK in Borivali West,Borivali West,Apartment,98600000.0,3533.0,1,1.0,https://www.sample-realestate.com/mumbai/property/18,Mumbai
+Luxury 3 BHK in Malad West,Worli,Apartment,84700000.0,3941.0,4,4.0,https://www.sample-realestate.com/mumbai/property/19,Mumbai
+Luxury 5 BHK in Worli,Kandivali East,Apartment,16800000.0,3143.0,2,2.0,https://www.sample-realestate.com/mumbai/property/20,Mumbai
+Luxury 2 BHK in Powai,Juhu,Apartment,92500000.0,1846.0,3,3.0,https://www.sample-realestate.com/mumbai/property/21,Mumbai
+Luxury 1 BHK in Chembur,Andheri West,Apartment,87600000.0,1859.0,2,3.0,https://www.sample-realestate.com/mumbai/property/22,Mumbai
+Luxury 2 BHK in Lower Parel,Juhu,Apartment,54300000.0,3029.0,3,3.0,https://www.sample-realestate.com/mumbai/property/23,Mumbai
+Luxury 1 BHK in Lower Parel,Powai,Apartment,61200000.0,1183.0,2,2.0,https://www.sample-realestate.com/mumbai/property/24,Mumbai
+Luxury 5 BHK in Bandra East,Bandra East,Apartment,42900000.0,709.0,3,2.0,https://www.sample-realestate.com/mumbai/property/25,Mumbai
+Luxury 4 BHK in Chembur,Andheri West,Studio,10200000.0,1612.0,1,1.0,https://www.sample-realestate.com/mumbai/property/26,Mumbai
+Luxury 4 BHK in Malad West,Malad West,Apartment,36800000.0,1363.0,1,1.0,https://www.sample-realestate.com/mumbai/property/27,Mumbai
+Luxury 4 BHK in Kandivali East,Kandivali East,Apartment,81300000.0,1396.0,2,2.0,https://www.sample-realestate.com/mumbai/property/28,Mumbai
+Luxury 3 BHK in Andheri West,Malad West,Villa,5400000.0,1164.0,1,1.0,https://www.sample-realestate.com/mumbai/property/29,Mumbai
+Luxury 4 BHK in Bandra East,Borivali West,Apartment,36700000.0,456.0,4,4.0,https://www.sample-realestate.com/mumbai/property/30,Mumbai
+Luxury 4 BHK in Bandra East,Chembur,Apartment,42800000.0,366.0,2,3.0,https://www.sample-realestate.com/mumbai/property/31,Mumbai
+Luxury 2 BHK in Powai,Andheri West,Studio,56100000.0,3955.0,5,5.0,https://www.sample-realestate.com/mumbai/property/32,Mumbai
+Luxury 5 BHK in Bandra East,Malad West,Studio,92400000.0,1883.0,2,1.0,https://www.sample-realestate.com/mumbai/property/33,Mumbai
+Luxury 2 BHK in Chembur,Malad West,Apartment,37900000.0,1722.0,1,1.0,https://www.sample-realestate.com/mumbai/property/34,Mumbai
+Luxury 2 BHK in Lower Parel,Worli,Studio,38000000.0,2815.0,3,3.0,https://www.sample-realestate.com/mumbai/property/35,Mumbai
+Luxury 4 BHK in Kandivali East,Juhu,Apartment,75100000.0,1108.0,3,3.0,https://www.sample-realestate.com/mumbai/property/36,Mumbai
+Luxury 4 BHK in Worli,Worli,Apartment,48000000.0,3815.0,2,2.0,https://www.sample-realestate.com/mumbai/property/37,Mumbai
+Luxury 5 BHK in Bandra East,Andheri West,Apartment,26300000.0,3209.0,2,2.0,https://www.sample-realestate.com/mumbai/property/38,Mumbai
+Luxury 5 BHK in Kandivali East,Andheri West,Studio,48000000.0,631.0,3,3.0,https://www.sample-realestate.com/mumbai/property/39,Mumbai
+Luxury 2 BHK in Worli,Powai,Apartment,18400000.0,1845.0,2,2.0,https://www.sample-realestate.com/mumbai/property/40,Mumbai
+Luxury 4 BHK in Chembur,Worli,Apartment,21800000.0,3553.0,5,5.0,https://www.sample-realestate.com/mumbai/property/41,Mumbai
+Luxury 4 BHK in Worli,Goregaon East,Apartment,52300000.0,,5,6.0,https://www.sample-realestate.com/mumbai/property/42,Mumbai
+Luxury 5 BHK in Andheri West,South Mumbai,Apartment,44800000.0,2029.0,3,3.0,https://www.sample-realestate.com/mumbai/property/43,Mumbai
+Luxury 1 BHK in Malad West,Juhu,Apartment,91900000.0,2570.0,1,1.0,https://www.sample-realestate.com/mumbai/property/44,Mumbai
+Luxury 1 BHK in Kandivali East,Andheri West,Apartment,39400000.0,918.0,3,3.0,https://www.sample-realestate.com/mumbai/property/45,Mumbai
+Luxury 1 BHK in Chembur,Powai,Apartment,60200000.0,3967.0,1,1.0,https://www.sample-realestate.com/mumbai/property/46,Mumbai
+Luxury 3 BHK in Juhu,Chembur,Apartment,65100000.0,1157.0,1,1.0,https://www.sample-realestate.com/mumbai/property/47,Mumbai
+Luxury 1 BHK in Kandivali East,Worli,Apartment,6200000.0,3788.0,2,2.0,https://www.sample-realestate.com/mumbai/property/48,Mumbai
+Luxury 3 BHK in Juhu,Juhu,Apartment,68000000.0,2704.0,2,3.0,https://www.sample-realestate.com/mumbai/property/49,Mumbai
+Luxury 1 BHK in South Mumbai,Chembur,Apartment,21900000.0,2549.0,4,4.0,https://www.sample-realestate.com/mumbai/property/50,Mumbai
+Luxury 5 BHK in Lower Parel,Worli,Apartment,96300000.0,2197.0,3,3.0,https://www.sample-realestate.com/mumbai/property/51,Mumbai
+Luxury 2 BHK in Worli,Malad West,Studio,19100000.0,1153.0,3,3.0,https://www.sample-realestate.com/mumbai/property/52,Mumbai
+Luxury 4 BHK in Malad West,Chembur,Apartment,44400000.0,953.0,2,2.0,https://www.sample-realestate.com/mumbai/property/53,Mumbai
+Luxury 1 BHK in Kandivali East,Powai,Apartment,13100000.0,1116.0,2,2.0,https://www.sample-realestate.com/mumbai/property/54,Mumbai
+Luxury 4 BHK in Bandra East,Juhu,Apartment,99700000.0,990.0,2,1.0,https://www.sample-realestate.com/mumbai/property/55,Mumbai
+Luxury 1 BHK in Malad West,Lower Parel,Apartment,52700000.0,3184.0,5,4.0,https://www.sample-realestate.com/mumbai/property/56,Mumbai
+Luxury 5 BHK in Juhu,Borivali West,Apartment,61600000.0,1595.0,1,2.0,https://www.sample-realestate.com/mumbai/property/57,Mumbai
+Luxury 4 BHK in Kandivali East,Borivali West,Apartment,11400000.0,514.0,4,4.0,https://www.sample-realestate.com/mumbai/property/58,Mumbai
+Luxury 3 BHK in Juhu,Juhu,Apartment,76200000.0,3886.0,2,2.0,https://www.sample-realestate.com/mumbai/property/59,Mumbai
+Luxury 1 BHK in Juhu,Chembur,Apartment,24900000.0,3570.0,2,2.0,https://www.sample-realestate.com/mumbai/property/60,Mumbai
+Luxury 5 BHK in Juhu,Worli,Apartment,90300000.0,3733.0,3,3.0,https://www.sample-realestate.com/mumbai/property/61,Mumbai
+Luxury 1 BHK in Borivali West,Powai,Apartment,24500000.0,3981.0,2,1.0,https://www.sample-realestate.com/mumbai/property/62,Mumbai
+Luxury 2 BHK in Malad West,South Mumbai,Apartment,23100000.0,943.0,4,4.0,https://www.sample-realestate.com/mumbai/property/63,Mumbai
+Luxury 3 BHK in Worli,Borivali West,Apartment,8500000.0,1766.0,4,3.0,https://www.sample-realestate.com/mumbai/property/64,Mumbai
+Luxury 2 BHK in Lower Parel,Powai,Apartment,49800000.0,3105.0,2,3.0,https://www.sample-realestate.com/mumbai/property/65,Mumbai
+Luxury 4 BHK in Juhu,Borivali West,Apartment,58700000.0,2875.0,2,2.0,https://www.sample-realestate.com/mumbai/property/66,Mumbai
+Luxury 1 BHK in Powai,Malad West,Apartment,11200000.0,869.0,2,2.0,https://www.sample-realestate.com/mumbai/property/67,Mumbai
+Luxury 5 BHK in Powai,Worli,Apartment,78700000.0,3319.0,4,5.0,https://www.sample-realestate.com/mumbai/property/68,Mumbai
+Luxury 5 BHK in Malad West,Malad West,Villa,48100000.0,1130.0,2,2.0,https://www.sample-realestate.com/mumbai/property/69,Mumbai
+Luxury 5 BHK in South Mumbai,Borivali West,Apartment,54800000.0,1128.0,3,3.0,https://www.sample-realestate.com/mumbai/property/70,Mumbai
+Luxury 5 BHK in Powai,Lower Parel,Apartment,46900000.0,2287.0,3,3.0,https://www.sample-realestate.com/mumbai/property/71,Mumbai
+Luxury 5 BHK in Malad West,Lower Parel,Studio,43100000.0,2494.0,3,3.0,https://www.sample-realestate.com/mumbai/property/72,Mumbai
+Luxury 3 BHK in Juhu,Malad West,Studio,58200000.0,2446.0,1,1.0,https://www.sample-realestate.com/mumbai/property/73,Mumbai
+Luxury 4 BHK in Bandra East,Lower Parel,Apartment,19700000.0,639.0,3,4.0,https://www.sample-realestate.com/mumbai/property/74,Mumbai
+Luxury 2 BHK in Worli,Borivali West,Apartment,22300000.0,3547.0,4,4.0,https://www.sample-realestate.com/mumbai/property/75,Mumbai
+Luxury 5 BHK in Goregaon East,Juhu,Independent House,86900000.0,1283.0,1,1.0,https://www.sample-realestate.com/mumbai/property/76,Mumbai
+Luxury 4 BHK in Chembur,Malad West,Apartment,94900000.0,779.0,2,2.0,https://www.sample-realestate.com/mumbai/property/77,Mumbai
+Luxury 4 BHK in Chembur,South Mumbai,Apartment,40500000.0,3588.0,5,5.0,https://www.sample-realestate.com/mumbai/property/78,Mumbai
+Luxury 4 BHK in South Mumbai,South Mumbai,Apartment,30700000.0,3836.0,1,1.0,https://www.sample-realestate.com/mumbai/property/79,Mumbai
+Luxury 2 BHK in Malad West,Bandra East,Apartment,66200000.0,3490.0,4,4.0,https://www.sample-realestate.com/mumbai/property/80,Mumbai
+Luxury 4 BHK in Worli,Chembur,Apartment,43800000.0,3295.0,2,3.0,https://www.sample-realestate.com/mumbai/property/81,Mumbai
+Luxury 1 BHK in Andheri West,Worli,Apartment,7400000.0,2724.0,2,2.0,https://www.sample-realestate.com/mumbai/property/82,Mumbai
+Luxury 1 BHK in South Mumbai,Lower Parel,Apartment,19800000.0,2338.0,4,4.0,https://www.sample-realestate.com/mumbai/property/83,Mumbai
+Luxury 1 BHK in Powai,Lower Parel,Apartment,73000000.0,622.0,2,2.0,https://www.sample-realestate.com/mumbai/property/84,Mumbai
+Luxury 5 BHK in Worli,Chembur,Apartment,67600000.0,1811.0,2,2.0,https://www.sample-realestate.com/mumbai/property/85,Mumbai
+Luxury 3 BHK in Malad West,Andheri West,Apartment,7600000.0,,2,1.0,https://www.sample-realestate.com/mumbai/property/86,Mumbai
+Luxury 3 BHK in Worli,Goregaon East,Apartment,26100000.0,1261.0,2,2.0,https://www.sample-realestate.com/mumbai/property/87,Mumbai
+Luxury 5 BHK in Andheri West,Malad West,Apartment,27000000.0,2977.0,1,1.0,https://www.sample-realestate.com/mumbai/property/88,Mumbai
+Luxury 3 BHK in Lower Parel,Kandivali East,Studio,68800000.0,2135.0,2,2.0,https://www.sample-realestate.com/mumbai/property/89,Mumbai
+Luxury 4 BHK in Kandivali East,Lower Parel,Apartment,6900000.0,600.0,5,5.0,https://www.sample-realestate.com/mumbai/property/90,Mumbai
+Luxury 3 BHK in Goregaon East,Worli,Apartment,14900000.0,1115.0,2,2.0,https://www.sample-realestate.com/mumbai/property/91,Mumbai
+Luxury 1 BHK in Powai,Bandra East,Apartment,81000000.0,2828.0,3,4.0,https://www.sample-realestate.com/mumbai/property/92,Mumbai
+Luxury 1 BHK in Andheri West,South Mumbai,Apartment,22000000.0,582.0,2,2.0,https://www.sample-realestate.com/mumbai/property/93,Mumbai
+Luxury 2 BHK in Powai,Lower Parel,Apartment,67000000.0,3449.0,3,3.0,https://www.sample-realestate.com/mumbai/property/94,Mumbai
+Luxury 4 BHK in Malad West,Bandra East,Apartment,27600000.0,2132.0,1,1.0,https://www.sample-realestate.com/mumbai/property/95,Mumbai
+Luxury 2 BHK in Juhu,Borivali West,Apartment,14400000.0,2078.0,5,6.0,https://www.sample-realestate.com/mumbai/property/96,Mumbai
+Luxury 1 BHK in Borivali West,Borivali West,Apartment,28100000.0,2492.0,2,3.0,https://www.sample-realestate.com/mumbai/property/97,Mumbai
+Luxury 1 BHK in Kandivali East,Goregaon East,Apartment,73600000.0,3351.0,2,2.0,https://www.sample-realestate.com/mumbai/property/98,Mumbai
+Luxury 1 BHK in South Mumbai,Juhu,Apartment,86300000.0,1587.0,1,2.0,https://www.sample-realestate.com/mumbai/property/99,Mumbai
+Luxury 1 BHK in Bandra East,Kandivali East,Apartment,83900000.0,,1,1.0,https://www.sample-realestate.com/mumbai/property/100,Mumbai
+Luxury 2 BHK in Chembur,Andheri West,Apartment,42700000.0,2393.0,2,2.0,https://www.sample-realestate.com/mumbai/property/101,Mumbai
+Luxury 5 BHK in Andheri West,Goregaon East,Apartment,68500000.0,1288.0,2,1.0,https://www.sample-realestate.com/mumbai/property/102,Mumbai
+Luxury 1 BHK in Juhu,Powai,Studio,24500000.0,3551.0,3,3.0,https://www.sample-realestate.com/mumbai/property/103,Mumbai
+Luxury 2 BHK in Borivali West,Andheri West,Apartment,32800000.0,3250.0,2,2.0,https://www.sample-realestate.com/mumbai/property/104,Mumbai
+Luxury 4 BHK in Lower Parel,Malad West,Apartment,90200000.0,2736.0,2,3.0,https://www.sample-realestate.com/mumbai/property/105,Mumbai
+Luxury 4 BHK in Malad West,Worli,Villa,6200000.0,3447.0,3,3.0,https://www.sample-realestate.com/mumbai/property/106,Mumbai
+Luxury 3 BHK in Kandivali East,Powai,Apartment,13100000.0,3509.0,3,3.0,https://www.sample-realestate.com/mumbai/property/107,Mumbai
+Luxury 3 BHK in Andheri West,Powai,Apartment,24700000.0,,1,1.0,https://www.sample-realestate.com/mumbai/property/108,Mumbai
+Luxury 5 BHK in Powai,Goregaon East,Apartment,7500000.0,3397.0,1,1.0,https://www.sample-realestate.com/mumbai/property/109,Mumbai
+Luxury 2 BHK in Goregaon East,Chembur,Apartment,22200000.0,2881.0,1,1.0,https://www.sample-realestate.com/mumbai/property/110,Mumbai
+Luxury 3 BHK in Andheri West,Juhu,Apartment,60400000.0,2817.0,3,3.0,https://www.sample-realestate.com/mumbai/property/111,Mumbai
+Luxury 1 BHK in Chembur,Chembur,Apartment,45000000.0,2589.0,3,2.0,https://www.sample-realestate.com/mumbai/property/112,Mumbai
+Luxury 3 BHK in Goregaon East,Goregaon East,Apartment,89800000.0,3085.0,2,3.0,https://www.sample-realestate.com/mumbai/property/113,Mumbai
+Luxury 5 BHK in Juhu,Malad West,Apartment,82700000.0,887.0,3,3.0,https://www.sample-realestate.com/mumbai/property/114,Mumbai
+Luxury 4 BHK in Chembur,South Mumbai,Apartment,37500000.0,3559.0,3,3.0,https://www.sample-realestate.com/mumbai/property/115,Mumbai
+Luxury 3 BHK in Powai,Lower Parel,Apartment,29600000.0,3526.0,2,2.0,https://www.sample-realestate.com/mumbai/property/116,Mumbai
+Luxury 3 BHK in Lower Parel,Lower Parel,Apartment,41100000.0,408.0,4,4.0,https://www.sample-realestate.com/mumbai/property/117,Mumbai
+Luxury 3 BHK in Juhu,Juhu,Apartment,61100000.0,3356.0,2,2.0,https://www.sample-realestate.com/mumbai/property/118,Mumbai
+Luxury 4 BHK in Malad West,Malad West,Studio,30500000.0,777.0,1,1.0,https://www.sample-realestate.com/mumbai/property/119,Mumbai
+Luxury 4 BHK in Worli,Juhu,Apartment,64300000.0,1540.0,2,3.0,https://www.sample-realestate.com/mumbai/property/120,Mumbai
+Luxury 1 BHK in Kandivali East,Bandra East,Apartment,43900000.0,3051.0,1,1.0,https://www.sample-realestate.com/mumbai/property/121,Mumbai
+Luxury 2 BHK in Kandivali East,Chembur,Apartment,57400000.0,895.0,2,3.0,https://www.sample-realestate.com/mumbai/property/122,Mumbai
+Luxury 1 BHK in South Mumbai,Lower Parel,Apartment,46400000.0,3326.0,4,5.0,https://www.sample-realestate.com/mumbai/property/123,Mumbai
+Luxury 4 BHK in Worli,Powai,Apartment,33000000.0,3379.0,1,1.0,https://www.sample-realestate.com/mumbai/property/124,Mumbai
+Luxury 1 BHK in Bandra East,Chembur,Apartment,95100000.0,2178.0,1,2.0,https://www.sample-realestate.com/mumbai/property/125,Mumbai
+Luxury 2 BHK in Juhu,Kandivali East,Apartment,77500000.0,324.0,2,2.0,https://www.sample-realestate.com/mumbai/property/126,Mumbai
+Luxury 4 BHK in Lower Parel,Worli,Apartment,18300000.0,1362.0,4,5.0,https://www.sample-realestate.com/mumbai/property/127,Mumbai
+Luxury 1 BHK in Powai,Malad West,Apartment,87500000.0,2583.0,2,2.0,https://www.sample-realestate.com/mumbai/property/128,Mumbai
+Luxury 4 BHK in Andheri West,Andheri West,Studio,51300000.0,3930.0,2,3.0,https://www.sample-realestate.com/mumbai/property/129,Mumbai
+Luxury 2 BHK in Andheri West,Juhu,Apartment,90000000.0,2638.0,1,2.0,https://www.sample-realestate.com/mumbai/property/130,Mumbai
+Luxury 4 BHK in Borivali West,Chembur,Apartment,81000000.0,1261.0,1,2.0,https://www.sample-realestate.com/mumbai/property/131,Mumbai
+Luxury 5 BHK in South Mumbai,Worli,Apartment,45400000.0,,5,5.0,https://www.sample-realestate.com/mumbai/property/132,Mumbai
+Luxury 1 BHK in Worli,Chembur,Studio,7100000.0,2298.0,5,5.0,https://www.sample-realestate.com/mumbai/property/133,Mumbai
+Luxury 3 BHK in Juhu,Andheri West,Apartment,30500000.0,3185.0,1,1.0,https://www.sample-realestate.com/mumbai/property/134,Mumbai
+Luxury 3 BHK in Powai,Worli,Apartment,56500000.0,696.0,5,5.0,https://www.sample-realestate.com/mumbai/property/135,Mumbai
+Luxury 1 BHK in Kandivali East,Kandivali East,Studio,65200000.0,3116.0,3,3.0,https://www.sample-realestate.com/mumbai/property/136,Mumbai
+Luxury 4 BHK in South Mumbai,Andheri West,Studio,29500000.0,2303.0,4,4.0,https://www.sample-realestate.com/mumbai/property/137,Mumbai
+Luxury 1 BHK in Kandivali East,Goregaon East,Independent House,18200000.0,3863.0,2,2.0,https://www.sample-realestate.com/mumbai/property/138,Mumbai
+Luxury 4 BHK in Goregaon East,Borivali West,Apartment,84300000.0,1565.0,2,3.0,https://www.sample-realestate.com/mumbai/property/139,Mumbai
+Luxury 4 BHK in Juhu,Goregaon East,Apartment,98500000.0,2641.0,2,2.0,https://www.sample-realestate.com/mumbai/property/140,Mumbai
+Luxury 1 BHK in Juhu,Lower Parel,Apartment,54900000.0,3749.0,3,4.0,https://www.sample-realestate.com/mumbai/property/141,Mumbai
+Luxury 1 BHK in Bandra East,Chembur,Studio,21300000.0,679.0,1,1.0,https://www.sample-realestate.com/mumbai/property/142,Mumbai
+Luxury 2 BHK in Bandra East,Borivali West,Apartment,30900000.0,3768.0,1,2.0,https://www.sample-realestate.com/mumbai/property/143,Mumbai
+Luxury 3 BHK in Worli,Goregaon East,Apartment,6700000.0,2845.0,2,3.0,https://www.sample-realestate.com/mumbai/property/144,Mumbai
+Luxury 4 BHK in Andheri West,Borivali West,Apartment,91900000.0,551.0,3,3.0,https://www.sample-realestate.com/mumbai/property/145,Mumbai
+Luxury 4 BHK in Andheri West,South Mumbai,Villa,16200000.0,1414.0,2,2.0,https://www.sample-realestate.com/mumbai/property/146,Mumbai
+Luxury 5 BHK in Powai,Chembur,Apartment,59800000.0,,3,3.0,https://www.sample-realestate.com/mumbai/property/147,Mumbai
+Luxury 3 BHK in Andheri West,Borivali West,Apartment,31000000.0,549.0,5,5.0,https://www.sample-realestate.com/mumbai/property/148,Mumbai
+Luxury 1 BHK in Chembur,Powai,Apartment,57600000.0,2454.0,1,1.0,https://www.sample-realestate.com/mumbai/property/149,Mumbai
+Luxury 3 BHK in Juhu,Juhu,Apartment,66900000.0,1580.0,3,3.0,https://www.sample-realestate.com/mumbai/property/150,Mumbai
+Luxury 5 BHK in Juhu,Juhu,Apartment,83800000.0,,2,2.0,https://www.sample-realestate.com/mumbai/property/151,Mumbai
+Luxury 3 BHK in South Mumbai,Powai,Apartment,24600000.0,469.0,4,4.0,https://www.sample-realestate.com/mumbai/property/152,Mumbai
+Luxury 2 BHK in Borivali West,Worli,Apartment,6000000.0,3525.0,1,1.0,https://www.sample-realestate.com/mumbai/property/153,Mumbai
+Luxury 1 BHK in Chembur,Bandra East,Apartment,18000000.0,3902.0,3,2.0,https://www.sample-realestate.com/mumbai/property/154,Mumbai
+Luxury 1 BHK in Borivali West,Worli,Apartment,90500000.0,3885.0,3,3.0,https://www.sample-realestate.com/mumbai/property/155,Mumbai
+Luxury 4 BHK in Juhu,Andheri West,Apartment,88000000.0,3074.0,4,5.0,https://www.sample-realestate.com/mumbai/property/156,Mumbai
+Luxury 4 BHK in Juhu,Andheri West,Apartment,61800000.0,781.0,3,3.0,https://www.sample-realestate.com/mumbai/property/157,Mumbai
+Luxury 1 BHK in Andheri West,Borivali West,Apartment,62000000.0,3106.0,2,3.0,https://www.sample-realestate.com/mumbai/property/158,Mumbai
+Luxury 4 BHK in Chembur,Goregaon East,Apartment,68200000.0,391.0,3,3.0,https://www.sample-realestate.com/mumbai/property/159,Mumbai
+Luxury 5 BHK in Borivali West,Goregaon East,Apartment,21700000.0,382.0,4,4.0,https://www.sample-realestate.com/mumbai/property/160,Mumbai
+Luxury 3 BHK in Chembur,Juhu,Apartment,91900000.0,1497.0,2,2.0,https://www.sample-realestate.com/mumbai/property/161,Mumbai
+Luxury 1 BHK in Borivali West,Malad West,Apartment,44800000.0,2108.0,1,1.0,https://www.sample-realestate.com/mumbai/property/162,Mumbai
+Luxury 5 BHK in Andheri West,Worli,Studio,41400000.0,3151.0,4,4.0,https://www.sample-realestate.com/mumbai/property/163,Mumbai
+Luxury 5 BHK in Juhu,South Mumbai,Apartment,54300000.0,2828.0,3,3.0,https://www.sample-realestate.com/mumbai/property/164,Mumbai
+Luxury 4 BHK in Andheri West,Chembur,Independent House,9500000.0,1950.0,3,3.0,https://www.sample-realestate.com/mumbai/property/165,Mumbai
+Luxury 4 BHK in Borivali West,Lower Parel,Apartment,20800000.0,1312.0,2,2.0,https://www.sample-realestate.com/mumbai/property/166,Mumbai
+Luxury 1 BHK in Juhu,Kandivali East,Apartment,75100000.0,3989.0,3,3.0,https://www.sample-realestate.com/mumbai/property/167,Mumbai
+Luxury 2 BHK in Worli,Goregaon East,Villa,12900000.0,1877.0,2,2.0,https://www.sample-realestate.com/mumbai/property/168,Mumbai
+Luxury 2 BHK in Goregaon East,Chembur,Apartment,62300000.0,1970.0,3,2.0,https://www.sample-realestate.com/mumbai/property/169,Mumbai
+Luxury 2 BHK in Juhu,Kandivali East,Apartment,28300000.0,905.0,1,1.0,https://www.sample-realestate.com/mumbai/property/170,Mumbai
+Luxury 2 BHK in Goregaon East,Chembur,Apartment,42000000.0,3241.0,3,3.0,https://www.sample-realestate.com/mumbai/property/171,Mumbai
+Luxury 2 BHK in South Mumbai,Borivali West,Apartment,32400000.0,2867.0,5,4.0,https://www.sample-realestate.com/mumbai/property/172,Mumbai
+Luxury 2 BHK in Bandra East,Kandivali East,Studio,38800000.0,1117.0,1,2.0,https://www.sample-realestate.com/mumbai/property/173,Mumbai
+Luxury 2 BHK in Andheri West,Lower Parel,Independent House,73300000.0,605.0,5,4.0,https://www.sample-realestate.com/mumbai/property/174,Mumbai
+Luxury 1 BHK in Worli,Chembur,Studio,33200000.0,2818.0,2,2.0,https://www.sample-realestate.com/mumbai/property/175,Mumbai
+Luxury 3 BHK in Goregaon East,Powai,Apartment,58800000.0,2722.0,4,5.0,https://www.sample-realestate.com/mumbai/property/176,Mumbai
+Luxury 5 BHK in Lower Parel,Lower Parel,Apartment,50200000.0,1311.0,3,3.0,https://www.sample-realestate.com/mumbai/property/177,Mumbai
+Luxury 2 BHK in Juhu,Kandivali East,Studio,68000000.0,3818.0,2,2.0,https://www.sample-realestate.com/mumbai/property/178,Mumbai
+Luxury 2 BHK in Worli,Lower Parel,Apartment,94000000.0,859.0,3,3.0,https://www.sample-realestate.com/mumbai/property/179,Mumbai
+Luxury 5 BHK in Chembur,Chembur,Apartment,74600000.0,1900.0,4,4.0,https://www.sample-realestate.com/mumbai/property/180,Mumbai
+Luxury 2 BHK in Malad West,Bandra East,Apartment,25400000.0,3791.0,2,2.0,https://www.sample-realestate.com/mumbai/property/181,Mumbai
+Luxury 1 BHK in Powai,Chembur,Apartment,8000000.0,1853.0,2,2.0,https://www.sample-realestate.com/mumbai/property/182,Mumbai
+Luxury 5 BHK in Powai,Chembur,Independent House,29900000.0,2663.0,3,2.0,https://www.sample-realestate.com/mumbai/property/183,Mumbai
+Luxury 1 BHK in Kandivali East,Borivali West,Apartment,61500000.0,1771.0,3,3.0,https://www.sample-realestate.com/mumbai/property/184,Mumbai
+Luxury 4 BHK in Juhu,Worli,Villa,9900000.0,1315.0,3,4.0,https://www.sample-realestate.com/mumbai/property/185,Mumbai
+Luxury 4 BHK in Bandra East,Powai,Apartment,52200000.0,3941.0,3,4.0,https://www.sample-realestate.com/mumbai/property/186,Mumbai
+Luxury 2 BHK in Malad West,South Mumbai,Apartment,61700000.0,1815.0,2,2.0,https://www.sample-realestate.com/mumbai/property/187,Mumbai
+Luxury 3 BHK in Worli,Goregaon East,Apartment,36800000.0,3608.0,3,3.0,https://www.sample-realestate.com/mumbai/property/188,Mumbai
+Luxury 2 BHK in Goregaon East,Andheri West,Independent House,78200000.0,1151.0,1,1.0,https://www.sample-realestate.com/mumbai/property/189,Mumbai
+Luxury 2 BHK in Lower Parel,Worli,Apartment,15100000.0,1088.0,2,2.0,https://www.sample-realestate.com/mumbai/property/190,Mumbai
+Luxury 1 BHK in Powai,Andheri West,Apartment,12100000.0,415.0,1,1.0,https://www.sample-realestate.com/mumbai/property/191,Mumbai
+Luxury 2 BHK in Goregaon East,Borivali West,Apartment,74200000.0,2711.0,2,2.0,https://www.sample-realestate.com/mumbai/property/192,Mumbai
+Luxury 3 BHK in Chembur,Powai,Studio,52100000.0,1664.0,2,3.0,https://www.sample-realestate.com/mumbai/property/193,Mumbai
+Luxury 5 BHK in Andheri West,Chembur,Apartment,70400000.0,3498.0,2,2.0,https://www.sample-realestate.com/mumbai/property/194,Mumbai
+Luxury 5 BHK in Chembur,Juhu,Independent House,46300000.0,2051.0,3,3.0,https://www.sample-realestate.com/mumbai/property/195,Mumbai
+Luxury 4 BHK in Chembur,Goregaon East,Apartment,28400000.0,3882.0,2,2.0,https://www.sample-realestate.com/mumbai/property/196,Mumbai
+Luxury 5 BHK in Malad West,Bandra East,Apartment,82800000.0,986.0,2,2.0,https://www.sample-realestate.com/mumbai/property/197,Mumbai
+Luxury 4 BHK in Goregaon East,Juhu,Apartment,80900000.0,3514.0,2,3.0,https://www.sample-realestate.com/mumbai/property/198,Mumbai
+Luxury 5 BHK in Powai,Borivali West,Apartment,71000000.0,,2,2.0,https://www.sample-realestate.com/mumbai/property/199,Mumbai
+Luxury 3 BHK in Malad West,Worli,Apartment,30900000.0,3152.0,2,2.0,https://www.sample-realestate.com/mumbai/property/200,Mumbai
+Luxury 4 BHK in Bandra East,Bandra East,Apartment,61100000.0,3426.0,1,1.0,https://www.sample-realestate.com/mumbai/property/201,Mumbai
+Luxury 4 BHK in Lower Parel,Lower Parel,Apartment,39300000.0,3116.0,3,3.0,https://www.sample-realestate.com/mumbai/property/202,Mumbai
+Luxury 3 BHK in Andheri West,Kandivali East,Studio,13700000.0,2617.0,3,3.0,https://www.sample-realestate.com/mumbai/property/203,Mumbai
+Luxury 3 BHK in Chembur,Bandra East,Apartment,92100000.0,786.0,3,2.0,https://www.sample-realestate.com/mumbai/property/204,Mumbai
+Luxury 2 BHK in Malad West,South Mumbai,Apartment,18000000.0,420.0,2,2.0,https://www.sample-realestate.com/mumbai/property/205,Mumbai
+Luxury 2 BHK in Borivali West,Borivali West,Studio,95300000.0,3707.0,2,2.0,https://www.sample-realestate.com/mumbai/property/206,Mumbai
+Luxury 2 BHK in Borivali West,Malad West,Apartment,47400000.0,2582.0,4,4.0,https://www.sample-realestate.com/mumbai/property/207,Mumbai
+Luxury 1 BHK in Chembur,Kandivali East,Apartment,22600000.0,3247.0,2,2.0,https://www.sample-realestate.com/mumbai/property/208,Mumbai
+Luxury 5 BHK in Andheri West,Andheri West,Studio,56500000.0,2082.0,2,2.0,https://www.sample-realestate.com/mumbai/property/209,Mumbai
+Luxury 2 BHK in Lower Parel,Goregaon East,Apartment,87900000.0,734.0,1,1.0,https://www.sample-realestate.com/mumbai/property/210,Mumbai
+Luxury 1 BHK in Bandra East,Andheri West,Apartment,74600000.0,763.0,2,2.0,https://www.sample-realestate.com/mumbai/property/211,Mumbai
+Luxury 1 BHK in Kandivali East,Bandra East,Apartment,81600000.0,2837.0,2,3.0,https://www.sample-realestate.com/mumbai/property/212,Mumbai
+Luxury 5 BHK in Borivali West,Andheri West,Villa,67600000.0,1892.0,2,3.0,https://www.sample-realestate.com/mumbai/property/213,Mumbai
+Luxury 1 BHK in Malad West,South Mumbai,Apartment,70800000.0,1042.0,2,3.0,https://www.sample-realestate.com/mumbai/property/214,Mumbai
+Luxury 5 BHK in Goregaon East,Borivali West,Apartment,85700000.0,2119.0,2,2.0,https://www.sample-realestate.com/mumbai/property/215,Mumbai
+Luxury 5 BHK in Malad West,Lower Parel,Studio,28700000.0,538.0,3,3.0,https://www.sample-realestate.com/mumbai/property/216,Mumbai
+Luxury 3 BHK in Chembur,Worli,Villa,51500000.0,2453.0,3,3.0,https://www.sample-realestate.com/mumbai/property/217,Mumbai
+Luxury 2 BHK in Juhu,Goregaon East,Apartment,26000000.0,1295.0,3,3.0,https://www.sample-realestate.com/mumbai/property/218,Mumbai
+Luxury 5 BHK in Goregaon East,South Mumbai,Apartment,98800000.0,3251.0,3,4.0,https://www.sample-realestate.com/mumbai/property/219,Mumbai
+Luxury 1 BHK in Chembur,South Mumbai,Apartment,94700000.0,1448.0,5,4.0,https://www.sample-realestate.com/mumbai/property/220,Mumbai
+Luxury 5 BHK in Andheri West,Andheri West,Apartment,8700000.0,1984.0,1,1.0,https://www.sample-realestate.com/mumbai/property/221,Mumbai
+Luxury 4 BHK in Borivali West,Andheri West,Apartment,72000000.0,343.0,1,1.0,https://www.sample-realestate.com/mumbai/property/222,Mumbai
+Luxury 4 BHK in Lower Parel,Bandra East,Apartment,92900000.0,568.0,1,1.0,https://www.sample-realestate.com/mumbai/property/223,Mumbai
+Luxury 2 BHK in Borivali West,Worli,Villa,22200000.0,1752.0,3,3.0,https://www.sample-realestate.com/mumbai/property/224,Mumbai
+Luxury 4 BHK in Andheri West,Juhu,Studio,59000000.0,2076.0,4,4.0,https://www.sample-realestate.com/mumbai/property/225,Mumbai
+Luxury 5 BHK in Malad West,Andheri West,Apartment,92000000.0,2520.0,2,2.0,https://www.sample-realestate.com/mumbai/property/226,Mumbai
+Luxury 2 BHK in Lower Parel,Borivali West,Independent House,8200000.0,1379.0,4,4.0,https://www.sample-realestate.com/mumbai/property/227,Mumbai
+Luxury 5 BHK in Powai,Malad West,Apartment,71300000.0,2871.0,1,1.0,https://www.sample-realestate.com/mumbai/property/228,Mumbai
+Luxury 2 BHK in Powai,Goregaon East,Independent House,33200000.0,3482.0,4,4.0,https://www.sample-realestate.com/mumbai/property/229,Mumbai
+Luxury 2 BHK in Lower Parel,Chembur,Apartment,92800000.0,3185.0,2,3.0,https://www.sample-realestate.com/mumbai/property/230,Mumbai
+Luxury 3 BHK in Lower Parel,Andheri West,Apartment,97300000.0,,1,2.0,https://www.sample-realestate.com/mumbai/property/231,Mumbai
+Luxury 1 BHK in Kandivali East,Borivali West,Villa,94700000.0,2078.0,2,2.0,https://www.sample-realestate.com/mumbai/property/232,Mumbai
+Luxury 5 BHK in Powai,Borivali West,Apartment,50100000.0,688.0,2,2.0,https://www.sample-realestate.com/mumbai/property/233,Mumbai
+Luxury 2 BHK in Andheri West,Goregaon East,Apartment,86900000.0,1196.0,2,2.0,https://www.sample-realestate.com/mumbai/property/234,Mumbai
+Luxury 4 BHK in South Mumbai,Juhu,Apartment,85200000.0,3951.0,2,2.0,https://www.sample-realestate.com/mumbai/property/235,Mumbai
+Luxury 4 BHK in Kandivali East,Borivali West,Apartment,35300000.0,827.0,3,3.0,https://www.sample-realestate.com/mumbai/property/236,Mumbai
+Luxury 4 BHK in Bandra East,Malad West,Apartment,83700000.0,2146.0,2,3.0,https://www.sample-realestate.com/mumbai/property/237,Mumbai
+Luxury 3 BHK in Chembur,Borivali West,Apartment,8500000.0,2587.0,2,1.0,https://www.sample-realestate.com/mumbai/property/238,Mumbai
+Luxury 1 BHK in Andheri West,Borivali West,Apartment,61600000.0,2899.0,3,4.0,https://www.sample-realestate.com/mumbai/property/239,Mumbai
+Luxury 5 BHK in Juhu,Borivali West,Apartment,26900000.0,2371.0,3,3.0,https://www.sample-realestate.com/mumbai/property/240,Mumbai
+Luxury 3 BHK in Borivali West,Lower Parel,Apartment,16500000.0,336.0,2,2.0,https://www.sample-realestate.com/mumbai/property/241,Mumbai
+Luxury 4 BHK in Juhu,Lower Parel,Apartment,12300000.0,1508.0,2,2.0,https://www.sample-realestate.com/mumbai/property/242,Mumbai
+Luxury 1 BHK in Andheri West,Juhu,Studio,71100000.0,2216.0,1,2.0,https://www.sample-realestate.com/mumbai/property/243,Mumbai
+Luxury 2 BHK in South Mumbai,Andheri West,Apartment,37300000.0,625.0,1,1.0,https://www.sample-realestate.com/mumbai/property/244,Mumbai
+Luxury 4 BHK in Chembur,Borivali West,Apartment,73900000.0,1597.0,3,3.0,https://www.sample-realestate.com/mumbai/property/245,Mumbai
+Luxury 2 BHK in Juhu,Worli,Apartment,11200000.0,423.0,1,1.0,https://www.sample-realestate.com/mumbai/property/246,Mumbai
+Luxury 2 BHK in Juhu,Andheri West,Studio,35000000.0,591.0,2,2.0,https://www.sample-realestate.com/mumbai/property/247,Mumbai
+Luxury 1 BHK in Lower Parel,Juhu,Apartment,56300000.0,1769.0,3,3.0,https://www.sample-realestate.com/mumbai/property/248,Mumbai
+Luxury 5 BHK in Lower Parel,Powai,Apartment,80100000.0,791.0,1,1.0,https://www.sample-realestate.com/mumbai/property/249,Mumbai
+Premium 3 BHK in Bhawarkua,Vijay Nagar,Apartment,4200000.0,936.0,3,3.0,https://www.sample-realestate.com/indore-property/0,Indore
+Premium 2 BHK in Nipania,LIG Colony,Apartment,11200000.0,1445.0,3,4.0,https://www.sample-realestate.com/indore-property/1,Indore
+Premium 3 BHK in Super Corridor,Sudama Nagar,Apartment,4500000.0,1926.0,1,1.0,https://www.sample-realestate.com/indore-property/2,Indore
+Premium 2 BHK in Vijay Nagar,Bypass Road,Apartment,6000000.0,1999.0,2,2.0,https://www.sample-realestate.com/indore-property/3,Indore
+Premium 2 BHK in Super Corridor,Sudama Nagar,Apartment,6400000.0,1505.0,3,3.0,https://www.sample-realestate.com/indore-property/4,Indore
+Premium 1 BHK in Vijay Nagar,Bypass Road,Independent House,2100000.0,2986.0,2,2.0,https://www.sample-realestate.com/indore-property/5,Indore
+Premium 2 BHK in Nipania,Vijay Nagar,Apartment,7500000.0,539.0,3,4.0,https://www.sample-realestate.com/indore-property/6,Indore
+Premium 5 BHK in Vijay Nagar,AB Road,Apartment,12800000.0,2689.0,5,4.0,https://www.sample-realestate.com/indore-property/7,Indore
+Premium 1 BHK in Rau,Nipania,Apartment,4300000.0,1525.0,1,1.0,https://www.sample-realestate.com/indore-property/8,Indore
+Premium 2 BHK in LIG Colony,Bhawarkua,Studio,7100000.0,2655.0,4,4.0,https://www.sample-realestate.com/indore-property/9,Indore
+Premium 4 BHK in Bhawarkua,Rau,Apartment,12400000.0,858.0,2,2.0,https://www.sample-realestate.com/indore-property/10,Indore
+Premium 5 BHK in LIG Colony,Nipania,Apartment,8900000.0,1335.0,2,2.0,https://www.sample-realestate.com/indore-property/11,Indore
+Premium 3 BHK in Rau,Nipania,Apartment,7600000.0,2955.0,2,1.0,https://www.sample-realestate.com/indore-property/12,Indore
+Premium 1 BHK in Vijay Nagar,Super Corridor,Apartment,8000000.0,2010.0,3,3.0,https://www.sample-realestate.com/indore-property/13,Indore
+Premium 2 BHK in Nipania,LIG Colony,Apartment,13100000.0,2052.0,1,1.0,https://www.sample-realestate.com/indore-property/14,Indore
+Premium 5 BHK in Rau,Palasia,Apartment,3000000.0,2725.0,3,4.0,https://www.sample-realestate.com/indore-property/15,Indore
+Premium 2 BHK in AB Road,Bypass Road,Apartment,7900000.0,786.0,2,2.0,https://www.sample-realestate.com/indore-property/16,Indore
+Premium 4 BHK in Bhawarkua,Vijay Nagar,Villa,11700000.0,,4,3.0,https://www.sample-realestate.com/indore-property/17,Indore
+Premium 2 BHK in Bypass Road,Palasia,Apartment,10100000.0,2717.0,2,2.0,https://www.sample-realestate.com/indore-property/18,Indore
+Premium 4 BHK in AB Road,Rau,Apartment,3100000.0,1958.0,2,2.0,https://www.sample-realestate.com/indore-property/19,Indore
+Premium 1 BHK in Bhawarkua,LIG Colony,Apartment,11600000.0,2806.0,3,3.0,https://www.sample-realestate.com/indore-property/20,Indore
+Premium 3 BHK in Sudama Nagar,Bhawarkua,Apartment,8900000.0,2224.0,2,2.0,https://www.sample-realestate.com/indore-property/21,Indore
+Premium 3 BHK in Rau,Rau,Apartment,9700000.0,979.0,2,2.0,https://www.sample-realestate.com/indore-property/22,Indore
+Premium 4 BHK in Rau,Bypass Road,Apartment,9300000.0,2886.0,2,2.0,https://www.sample-realestate.com/indore-property/23,Indore
+Premium 4 BHK in Vijay Nagar,Nipania,Apartment,13600000.0,2493.0,3,,https://www.sample-realestate.com/indore-property/24,Indore
+Premium 5 BHK in LIG Colony,Rau,Apartment,5300000.0,2644.0,1,1.0,https://www.sample-realestate.com/indore-property/25,Indore
+Premium 4 BHK in Sudama Nagar,Super Corridor,Villa,6200000.0,811.0,2,2.0,https://www.sample-realestate.com/indore-property/26,Indore
+Premium 2 BHK in AB Road,Sudama Nagar,Villa,10700000.0,738.0,3,,https://www.sample-realestate.com/indore-property/27,Indore
+Premium 2 BHK in Bhawarkua,Bhawarkua,Studio,12300000.0,2186.0,3,3.0,https://www.sample-realestate.com/indore-property/28,Indore
+Premium 5 BHK in Bypass Road,LIG Colony,Villa,3800000.0,2021.0,2,2.0,https://www.sample-realestate.com/indore-property/29,Indore
+Premium 2 BHK in Bhawarkua,LIG Colony,Villa,6800000.0,1464.0,3,4.0,https://www.sample-realestate.com/indore-property/30,Indore
+Premium 2 BHK in Palasia,LIG Colony,Independent House,10800000.0,898.0,2,3.0,https://www.sample-realestate.com/indore-property/31,Indore
+Premium 4 BHK in AB Road,Rau,Independent House,10200000.0,1735.0,2,2.0,https://www.sample-realestate.com/indore-property/32,Indore
+Premium 2 BHK in Vijay Nagar,LIG Colony,Apartment,10600000.0,947.0,2,2.0,https://www.sample-realestate.com/indore-property/33,Indore
+Premium 1 BHK in Palasia,Bypass Road,Apartment,4800000.0,806.0,4,4.0,https://www.sample-realestate.com/indore-property/34,Indore
+Premium 4 BHK in Nipania,Rau,Studio,14300000.0,2677.0,5,4.0,https://www.sample-realestate.com/indore-property/35,Indore
+Premium 4 BHK in AB Road,Vijay Nagar,Villa,13200000.0,1799.0,3,3.0,https://www.sample-realestate.com/indore-property/36,Indore
+Premium 2 BHK in LIG Colony,LIG Colony,Villa,11100000.0,1298.0,3,3.0,https://www.sample-realestate.com/indore-property/37,Indore
+Premium 2 BHK in Bhawarkua,Sudama Nagar,Apartment,7900000.0,2299.0,3,3.0,https://www.sample-realestate.com/indore-property/38,Indore
+Premium 4 BHK in Nipania,Nipania,Villa,9000000.0,2911.0,1,1.0,https://www.sample-realestate.com/indore-property/39,Indore
+Premium 4 BHK in Bypass Road,Rau,Apartment,9300000.0,540.0,2,1.0,https://www.sample-realestate.com/indore-property/40,Indore
+Premium 2 BHK in LIG Colony,Palasia,Apartment,5100000.0,1122.0,2,2.0,https://www.sample-realestate.com/indore-property/41,Indore
+Premium 4 BHK in Super Corridor,Palasia,Apartment,9200000.0,1328.0,1,1.0,https://www.sample-realestate.com/indore-property/42,Indore
+Premium 5 BHK in Sudama Nagar,LIG Colony,Apartment,12900000.0,966.0,3,4.0,https://www.sample-realestate.com/indore-property/43,Indore
+Premium 4 BHK in Sudama Nagar,Bhawarkua,Apartment,11400000.0,2376.0,1,1.0,https://www.sample-realestate.com/indore-property/44,Indore
+Premium 2 BHK in Nipania,LIG Colony,Villa,3800000.0,2672.0,2,2.0,https://www.sample-realestate.com/indore-property/45,Indore
+Premium 5 BHK in Nipania,Bypass Road,Villa,6900000.0,1585.0,2,3.0,https://www.sample-realestate.com/indore-property/46,Indore
+Premium 2 BHK in Vijay Nagar,Super Corridor,Apartment,5400000.0,1381.0,1,1.0,https://www.sample-realestate.com/indore-property/47,Indore
+Premium 1 BHK in Sudama Nagar,Rau,Apartment,6400000.0,1478.0,2,2.0,https://www.sample-realestate.com/indore-property/48,Indore
+Premium 4 BHK in Bypass Road,Rau,Apartment,12400000.0,949.0,2,1.0,https://www.sample-realestate.com/indore-property/49,Indore
+Premium 2 BHK in Palasia,Rau,Independent House,14500000.0,1411.0,3,3.0,https://www.sample-realestate.com/indore-property/50,Indore
+Premium 1 BHK in Nipania,LIG Colony,Villa,2700000.0,1014.0,2,2.0,https://www.sample-realestate.com/indore-property/51,Indore
+Premium 2 BHK in Nipania,LIG Colony,Apartment,8000000.0,1273.0,3,,https://www.sample-realestate.com/indore-property/52,Indore
+Premium 5 BHK in LIG Colony,Super Corridor,Independent House,5500000.0,2315.0,1,1.0,https://www.sample-realestate.com/indore-property/53,Indore
+Premium 5 BHK in Palasia,Super Corridor,Independent House,9000000.0,2748.0,1,2.0,https://www.sample-realestate.com/indore-property/54,Indore
+Premium 5 BHK in Nipania,Rau,Independent House,11800000.0,1159.0,1,1.0,https://www.sample-realestate.com/indore-property/55,Indore
+Premium 5 BHK in Nipania,Palasia,Independent House,14000000.0,2556.0,1,1.0,https://www.sample-realestate.com/indore-property/56,Indore
+Premium 1 BHK in Sudama Nagar,AB Road,Apartment,6200000.0,733.0,1,1.0,https://www.sample-realestate.com/indore-property/57,Indore
+Premium 5 BHK in Rau,AB Road,Apartment,13400000.0,2104.0,3,3.0,https://www.sample-realestate.com/indore-property/58,Indore
+Premium 5 BHK in LIG Colony,Bypass Road,Apartment,4200000.0,2813.0,2,2.0,https://www.sample-realestate.com/indore-property/59,Indore
+Premium 1 BHK in Vijay Nagar,Super Corridor,Apartment,9300000.0,,2,3.0,https://www.sample-realestate.com/indore-property/60,Indore
+Premium 2 BHK in Bypass Road,AB Road,Apartment,7100000.0,2558.0,2,2.0,https://www.sample-realestate.com/indore-property/61,Indore
+Premium 1 BHK in Rau,Palasia,Apartment,13000000.0,2544.0,3,3.0,https://www.sample-realestate.com/indore-property/62,Indore
+Premium 3 BHK in Bypass Road,Vijay Nagar,Apartment,14500000.0,,3,3.0,https://www.sample-realestate.com/indore-property/63,Indore
+Premium 2 BHK in Sudama Nagar,Sudama Nagar,Apartment,2500000.0,2990.0,1,1.0,https://www.sample-realestate.com/indore-property/64,Indore
+Premium 1 BHK in LIG Colony,Vijay Nagar,Independent House,2200000.0,1054.0,2,1.0,https://www.sample-realestate.com/indore-property/65,Indore
+Premium 3 BHK in Super Corridor,Super Corridor,Studio,7800000.0,2196.0,4,4.0,https://www.sample-realestate.com/indore-property/66,Indore
+Premium 3 BHK in Palasia,Rau,Studio,6400000.0,1646.0,1,1.0,https://www.sample-realestate.com/indore-property/67,Indore
+Premium 5 BHK in Palasia,Sudama Nagar,Apartment,10800000.0,2285.0,1,,https://www.sample-realestate.com/indore-property/68,Indore
+Premium 2 BHK in Bypass Road,Rau,Independent House,10200000.0,1553.0,4,,https://www.sample-realestate.com/indore-property/69,Indore
+Premium 2 BHK in Nipania,AB Road,Apartment,12900000.0,1803.0,2,2.0,https://www.sample-realestate.com/indore-property/70,Indore
+Premium 2 BHK in Bypass Road,Nipania,Apartment,4500000.0,2851.0,3,3.0,https://www.sample-realestate.com/indore-property/71,Indore
+Premium 2 BHK in Bhawarkua,Rau,Apartment,6400000.0,1621.0,2,2.0,https://www.sample-realestate.com/indore-property/72,Indore
+Premium 3 BHK in Bhawarkua,Sudama Nagar,Apartment,8700000.0,,2,3.0,https://www.sample-realestate.com/indore-property/73,Indore
+Premium 2 BHK in Nipania,Bhawarkua,Apartment,3900000.0,983.0,3,3.0,https://www.sample-realestate.com/indore-property/74,Indore
+Premium 3 BHK in Sudama Nagar,AB Road,Independent House,5500000.0,2413.0,1,1.0,https://www.sample-realestate.com/indore-property/75,Indore
+Premium 2 BHK in Palasia,Bhawarkua,Apartment,6600000.0,1844.0,3,,https://www.sample-realestate.com/indore-property/76,Indore
+Premium 4 BHK in Bypass Road,Rau,Apartment,12400000.0,2594.0,2,2.0,https://www.sample-realestate.com/indore-property/77,Indore
+Premium 4 BHK in Nipania,Nipania,Independent House,5000000.0,2132.0,2,2.0,https://www.sample-realestate.com/indore-property/78,Indore
+Premium 3 BHK in LIG Colony,Bhawarkua,Apartment,9900000.0,2692.0,2,2.0,https://www.sample-realestate.com/indore-property/79,Indore
+Premium 2 BHK in Super Corridor,Rau,Apartment,12900000.0,699.0,1,1.0,https://www.sample-realestate.com/indore-property/80,Indore
+Premium 4 BHK in Nipania,Bypass Road,Villa,13300000.0,1607.0,2,2.0,https://www.sample-realestate.com/indore-property/81,Indore
+Premium 4 BHK in AB Road,Vijay Nagar,Apartment,9600000.0,,2,2.0,https://www.sample-realestate.com/indore-property/82,Indore
+Premium 4 BHK in Sudama Nagar,Sudama Nagar,Independent House,3000000.0,2645.0,2,2.0,https://www.sample-realestate.com/indore-property/83,Indore
+Premium 1 BHK in Bypass Road,Bypass Road,Independent House,14900000.0,1369.0,1,2.0,https://www.sample-realestate.com/indore-property/84,Indore
+Premium 5 BHK in Rau,Bypass Road,Apartment,10800000.0,2750.0,2,3.0,https://www.sample-realestate.com/indore-property/85,Indore
+Premium 1 BHK in Bypass Road,AB Road,Apartment,10400000.0,,3,2.0,https://www.sample-realestate.com/indore-property/86,Indore
+Premium 5 BHK in Super Corridor,Sudama Nagar,Apartment,6900000.0,1094.0,2,2.0,https://www.sample-realestate.com/indore-property/87,Indore
+Premium 3 BHK in AB Road,AB Road,Villa,8800000.0,1167.0,3,3.0,https://www.sample-realestate.com/indore-property/88,Indore
+Premium 2 BHK in AB Road,Sudama Nagar,Apartment,12300000.0,2545.0,3,2.0,https://www.sample-realestate.com/indore-property/89,Indore
+Premium 5 BHK in Super Corridor,Vijay Nagar,Villa,2500000.0,2104.0,1,1.0,https://www.sample-realestate.com/indore-property/90,Indore
+Premium 4 BHK in Bhawarkua,Rau,Apartment,8900000.0,1727.0,2,2.0,https://www.sample-realestate.com/indore-property/91,Indore
+Premium 3 BHK in Rau,Super Corridor,Apartment,2400000.0,2768.0,2,2.0,https://www.sample-realestate.com/indore-property/92,Indore
+Premium 4 BHK in Vijay Nagar,Vijay Nagar,Independent House,7700000.0,899.0,1,1.0,https://www.sample-realestate.com/indore-property/93,Indore
+Premium 4 BHK in LIG Colony,Bypass Road,Independent House,14900000.0,1755.0,1,1.0,https://www.sample-realestate.com/indore-property/94,Indore
+Premium 4 BHK in LIG Colony,Vijay Nagar,Independent House,6400000.0,2141.0,2,2.0,https://www.sample-realestate.com/indore-property/95,Indore
+Premium 3 BHK in AB Road,AB Road,Apartment,12700000.0,2860.0,2,2.0,https://www.sample-realestate.com/indore-property/96,Indore
+Premium 2 BHK in LIG Colony,Sudama Nagar,Independent House,4000000.0,539.0,1,1.0,https://www.sample-realestate.com/indore-property/97,Indore
+Premium 2 BHK in Palasia,Sudama Nagar,Apartment,14600000.0,1194.0,1,1.0,https://www.sample-realestate.com/indore-property/98,Indore
+Premium 3 BHK in Bhawarkua,Bypass Road,Villa,9400000.0,602.0,3,3.0,https://www.sample-realestate.com/indore-property/99,Indore
+Premium 3 BHK in Bypass Road,Bypass Road,Apartment,6200000.0,2519.0,1,1.0,https://www.sample-realestate.com/indore-property/100,Indore
+Premium 1 BHK in Super Corridor,Rau,Apartment,4200000.0,2484.0,2,2.0,https://www.sample-realestate.com/indore-property/101,Indore
+Premium 4 BHK in Nipania,Rau,Apartment,3300000.0,1788.0,2,3.0,https://www.sample-realestate.com/indore-property/102,Indore
+Premium 4 BHK in Palasia,Vijay Nagar,Apartment,12400000.0,1975.0,2,3.0,https://www.sample-realestate.com/indore-property/103,Indore
+Premium 4 BHK in Palasia,Palasia,Villa,2700000.0,2092.0,1,1.0,https://www.sample-realestate.com/indore-property/104,Indore
+Premium 3 BHK in Sudama Nagar,Super Corridor,Apartment,6000000.0,1581.0,3,3.0,https://www.sample-realestate.com/indore-property/105,Indore
+Premium 2 BHK in Bypass Road,Vijay Nagar,Villa,9300000.0,1463.0,2,,https://www.sample-realestate.com/indore-property/106,Indore
+Premium 2 BHK in Rau,LIG Colony,Apartment,11800000.0,2169.0,2,2.0,https://www.sample-realestate.com/indore-property/107,Indore
+Premium 3 BHK in LIG Colony,AB Road,Apartment,11400000.0,1335.0,3,2.0,https://www.sample-realestate.com/indore-property/108,Indore
+Premium 1 BHK in AB Road,Rau,Apartment,2100000.0,2269.0,2,2.0,https://www.sample-realestate.com/indore-property/109,Indore
+Premium 2 BHK in Bhawarkua,LIG Colony,Apartment,14200000.0,2963.0,1,1.0,https://www.sample-realestate.com/indore-property/110,Indore
+Premium 5 BHK in Nipania,Bhawarkua,Apartment,3500000.0,2981.0,2,3.0,https://www.sample-realestate.com/indore-property/111,Indore
+Premium 4 BHK in Palasia,Nipania,Apartment,14500000.0,1422.0,2,2.0,https://www.sample-realestate.com/indore-property/112,Indore
+Premium 5 BHK in Bypass Road,AB Road,Independent House,3100000.0,1195.0,2,3.0,https://www.sample-realestate.com/indore-property/113,Indore
+Premium 5 BHK in AB Road,AB Road,Villa,4700000.0,1885.0,5,6.0,https://www.sample-realestate.com/indore-property/114,Indore
+Premium 1 BHK in Vijay Nagar,Rau,Apartment,10800000.0,1286.0,2,2.0,https://www.sample-realestate.com/indore-property/115,Indore
+Premium 1 BHK in Palasia,Bhawarkua,Apartment,9700000.0,2562.0,2,2.0,https://www.sample-realestate.com/indore-property/116,Indore
+Premium 1 BHK in Rau,Sudama Nagar,Apartment,6600000.0,2799.0,3,3.0,https://www.sample-realestate.com/indore-property/117,Indore
+Premium 4 BHK in AB Road,Super Corridor,Apartment,7800000.0,2261.0,3,3.0,https://www.sample-realestate.com/indore-property/118,Indore
+Premium 5 BHK in AB Road,LIG Colony,Apartment,14400000.0,2353.0,2,2.0,https://www.sample-realestate.com/indore-property/119,Indore
+Premium 1 BHK in LIG Colony,Super Corridor,Apartment,9800000.0,1532.0,1,1.0,https://www.sample-realestate.com/indore-property/120,Indore
+Premium 2 BHK in Bhawarkua,Rau,Apartment,8900000.0,675.0,2,3.0,https://www.sample-realestate.com/indore-property/121,Indore
+Premium 3 BHK in Bhawarkua,Super Corridor,Villa,13000000.0,2609.0,2,2.0,https://www.sample-realestate.com/indore-property/122,Indore
+Premium 3 BHK in LIG Colony,Sudama Nagar,Apartment,11100000.0,1863.0,2,2.0,https://www.sample-realestate.com/indore-property/123,Indore
+Premium 4 BHK in Sudama Nagar,AB Road,Apartment,8900000.0,2055.0,1,1.0,https://www.sample-realestate.com/indore-property/124,Indore
+Premium 2 BHK in Bypass Road,LIG Colony,Apartment,7900000.0,2141.0,5,6.0,https://www.sample-realestate.com/indore-property/125,Indore
+Premium 5 BHK in Palasia,Nipania,Apartment,13000000.0,1909.0,1,1.0,https://www.sample-realestate.com/indore-property/126,Indore
+Premium 2 BHK in Vijay Nagar,Super Corridor,Apartment,4900000.0,524.0,2,1.0,https://www.sample-realestate.com/indore-property/127,Indore
+Premium 4 BHK in Palasia,Palasia,Independent House,5200000.0,1054.0,2,2.0,https://www.sample-realestate.com/indore-property/128,Indore
+Premium 4 BHK in LIG Colony,Nipania,Villa,6600000.0,996.0,3,3.0,https://www.sample-realestate.com/indore-property/129,Indore
+Premium 4 BHK in Sudama Nagar,Super Corridor,Apartment,12200000.0,1596.0,4,4.0,https://www.sample-realestate.com/indore-property/130,Indore
+Premium 4 BHK in AB Road,Nipania,Villa,3200000.0,2261.0,2,2.0,https://www.sample-realestate.com/indore-property/131,Indore
+Premium 2 BHK in AB Road,Bypass Road,Apartment,2500000.0,2509.0,5,6.0,https://www.sample-realestate.com/indore-property/132,Indore
+Premium 2 BHK in Palasia,Nipania,Apartment,6100000.0,2666.0,2,1.0,https://www.sample-realestate.com/indore-property/133,Indore
+Premium 4 BHK in Super Corridor,AB Road,Apartment,13800000.0,1557.0,2,2.0,https://www.sample-realestate.com/indore-property/134,Indore
+Premium 2 BHK in AB Road,Sudama Nagar,Apartment,7100000.0,1693.0,1,1.0,https://www.sample-realestate.com/indore-property/135,Indore
+Premium 3 BHK in Palasia,LIG Colony,Villa,11900000.0,1496.0,1,1.0,https://www.sample-realestate.com/indore-property/136,Indore
+Premium 1 BHK in LIG Colony,Sudama Nagar,Independent House,7600000.0,684.0,1,1.0,https://www.sample-realestate.com/indore-property/137,Indore
+Premium 1 BHK in Nipania,AB Road,Apartment,9500000.0,1195.0,1,1.0,https://www.sample-realestate.com/indore-property/138,Indore
+Premium 1 BHK in Sudama Nagar,LIG Colony,Villa,6800000.0,1440.0,3,3.0,https://www.sample-realestate.com/indore-property/139,Indore
+Premium 3 BHK in LIG Colony,Palasia,Studio,3500000.0,1002.0,3,3.0,https://www.sample-realestate.com/indore-property/140,Indore
+Premium 3 BHK in AB Road,Palasia,Studio,12000000.0,2029.0,1,1.0,https://www.sample-realestate.com/indore-property/141,Indore
+Premium 2 BHK in Vijay Nagar,Sudama Nagar,Villa,7700000.0,2710.0,2,2.0,https://www.sample-realestate.com/indore-property/142,Indore
+Premium 1 BHK in Bhawarkua,Sudama Nagar,Apartment,7100000.0,2524.0,1,1.0,https://www.sample-realestate.com/indore-property/143,Indore
+Premium 5 BHK in Super Corridor,Rau,Apartment,10500000.0,1921.0,2,2.0,https://www.sample-realestate.com/indore-property/144,Indore
+Premium 2 BHK in AB Road,Super Corridor,Apartment,6600000.0,2324.0,1,1.0,https://www.sample-realestate.com/indore-property/145,Indore
+Premium 4 BHK in Sudama Nagar,Vijay Nagar,Apartment,7800000.0,1723.0,3,3.0,https://www.sample-realestate.com/indore-property/146,Indore
+Premium 5 BHK in LIG Colony,Super Corridor,Independent House,11700000.0,,2,2.0,https://www.sample-realestate.com/indore-property/147,Indore
+Premium 2 BHK in Sudama Nagar,Nipania,Apartment,12400000.0,2108.0,4,5.0,https://www.sample-realestate.com/indore-property/148,Indore
+Premium 1 BHK in Nipania,Bypass Road,Apartment,14500000.0,2495.0,3,3.0,https://www.sample-realestate.com/indore-property/149,Indore
+Premium 2 BHK in Nipania,AB Road,Apartment,2300000.0,2622.0,2,3.0,https://www.sample-realestate.com/indore-property/150,Indore
+Premium 1 BHK in Bypass Road,Nipania,Apartment,14600000.0,2571.0,2,3.0,https://www.sample-realestate.com/indore-property/151,Indore
+Premium 2 BHK in Rau,Nipania,Apartment,4300000.0,1485.0,4,4.0,https://www.sample-realestate.com/indore-property/152,Indore
+Premium 4 BHK in Bhawarkua,Bypass Road,Apartment,14000000.0,,2,1.0,https://www.sample-realestate.com/indore-property/153,Indore
+Premium 3 BHK in Vijay Nagar,LIG Colony,Apartment,6900000.0,1634.0,2,3.0,https://www.sample-realestate.com/indore-property/154,Indore
+Premium 3 BHK in Vijay Nagar,Vijay Nagar,Apartment,5700000.0,,1,1.0,https://www.sample-realestate.com/indore-property/155,Indore
+Premium 3 BHK in LIG Colony,Palasia,Apartment,9500000.0,2955.0,2,3.0,https://www.sample-realestate.com/indore-property/156,Indore
+Premium 2 BHK in Vijay Nagar,LIG Colony,Apartment,2400000.0,700.0,2,3.0,https://www.sample-realestate.com/indore-property/157,Indore
+Premium 4 BHK in Super Corridor,Bhawarkua,Apartment,14800000.0,1563.0,2,2.0,https://www.sample-realestate.com/indore-property/158,Indore
+Premium 4 BHK in LIG Colony,Nipania,Apartment,2200000.0,2865.0,1,1.0,https://www.sample-realestate.com/indore-property/159,Indore
+Premium 1 BHK in AB Road,AB Road,Apartment,11100000.0,,2,2.0,https://www.sample-realestate.com/indore-property/160,Indore
+Premium 4 BHK in Rau,AB Road,Apartment,9300000.0,1624.0,4,4.0,https://www.sample-realestate.com/indore-property/161,Indore
+Premium 1 BHK in LIG Colony,Vijay Nagar,Apartment,10100000.0,1192.0,2,2.0,https://www.sample-realestate.com/indore-property/162,Indore
+Premium 1 BHK in Bypass Road,Bhawarkua,Apartment,10400000.0,501.0,2,2.0,https://www.sample-realestate.com/indore-property/163,Indore
+Premium 4 BHK in Palasia,AB Road,Apartment,7200000.0,1988.0,3,2.0,https://www.sample-realestate.com/indore-property/164,Indore
+Premium 1 BHK in Palasia,Bypass Road,Apartment,7100000.0,879.0,2,2.0,https://www.sample-realestate.com/indore-property/165,Indore
+Premium 4 BHK in Vijay Nagar,Super Corridor,Independent House,13500000.0,1274.0,3,3.0,https://www.sample-realestate.com/indore-property/166,Indore
+Premium 5 BHK in Bypass Road,LIG Colony,Apartment,14300000.0,1524.0,1,1.0,https://www.sample-realestate.com/indore-property/167,Indore
+Premium 5 BHK in Super Corridor,Super Corridor,Villa,5200000.0,1290.0,2,2.0,https://www.sample-realestate.com/indore-property/168,Indore
+Premium 4 BHK in AB Road,LIG Colony,Apartment,11300000.0,,2,2.0,https://www.sample-realestate.com/indore-property/169,Indore
+Premium 2 BHK in Bypass Road,Rau,Apartment,5700000.0,2212.0,3,3.0,https://www.sample-realestate.com/indore-property/170,Indore
+Premium 1 BHK in Super Corridor,AB Road,Apartment,14200000.0,1731.0,2,2.0,https://www.sample-realestate.com/indore-property/171,Indore
+Premium 5 BHK in Palasia,Palasia,Independent House,7800000.0,1865.0,2,2.0,https://www.sample-realestate.com/indore-property/172,Indore
+Premium 5 BHK in Bypass Road,Bypass Road,Studio,11700000.0,2663.0,2,3.0,https://www.sample-realestate.com/indore-property/173,Indore
+Premium 1 BHK in Rau,Sudama Nagar,Apartment,5100000.0,2372.0,2,2.0,https://www.sample-realestate.com/indore-property/174,Indore
+Premium 1 BHK in LIG Colony,Bypass Road,Apartment,13300000.0,1121.0,1,1.0,https://www.sample-realestate.com/indore-property/175,Indore
+Premium 2 BHK in Bhawarkua,Rau,Independent House,7000000.0,1131.0,4,4.0,https://www.sample-realestate.com/indore-property/176,Indore
+Premium 1 BHK in Vijay Nagar,Bhawarkua,Independent House,9000000.0,1744.0,2,2.0,https://www.sample-realestate.com/indore-property/177,Indore
+Premium 2 BHK in Super Corridor,LIG Colony,Apartment,13100000.0,1493.0,2,2.0,https://www.sample-realestate.com/indore-property/178,Indore
+Premium 5 BHK in AB Road,Palasia,Apartment,13200000.0,1163.0,1,1.0,https://www.sample-realestate.com/indore-property/179,Indore
+Premium 4 BHK in AB Road,Sudama Nagar,Apartment,9200000.0,1340.0,1,1.0,https://www.sample-realestate.com/indore-property/180,Indore
+Premium 3 BHK in Bhawarkua,Bhawarkua,Apartment,9900000.0,1048.0,1,2.0,https://www.sample-realestate.com/indore-property/181,Indore
+Premium 3 BHK in LIG Colony,Sudama Nagar,Apartment,12400000.0,1477.0,1,1.0,https://www.sample-realestate.com/indore-property/182,Indore
+Premium 4 BHK in Palasia,AB Road,Villa,5700000.0,,3,2.0,https://www.sample-realestate.com/indore-property/183,Indore
+Premium 4 BHK in Super Corridor,Sudama Nagar,Independent House,8300000.0,2997.0,2,2.0,https://www.sample-realestate.com/indore-property/184,Indore
+Premium 4 BHK in Sudama Nagar,Vijay Nagar,Apartment,7200000.0,558.0,2,2.0,https://www.sample-realestate.com/indore-property/185,Indore
+Premium 3 BHK in Nipania,Nipania,Apartment,5900000.0,1776.0,1,1.0,https://www.sample-realestate.com/indore-property/186,Indore
+Premium 2 BHK in Super Corridor,Bhawarkua,Apartment,9900000.0,1669.0,3,3.0,https://www.sample-realestate.com/indore-property/187,Indore
+Premium 1 BHK in Vijay Nagar,Bhawarkua,Apartment,4300000.0,1473.0,1,1.0,https://www.sample-realestate.com/indore-property/188,Indore
+Premium 3 BHK in Nipania,Super Corridor,Studio,6400000.0,854.0,1,1.0,https://www.sample-realestate.com/indore-property/189,Indore
+Premium 3 BHK in Super Corridor,LIG Colony,Apartment,12300000.0,618.0,1,1.0,https://www.sample-realestate.com/indore-property/190,Indore
+Premium 4 BHK in Bhawarkua,AB Road,Independent House,12600000.0,2975.0,3,4.0,https://www.sample-realestate.com/indore-property/191,Indore
+Premium 2 BHK in LIG Colony,AB Road,Apartment,10500000.0,2468.0,1,2.0,https://www.sample-realestate.com/indore-property/192,Indore
+Premium 2 BHK in Rau,Vijay Nagar,Apartment,13600000.0,1600.0,2,2.0,https://www.sample-realestate.com/indore-property/193,Indore
+Premium 5 BHK in LIG Colony,Vijay Nagar,Apartment,2600000.0,2178.0,2,2.0,https://www.sample-realestate.com/indore-property/194,Indore
+Premium 5 BHK in LIG Colony,Super Corridor,Villa,4600000.0,1244.0,1,,https://www.sample-realestate.com/indore-property/195,Indore
+Premium 1 BHK in Vijay Nagar,Nipania,Villa,13800000.0,1592.0,2,3.0,https://www.sample-realestate.com/indore-property/196,Indore
+Premium 3 BHK in LIG Colony,LIG Colony,Apartment,9700000.0,2627.0,3,2.0,https://www.sample-realestate.com/indore-property/197,Indore
+Premium 5 BHK in Nipania,Palasia,Apartment,13900000.0,1939.0,2,2.0,https://www.sample-realestate.com/indore-property/198,Indore
+Premium 4 BHK in LIG Colony,Bypass Road,Apartment,6100000.0,1772.0,2,1.0,https://www.sample-realestate.com/indore-property/199,Indore
