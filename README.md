@@ -10,7 +10,47 @@ The system culminates in an interactive Streamlit web dashboard that leverages h
 - **Data Preprocessing Pipeline:** Automated missing value handling, Outlier detection, Geocoding, and One-Hot Encoding.
 - **Multi-City Price Prediction:** Unified predictive model managing disparate urban markets simultaneously.
 
-## 3. Project Workflow
+## 3. 🖥️ Application Screenshots
+
+The following screenshots demonstrate the actual working Streamlit interface of the Real Estate Price Prediction project.
+
+### 🏠 Price Prediction
+
+Users can enter property characteristics and obtain an estimated property price from the trained machine-learning model.
+
+![Price Prediction](screenshots/home.png)
+
+### 📊 Prediction Result
+
+The application processes the input features and displays the estimated property price based on historical market trends.
+
+![Prediction Result](screenshots/prediction-result.png)
+
+### 📈 Market Analysis
+
+The application provides historical-data visualizations and analysis for Mumbai and Indore, allowing users to explore market distributions and relationships without writing any code.
+
+![Market Analysis](screenshots/market-analysis.png)
+
+### 🤖 Model Information
+
+The application provides information about the trained models, feature importance, and evaluation metrics.
+
+![Model Information](screenshots/model-information.png)
+
+### 🌆 Mumbai Prediction
+
+An example of a residential property price estimation in Mumbai using the Machine Learning Model:
+
+![Mumbai Prediction](screenshots/mumbai-prediction.png)
+
+### 🏙️ Indore Prediction
+
+An example of a residential property price estimation in Indore, reflecting the geographical price disparities learned by the Machine Learning Model:
+
+![Indore Prediction](screenshots/indore-prediction.png)
+
+## 4. ⚙️ How It Works (Project Workflow)
 ```text
 Historical Mumbai Property Data (250 records)
         +
