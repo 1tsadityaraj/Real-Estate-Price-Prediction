@@ -8,11 +8,7 @@ The system culminates in an interactive Streamlit web dashboard that transparent
 ## 2. Features
 - **Mumbai and Indore Property Analysis:** Detailed EDA comparing the two distinct property markets.
 - **Data Preprocessing Pipeline:** Automated missing value handling, Outlier detection, and One-Hot Encoding.
-- **Geographic Analysis:** Integration with Nominatim APIs (Geopy) to map property coordinates spatially.
 - **Multi-City Price Prediction:** Unified predictive model managing disparate urban markets simultaneously.
-- **Current Market Data Architecture:** Integrates a Live Provider Abstraction that searches current property listings and computes a dynamic 3-Tier Comparable Median ₹/sq.ft.
-- **Graceful Fallback Protocols:** If live APIs are unavailable or unconfigured, the system safely triggers a 100% fallback to the Historical ML Estimate without crashing.
-- **Streamlit Interface:** A dynamic dashboard to forecast prices, visualize market analytics, and trigger fresh API data retrievals.
 
 ## 3. Project Workflow
 ```text
@@ -28,11 +24,9 @@ Model Training & Evaluation
       ↓
 Best Model Selection (Linear Regression)
       ↓
-Current Listing Retrieval (Live API Abstraction)
       ↓
 Comparable Analysis (3-Tier Match for Current ₹/sq.ft)
       ↓
-Streamlit Deployment (Combining ML + Current Market)
 ```
 
 ## 4. Dataset
@@ -73,12 +67,8 @@ The performance of the models on the test split:
 
 *(Note: The Comparable-Only mathematical model was tested offline independently and achieved an MAE of ₹16.20M, proving its viability).*
 
-## 8. Current Market Data & Streamlit Application
 The web interface enables a fully dual-architecture analysis:
 - **Historical ML Estimate:** Instantly processed via `best_model.pkl`.
-- **Current Comparable Estimate:** The system queries an abstract `ConfiguredAPIDataProvider` for live listings. It calculates a median ₹/sq.ft. using matching comparable hierarchies (Exact Match → Relaxed Area → Relaxed Type).
-- **Refresh Mechanism:** Users can clear the `@st.cache_data` memory to execute a fresh API retrieval timestamped on the UI.
-- **Fallback Safe-Mode:** If the provider lacks commercial API keys, the system detects `LIVE DATA PROVIDER NOT CONFIGURED` and smoothly reverts the Final Estimate back to the Historical ML Prediction, preventing UI crashes.
 
 ## 9. Installation
 
@@ -117,7 +107,6 @@ Real-Estate-Price-Prediction/
 ├── model/ (Pickled LR pipeline)
 │
 ├── src/live_data/
-│   └── provider.py (Live API Provider Abstraction)
 │
 ├── docs/ (Final Reports, Figures, Testing Logs)
 │
@@ -134,11 +123,8 @@ Real-Estate-Price-Prediction/
 
 ## 12. Limitations
 - **Dataset Size:** The ML model is trained on a 440-row proxy dataset. Commercial scaling requires scraping hundreds of thousands of records.
-- **Asking vs. Transaction Price:** Live estimates rely on recently retrieved asking prices from listing APIs, which are typically inflated compared to the actual negotiated legal transaction value.
-- **API Availability:** The live comparable module currently operates in a mock/fallback state requiring injection of a valid commercial Real-Estate Aggregator API key to function fully.
 
 ## 13. Future Scope
-- Injection of a commercial B2B API to activate the Live Data Provider.
 - Expansion to include 10+ major Indian metropolitan cities (e.g., Delhi, Bangalore, Pune).
 - Inclusion of micro-economic features (proximity to transit, hospital density, interest rates).
 - Exploring advanced ensemble architectures (e.g., XGBoost, Gradient Boosting) on scaled datasets.
