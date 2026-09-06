@@ -330,7 +330,7 @@ The project successfully bridged two heavily disparate markets. The Exploratory 
 
 # CHAPTER 16 – FUTURE SCOPE
 
-- **Support for More Indian Cities:** Scaling the architecture to cover Delhi, Bangalore, and Pune.
+- **Support for More Indian Cities:** Scaling the architecture to cover Delhi, Indore, and Pune.
 - **Larger Datasets:** Utilizing big-data pipelines to ingest millions of commercial API rows.
 - **Advanced Algorithms:** Tuning XGBoost and Gradient Boosting regressors on larger data corpuses to manage extreme non-linear outliers.
 - **Deployment:** Migrating the local Streamlit application to a continuous cloud-hosting provider (e.g., AWS EC2, Streamlit Cloud).
@@ -360,7 +360,7 @@ This project successfully implements an end-to-end Machine Learning ecosystem ad
 2. **Supported cities:** Mumbai, Indore
 3. **Final dataset size:** 440 records
 4. **Final model:** Linear Regression
-5. **Actual best model metrics:** MAE: 13,623,956 | MSE: 388,416,513,203,432 | RMSE: 19,708,285 | R²: 0.5135
+5. **Actual best model metrics:** MAE: 13,623,956 | MSE: 388,416,513,203,432 | RMSE: 19,708,285 | R²: 0.513535
 6. **Main implemented features:** Data pipeline, EDA, Geocoding, ML Modeling, Streamlit Multi-tab Dashboard, Market Analysis.
 7. **Number of test cases:** 6 primary Streamlit test cases.
 8. **Number of figures:** Generated 15 core figures in `docs/figures/`.

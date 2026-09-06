@@ -187,7 +187,7 @@ Estimated Price Output (INR)
 ---
 
 ## Slide 17 – Future Scope
-- **Add more Indian cities:** Delhi, Bangalore, Pune.
+- **Add more Indian cities:** Delhi, Indore, Pune.
 - **Larger Datasets:** Utilizing live commercial API streams.
 - **More Property Attributes:** Adding age of property, proximity to transit, crime rates.
 - **More Advanced Models:** Exploring Gradient Boosting or Neural Networks on larger data.
