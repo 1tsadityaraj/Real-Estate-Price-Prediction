@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import os
+import json
 
 # --- Page Config ---
 st.set_page_config(page_title="Real Estate Price Prediction", page_icon="🏠", layout="wide")
@@ -43,18 +44,25 @@ def load_artifacts():
         model = joblib.load('model/best_model.pkl')
         preprocessor = joblib.load('model/preprocessor.pkl')
         
-        # Load unique locations and property types to populate the UI dropdowns
-        df = pd.read_csv('data/processed/geocoded_property_data.csv')
-        locations = df['Location'].dropna().unique().tolist()
-        property_types = df['Property_Type'].dropna().unique().tolist()
+        # Load unique locations and property types from the combined geocoded data
+        df = pd.read_csv('data/processed/geocoded_mumbai_indore_property_data.csv')
         
-        # Build a coordinate mapping for locations
-        coord_map = df.drop_duplicates(subset=['Location']).set_index('Location')[['Latitude', 'Longitude']].to_dict('index')
-        
-        return model, preprocessor, locations, property_types, coord_map
+        return model, preprocessor, df
     except Exception as e:
         st.error(f"Error loading required files: {e}")
-        return None, None, [], [], {}
+        return None, None, pd.DataFrame()
+
+@st.cache_data
+def get_model_info():
+    try:
+        with open('model_summary.json', 'r') as f:
+            data = json.load(f)
+            best_model_name = data.get('best_model', 'Unknown')
+            # Extract metrics for best model
+            metrics = next((item for item in data.get('results', []) if item["Model"] == best_model_name), None)
+            return best_model_name, metrics
+    except Exception:
+        return "Unknown", None
 
 def format_indian_currency(num):
     # Simple formatter for Crores/Lakhs
@@ -66,29 +74,42 @@ def format_indian_currency(num):
         return f"₹ {num:,.0f}"
 
 # Load artifacts
-model, preprocessor, locations, property_types, coord_map = load_artifacts()
+model, preprocessor, df = load_artifacts()
+best_model_name, metrics = get_model_info()
 
 # --- Main App ---
 st.markdown('<div class="main-title">REAL ESTATE PRICE PREDICTION</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-title">Enter property details to estimate the expected real estate price.</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-title">Predict property prices for Mumbai and Indore using Machine Learning.</div>', unsafe_allow_html=True)
 
-if model is None or preprocessor is None:
-    st.warning("Application is down: Missing model artifacts. Please ensure Step 7 is completed.")
+if model is None or preprocessor is None or df.empty:
+    st.warning("Application is down: Missing model artifacts or dataset.")
     st.stop()
 
 # --- Input Form ---
 with st.container():
     st.subheader("Property Details")
     
+    # Extract unique cities
+    cities = sorted(df['City'].dropna().unique().tolist())
+    city = st.selectbox("City", cities)
+    
+    # Dynamically filter locations based on selected city
+    city_df = df[df['City'] == city]
+    locations = sorted(city_df['Location'].dropna().unique().tolist())
+    
+    # Coordinate Map for Latitude/Longitude specific to the selected city and location
+    coord_map = city_df.drop_duplicates(subset=['Location']).set_index('Location')[['Latitude', 'Longitude']].to_dict('index')
+    property_types = sorted(df['Property_Type'].dropna().unique().tolist())
+    
     col1, col2 = st.columns(2)
     
     with col1:
-        location = st.selectbox("Location", sorted(locations))
+        location = st.selectbox("Location", locations)
         bhk = st.number_input("BHK (Bedrooms)", min_value=1, max_value=10, value=2, step=1)
         bathrooms = st.number_input("Bathrooms", min_value=1, max_value=10, value=2, step=1)
         
     with col2:
-        property_type = st.selectbox("Property Type", sorted(property_types))
+        property_type = st.selectbox("Property Type", property_types)
         area = st.number_input("Area (sq.ft)", min_value=100.0, max_value=20000.0, value=1000.0, step=50.0)
 
 # --- Prediction Action ---
@@ -107,6 +128,7 @@ if predict_btn:
             
             # 2. Build input dataframe exactly as expected by the preprocessor
             input_data = pd.DataFrame([{
+                'City': city,
                 'Location': location,
                 'Property_Type': property_type,
                 'Area_sqft': area,
@@ -123,26 +145,47 @@ if predict_btn:
             prediction = model.predict(input_processed)[0]
             
             # Display Result
-            st.markdown("### ESTIMATED PRICE")
+            st.markdown("### Prediction Result")
             st.markdown(f'<div class="price-display">{format_indian_currency(prediction)}</div>', unsafe_allow_html=True)
+            
+            st.write(f"**Based on:** {bhk} BHK {property_type} in {location}, {city} ({area} sq.ft.)")
             
         except Exception as e:
             st.error(f"An error occurred during prediction: {e}")
 
 # --- Expandable Info Sections ---
 st.markdown("---")
-with st.expander("ℹ️ About the Project"):
-    st.write("""
-    This application uses Machine Learning to estimate real-estate property prices based on historical property data.
+
+with st.expander("📊 Market Analysis"):
+    st.write(f"### {city} Market Overview")
+    st.write("Overview based on the dataset used to train the model.")
+    col_a, col_b, col_c = st.columns(3)
     
-    **Algorithms evaluated during development:**
-    * Linear Regression
-    * Decision Tree Regression
-    * Random Forest Regression
-    * Polynomial Regression
-    """)
-    st.write(f"**Model Used:** Linear Regression")
-    st.write(f"**R² Score:** -0.237 *(Demonstration dataset metric)*")
-    st.write("""
-    **Limitations:** This model was trained on a highly randomized subset of proxy real estate data for academic demonstration. The accuracy represents the relationships in that specific random sample.
-    """)
+    with col_a:
+        st.metric("Total Properties Analyzed", len(city_df))
+    with col_b:
+        st.metric("Median Price", format_indian_currency(city_df['Price_INR'].median()))
+    with col_c:
+        st.metric("Average Area (sq.ft)", f"{city_df['Area_sqft'].mean():,.0f}")
+        
+with st.expander("⚖️ Mumbai vs Indore Comparison"):
+    st.write("### Cross-City Analytics")
+    comp_df = df.groupby('City').agg(
+        Total_Properties=('Price_INR', 'count'),
+        Median_Price=('Price_INR', 'median'),
+        Avg_Area_Sqft=('Area_sqft', 'mean'),
+    ).reset_index()
+    
+    comp_df['Median_Price_Fmt'] = comp_df['Median_Price'].apply(format_indian_currency)
+    comp_df['Avg_Area_Sqft'] = comp_df['Avg_Area_Sqft'].round(0)
+    st.dataframe(comp_df[['City', 'Total_Properties', 'Median_Price_Fmt', 'Avg_Area_Sqft']], use_container_width=True)
+
+with st.expander("ℹ️ About the Model"):
+    st.write(f"**Algorithm Used:** {best_model_name}")
+    if metrics:
+        st.write("### Model Evaluation Metrics (Test Set)")
+        st.write(f"- **R² Score:** {metrics.get('R2', 0):.4f}")
+        st.write(f"- **MAE:** ₹ {metrics.get('MAE', 0):,.2f}")
+        st.write(f"- **RMSE:** ₹ {metrics.get('RMSE', 0):,.2f}")
+    else:
+        st.write("Evaluation metrics are currently unavailable.")

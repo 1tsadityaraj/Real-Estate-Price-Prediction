@@ -28,6 +28,11 @@ The project directory successfully matches the requirements:
 | T05     | Model loading      | Model loads           | Model loaded efficiently once (no retraining loop) | PASS |
 | T06     | EDA notebook       | Runs successfully     | Executed fully; all seaborn/matplotlib charts rendered | PASS |
 | T07     | Geocoding          | Coordinates generated | `geocoders_maps.ipynb` connected to Nominatim successfully | PASS |
+| T08     | Mumbai Prediction  | Predicts correct price| Successfully generated prediction (₹ 4.65 Crore) | PASS |
+| T09     | Indore Prediction  | Predicts correct price| Successfully generated prediction (₹ 49.2 Lakhs) | PASS |
+| T10     | City Switching     | Locations update      | Location dropdown successfully filters per city | PASS |
+| T11     | Invalid input test | Graceful handling     | Simulated invalid location triggers prediction error gracefully | PASS |
+| T12     | Predict Consistency| Consistent results    | Same parameters yielded identical predictions across runs | PASS |
 
 ## 5. Cross-Platform Paths & Requirements
 **Status: PASS**
