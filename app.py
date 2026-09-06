@@ -25,6 +25,34 @@ def format_indian_currency(num):
     else:
         return f"₹ {num:,.0f}"
 
+@st.cache_resource
+def load_artifacts():
+    try:
+        model = joblib.load('model/best_model.pkl')
+        preprocessor = joblib.load('model/preprocessor.pkl')
+        return model, preprocessor
+    except Exception as e:
+        return None, None
+
+@st.cache_data
+def load_data():
+    try:
+        df = pd.read_csv('data/processed/geocoded_mumbai_indore_property_data.csv')
+        return df
+    except Exception as e:
+        return pd.DataFrame()
+
+@st.cache_data
+def get_model_info():
+    try:
+        with open('model_summary.json', 'r') as f:
+            data = json.load(f)
+            best_model_name = data.get('best_model', 'Unknown')
+            metrics = next((item for item in data.get('results', []) if item["Model"] == best_model_name), None)
+            return best_model_name, metrics
+    except Exception:
+        return "Unknown", None
+
 # Load artifacts
 model, preprocessor = load_artifacts()
 df = load_data()
