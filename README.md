@@ -1,35 +1,38 @@
 # Real Estate Price Prediction and Property Analysis System for Mumbai and Indore Using Machine Learning
 
 ## 1. Project Overview
-This project is an end-to-end Machine Learning pipeline that collects, cleans, and analyzes real estate property data to predict market prices for **Mumbai** and **Indore**. It aims to provide users, researchers, and stakeholders with data-driven insights into the property market by predicting prices based on geographical coordinates, property type, area, and spatial configuration. The system culminates in an interactive Streamlit web dashboard.
+This project is an end-to-end Machine Learning pipeline and robust Live-Data architecture that collects, cleans, and analyzes real estate property data to estimate market prices for **Mumbai** and **Indore**. It aims to provide users, researchers, and stakeholders with data-driven insights into the property market by estimating prices based on geographical coordinates, property type, area, and spatial configuration. 
+
+The system culminates in an interactive Streamlit web dashboard that transparently combines a **Historical ML Estimate** with a **Recently Retrieved Listing-Based Market Estimate** to generate a final objective valuation.
 
 ## 2. Features
 - **Mumbai and Indore Property Analysis:** Detailed EDA comparing the two distinct property markets.
-- **Data Preprocessing Pipeline:** Automated missing value handling and outlier detection.
-- **Geographic Analysis:** Integration with Nominatim APIs (Geopy) to map property coordinates.
-- **Multi-City Price Prediction:** Unified predictive model managing disparate urban markets.
-- **Multiple Regression Models:** Evaluates and compares four distinct ML algorithms.
-- **Streamlit Interface:** A dynamic dashboard to forecast prices and visualize market analytics.
+- **Data Preprocessing Pipeline:** Automated missing value handling, Outlier detection, and One-Hot Encoding.
+- **Geographic Analysis:** Integration with Nominatim APIs (Geopy) to map property coordinates spatially.
+- **Multi-City Price Prediction:** Unified predictive model managing disparate urban markets simultaneously.
+- **Current Market Data Architecture:** Integrates a Live Provider Abstraction that searches current property listings and computes a dynamic 3-Tier Comparable Median ₹/sq.ft.
+- **Graceful Fallback Protocols:** If live APIs are unavailable or unconfigured, the system safely triggers a 100% fallback to the Historical ML Estimate without crashing.
+- **Streamlit Interface:** A dynamic dashboard to forecast prices, visualize market analytics, and trigger fresh API data retrievals.
 
 ## 3. Project Workflow
 ```text
-Data Collection (Simulated Web Scraping)
+Data Collection (Historical proxy data)
       ↓
-Data Cleaning
-      ↓
-Exploratory Data Analysis (EDA)
+Data Cleaning & EDA
       ↓
 Geocoding (Extracting Latitude & Longitude)
       ↓
 Feature Engineering (One-Hot Encoding, scaling)
       ↓
-Model Training
-      ↓
-Model Evaluation
+Model Training & Evaluation
       ↓
 Best Model Selection (Linear Regression)
       ↓
-Streamlit Deployment
+Current Listing Retrieval (Live API Abstraction)
+      ↓
+Comparable Analysis (3-Tier Match for Current ₹/sq.ft)
+      ↓
+Streamlit Deployment (Combining ML + Current Market)
 ```
 
 ## 4. Dataset
@@ -37,25 +40,23 @@ Streamlit Deployment
 - **Number of Records:** 440 unique properties
 - **Important Columns:** `City`, `Location`, `Property_Type`, `Price_INR`, `Area_sqft`, `BHK`, `Bathrooms`, `Latitude`, `Longitude`
 - **Target Variable:** `Price_INR` (Property Price in Indian Rupees)
-- **Limitations:** The dataset is a synthetic proxy representation generated to emulate real-world distributions for academic purposes. Due to limitations in public scraping, coordinate lookup success rates vary slightly.
+- **Limitations:** The training dataset is a synthetic proxy representation generated to emulate real-world distributions for academic purposes. 
 
 ## 5. Technologies Used
 - **Python** (Core language)
-- **Jupyter Notebook** (Pipeline development)
 - **Pandas / NumPy** (Data manipulation)
-- **Matplotlib / Seaborn** (Data visualization)
-- **Scikit-learn** (Machine learning)
+- **Scikit-learn** (Machine learning pipelines)
 - **BeautifulSoup / Requests** (Web scraping simulation)
 - **Geopy** (Location geocoding)
-- **Folium** (Interactive mapping)
-- **Streamlit** (Web application frontend)
-- **Git / GitHub** (Version control)
+- **Folium / Seaborn** (Mapping and statistical visualizations)
+- **Streamlit** (Web application frontend and state caching)
+- **Joblib** (Model serialization)
 
 ## 6. Machine Learning Models
-The project trained and evaluated the following regression models:
-1. **Linear Regression:** Found to be highly effective at handling the heavily linearly correlated `Area_sqft` and encoded `City` properties.
-2. **Decision Tree Regressor:** Prone to overfitting on the specific high-value outliers present in the Mumbai dataset.
-3. **Random Forest Regressor:** Provided moderate generalization but was computationally heavier than standard regression for this specific feature shape.
+The project trained and evaluated the following regression models strictly on the historical training data:
+1. **Linear Regression:** Found to be highly effective at handling the heavily linearly correlated `Area_sqft` and encoded `City` properties without overfitting.
+2. **Decision Tree Regressor:** Prone to overfitting on the specific high-value luxury outliers present in the Mumbai dataset.
+3. **Random Forest Regressor:** Provided moderate generalization but suffered from memorizing sparse anomalies on this specific dataset size.
 4. **Polynomial Regression (Degree 2):** Resulted in extreme overfitting on numerical bounds.
 
 ## 7. Model Evaluation
@@ -70,12 +71,14 @@ The performance of the models on the test split:
 
 **Best Performing Model:** `Linear Regression` (Highest R² and lowest errors).
 
-## 8. Streamlit Application
-The web interface allows users to input custom property metrics:
-- **City & Location Selection:** Dynamically updates available locations based on the chosen city (Mumbai/Indore).
-- **Property Inputs:** BHK, Area, Bathrooms, and Property Type.
-- **Price Prediction:** Instantly outputs the estimated property value formatted in Indian Rupees using the loaded `best_model.pkl`.
-- **Market Analysis:** Shows live data distribution metrics, median prices, and cross-city comparisons fetched directly from the clean dataset.
+*(Note: The Comparable-Only mathematical model was tested offline independently and achieved an MAE of ₹16.20M, proving its viability).*
+
+## 8. Current Market Data & Streamlit Application
+The web interface enables a fully dual-architecture analysis:
+- **Historical ML Estimate:** Instantly processed via `best_model.pkl`.
+- **Current Comparable Estimate:** The system queries an abstract `ConfiguredAPIDataProvider` for live listings. It calculates a median ₹/sq.ft. using matching comparable hierarchies (Exact Match → Relaxed Area → Relaxed Type).
+- **Refresh Mechanism:** Users can clear the `@st.cache_data` memory to execute a fresh API retrieval timestamped on the UI.
+- **Fallback Safe-Mode:** If the provider lacks commercial API keys, the system detects `LIVE DATA PROVIDER NOT CONFIGURED` and smoothly reverts the Final Estimate back to the Historical ML Prediction, preventing UI crashes.
 
 ## 9. Installation
 
@@ -107,53 +110,38 @@ Real-Estate-Price-Prediction/
 │
 ├── data/
 │   ├── raw/
-│   │   ├── mumbai_property_data.csv
-│   │   ├── indore_property_data.csv
-│   │   └── mumbai_indore_property_data.csv
-│   │
 │   └── processed/
-│       ├── cleaned_mumbai_indore_property_data.csv
-│       ├── geocoded_mumbai_indore_property_data.csv
-│       └── ml_ready_mumbai_indore_data.csv
 │
-├── notebooks/
-│   ├── web_scraping.ipynb
-│   ├── data_cleaning.ipynb
-│   ├── EDA.ipynb
-│   ├── geocoders_maps.ipynb
-│   ├── feature_engineering.ipynb
-│   └── model_building.ipynb
+├── notebooks/ (Data Cleaning, EDA, Model Building)
 │
-├── model/
-│   ├── best_model.pkl
-│   ├── preprocessor.pkl
-│   └── model_summary.json
+├── model/ (Pickled LR pipeline)
 │
-├── docs/
-│   ├── figures/
-│   └── testing_report.md
+├── src/live_data/
+│   └── provider.py (Live API Provider Abstraction)
 │
-├── app.py
+├── docs/ (Final Reports, Figures, Testing Logs)
+│
+├── evaluate_comparables.py (Offline validation logic)
+├── app.py (Streamlit UI)
 ├── requirements.txt
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ## 11. Results
 - **Mumbai vs Indore Differences:** Mumbai property median prices heavily overshadow Indore's, with Mumbai regularly crossing ₹3 Crores compared to Indore's sub-₹1 Crore medians. 
 - **Area-Price Dynamic:** The model accurately isolated the `City` variable to realize that identical areas (sq.ft) cost exponentially more in Mumbai than in Indore.
-- **Best Model:** Linear Regression yielded a 0.51 R² score, providing reliable baseline market estimations.
+- **Combined Estimates:** The architecture successfully merges static historical statistical models with dynamic real-time querying logic.
 
 ## 12. Limitations
-- **Dataset Size:** The model is trained on a 440-row proxy dataset. Real-world property prediction models require hundreds of thousands of rows.
-- **Data Freshness:** Real estate is highly sensitive to time (interest rates, development projects); this dataset represents a static snapshot.
-- **Geocoding Constraints:** Free geocoding APIs (Nominatim) occasionally fail to match specific hyper-local building names.
+- **Dataset Size:** The ML model is trained on a 440-row proxy dataset. Commercial scaling requires scraping hundreds of thousands of records.
+- **Asking vs. Transaction Price:** Live estimates rely on recently retrieved asking prices from listing APIs, which are typically inflated compared to the actual negotiated legal transaction value.
+- **API Availability:** The live comparable module currently operates in a mock/fallback state requiring injection of a valid commercial Real-Estate Aggregator API key to function fully.
 
 ## 13. Future Scope
-- Integration with live real-estate APIs for real-time data streaming.
+- Injection of a commercial B2B API to activate the Live Data Provider.
 - Expansion to include 10+ major Indian metropolitan cities (e.g., Delhi, Bangalore, Pune).
-- Inclusion of micro-economic features (proximity to transit, hospital density, crime rates).
-- Exploring advanced ensemble architectures (e.g., XGBoost, Gradient Boosting) on larger datasets.
+- Inclusion of micro-economic features (proximity to transit, hospital density, interest rates).
+- Exploring advanced ensemble architectures (e.g., XGBoost, Gradient Boosting) on scaled datasets.
 
 ## 14. License
-This project is for academic and demonstration purposes. Datasets are simulated/mocked for educational use and do not represent proprietary third-party property listings.
+This project is for academic and demonstration purposes. Datasets are simulated/mocked for educational use and do not represent proprietary third-party property listings. Estimates do not constitute legal property valuations.
