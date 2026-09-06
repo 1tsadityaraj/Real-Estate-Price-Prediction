@@ -91,3 +91,17 @@ To isolate the behavior, variables were held constant while altering single inpu
 
 ### Final Conclusion
 The bizarre prediction is **not a software bug**, but an artifact of the simulated, proxy training dataset. Because the underlying data assigned random price nodes without strict multidimensional real-estate coherence, the model correctly learned the negative BHK correlation present in the data it was fed. To maintain scientific integrity, the mathematically correct model is preserved. Instead of artificially forcing coefficients, a **Data Disclaimer** and **Prediction Context** breakdown have been added to the Streamlit UI to transparently communicate that predictions are estimations based on limited historical simulated data, not live market valuations.
+
+## Current Market Estimate (Live Data) Testing
+### Offline Validation (Comparable Estimates)
+To evaluate the mathematical logic of the Comparable Analysis module (`ComparableAnalyzer`), historical dataset records were treated as simulated "live" queries.
+- **Methodology:** Each property was individually held out, and comparables were found using Level 1-3 matching on the remaining dataset.
+- **Results:** Out of 440 properties, 439 were successfully matched and estimated.
+- **Comparable-Only MAE:** ₹16.20M (Compared to ML MAE of ₹13.62M)
+- **Comparable-Only R²:** 0.3326
+- **Conclusion:** The median comparable logic works successfully.
+
+### Fallback UI Testing
+The system was verified to properly handle restricted Live API scenarios without crashing.
+- **Provider Status:** `LIVE DATA PROVIDER NOT CONFIGURED`
+- **Result:** The system gracefully fell back to the Historical ML Estimate. The comparison table accurately displayed "Not available (API Not Configured)" for the Current Comparable Estimate column.

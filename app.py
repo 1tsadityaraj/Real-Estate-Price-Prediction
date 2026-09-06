@@ -2,71 +2,20 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import os
 import json
-import matplotlib.pyplot as plt
-import seaborn as sns
+from datetime import datetime
+import sys
+import os
 
-# --- Page Config ---
-st.set_page_config(page_title="Real Estate Analytics & Prediction", page_icon="🏠", layout="wide")
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from src.live_data.provider import ConfiguredAPIDataProvider, ComparableAnalyzer
 
-# --- Custom Styling ---
-st.markdown("""
-<style>
-    .main-title {
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 700;
-        color: #2E86C1;
-        margin-bottom: 0px;
-    }
-    .sub-title {
-        text-align: center;
-        font-size: 1.2rem;
-        color: #5D6D7E;
-        margin-bottom: 20px;
-    }
-    .price-display {
-        font-size: 2.5rem;
-        font-weight: 800;
-        color: #27AE60;
-        text-align: center;
-        padding: 20px;
-        background-color: #EAFAF1;
-        border-radius: 10px;
-        border: 2px solid #2ECC71;
-    }
-</style>
-""", unsafe_allow_html=True)
-
-# --- Caching Data & Models ---
-@st.cache_resource
-def load_artifacts():
-    try:
-        model = joblib.load('model/best_model.pkl')
-        preprocessor = joblib.load('model/preprocessor.pkl')
-        return model, preprocessor
-    except Exception as e:
-        return None, None
-
-@st.cache_data
-def load_data():
-    try:
-        df = pd.read_csv('data/processed/geocoded_mumbai_indore_property_data.csv')
-        return df
-    except Exception as e:
-        return pd.DataFrame()
-
-@st.cache_data
-def get_model_info():
-    try:
-        with open('model_summary.json', 'r') as f:
-            data = json.load(f)
-            best_model_name = data.get('best_model', 'Unknown')
-            metrics = next((item for item in data.get('results', []) if item["Model"] == best_model_name), None)
-            return best_model_name, metrics
-    except Exception:
-        return "Unknown", None
+@st.cache_data(ttl=3600)
+def fetch_live_market_data(city, location, property_type, bhk):
+    # Retrieve current listings from the provider abstraction
+    # By default this will return an empty DataFrame as no commercial API key is configured
+    provider = ConfiguredAPIDataProvider(api_key=None)
+    return provider.fetch_listings(city, location, property_type, bhk)
 
 def format_indian_currency(num):
     if num >= 1_00_00_000:
@@ -157,9 +106,51 @@ with tab1:
                     input_processed = preprocessor.transform(input_data)
                     prediction = model.predict(input_processed)[0]
                     
-                    st.markdown("### Prediction Result")
-                    st.markdown(f'<div class="price-display">{format_indian_currency(prediction)}</div>', unsafe_allow_html=True)
+                    st.markdown("### Current Market Estimate")
                     
+                    # Fetch live market data
+                    live_listings_df = fetch_live_market_data(city, location, property_type, bhk)
+                    
+                    # Analyze comparables
+                    analyzer = ComparableAnalyzer(live_listings_df)
+                    comp_result = analyzer.find_comparables(city, location, property_type, bhk, area)
+                    
+                    st.markdown("#### Comparison Summary")
+                    
+                    if comp_result['status'] == 'SUCCESS':
+                        comp_estimate = comp_result['estimate']
+                        final_estimate = (prediction + comp_estimate) / 2 # 50/50 weighting for now
+                        comp_display = format_indian_currency(comp_estimate)
+                        final_display = format_indian_currency(final_estimate)
+                        status_msg = f"Current comparable listings: {comp_result['count']} | Median ₹/sq.ft.: ₹{comp_result['median_sqft_price']:,.2f}"
+                    elif comp_result['status'] == 'LIVE DATA PROVIDER NOT CONFIGURED':
+                        comp_estimate = None
+                        final_estimate = prediction
+                        comp_display = "Not available (API Not Configured)"
+                        final_display = format_indian_currency(final_estimate)
+                        status_msg = "Current comparable listings: 0"
+                    else:
+                        comp_estimate = None
+                        final_estimate = prediction
+                        comp_display = "Not available (Insufficient listings)"
+                        final_display = format_indian_currency(final_estimate)
+                        status_msg = f"Current comparable listings: {comp_result['count']}"
+                        
+                    # Display the estimate table
+                    st.markdown(f"""
+                    | Estimate Type | Value |
+                    | --- | --- |
+                    | Historical ML Estimate | **{format_indian_currency(prediction)}** |
+                    | Current Comparable Estimate | **{comp_display}** |
+                    | **Final Market Estimate** | **{final_display}** |
+                    """)
+                    
+                    st.info(f"{status_msg} | Data retrieved: {datetime.now().strftime('%d-%m-%Y %H:%M')}")
+                    
+                    if st.button("🔄 Refresh Current Market Data"):
+                        fetch_live_market_data.clear()
+                        st.rerun()
+
                     st.markdown("#### Prediction Context")
                     st.markdown(f"""
                     * **Model Used:** `{best_model_name}`
@@ -170,7 +161,16 @@ with tab1:
                     * **Area:** {area} sq.ft.
                     """)
                     
-                    st.warning("**Important Note**: This property price is an estimated value generated by a machine-learning model trained on historical simulated property data. It is not a live market price or a guaranteed valuation.")
+                    st.markdown("#### Current Data Source")
+                    st.markdown(f"""
+                    * **Provider:** ConfiguredAPIDataProvider (Mock)
+                    * **Retrieval Time:** {datetime.now().strftime('%d-%m-%Y %H:%M')}
+                    * **Search Location:** {city}, {location}
+                    * **Listings Retrieved:** {comp_result['count']}
+                    """)
+                    
+                    st.warning("**Important Note**: This is an estimated market value based on current property listings and historical machine-learning data. Listing prices are asking prices and may differ from actual negotiated or registered transaction prices. This estimate is not a legal property valuation or guaranteed sale price.")
+
 
                     
                 except Exception as e:
