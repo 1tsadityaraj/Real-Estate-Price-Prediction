@@ -11,7 +11,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.pipeline import make_pipeline
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-df = pd.read_csv('data/processed/ml_ready_data.csv')
+df = pd.read_csv('data/processed/ml_ready_mumbai_indore_data.csv')
 
 # 3. Prepare X and y
 target = 'Price_INR'
