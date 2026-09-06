@@ -134,10 +134,16 @@ with tab1:
         if predict_btn:
             with st.spinner("Calculating estimate..."):
                 try:
-                    lat = coord_map.get(location, {}).get('Latitude', 0)
-                    lon = coord_map.get(location, {}).get('Longitude', 0)
+                    lat = coord_map.get(location, {}).get('Latitude', float('nan'))
+                    lon = coord_map.get(location, {}).get('Longitude', float('nan'))
+                    
+
+                    if not city or not location or not property_type:
+                        st.warning("Please enter valid property details before generating a prediction.")
+                        st.stop()
                     
                     input_data = pd.DataFrame([{
+
                         'City': city,
                         'Location': location,
                         'Property_Type': property_type,

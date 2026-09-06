@@ -46,3 +46,26 @@ The project directory successfully matches the requirements:
 - `requirements.txt` has been validated by deploying a fresh installation process which fully installed the application stack natively without missing dependencies.
 
 **Overall Status: READY FOR DEPLOYMENT**
+
+## NaN Prediction Error (Bug Fix)
+
+### Root Cause
+During Geocoding, 85 property locations failed to fetch Latitude and Longitude coordinates from the API, resulting in `NaN` values. The original `feature_engineering.ipynb` script indiscriminately dropped these rows (`df.dropna()`) before fitting the preprocessing objects, meaning the final `ColumnTransformer` had no mechanism to handle missing values. However, in the Streamlit application, these 85 locations remained selectable in the UI. When a user attempted a prediction on an affected location (e.g., an Indore property with missing coordinates), Streamlit passed `NaN` directly to the `LinearRegression` model, causing a fatal `Input X contains NaN` crash.
+
+### Fix Implemented
+The Machine Learning pipeline was structurally refactored to implement a unified Scikit-Learn pipeline. The brittle `df.dropna()` command was removed from `feature_engineering.ipynb`. Instead, a Scikit-Learn `Pipeline` utilizing `SimpleImputer` was integrated into the `ColumnTransformer`. 
+- **Numerical Pipeline:** `SimpleImputer(strategy='median')`
+- **Categorical Pipeline:** `SimpleImputer(strategy='most_frequent')` + `OneHotEncoder`
+This guarantees that missing coordinates passed from Streamlit are safely mapped to the city's median coordinates without crashing the model.
+
+### Files Changed
+- `notebooks/feature_engineering.ipynb`
+- `notebooks/model_building.ipynb`
+- `app.py`
+- `model/preprocessor.pkl`
+- `model/best_model.pkl`
+
+### Post-Fix Testing Results
+- **Mumbai Prediction Test:** Passed. Predictions successfully returned valid formatting without NaN trace.
+- **Indore Prediction Test:** Passed. Selecting previously-failing Indore locations successfully returned predictions using imputed coordinates.
+- **City-Switching Test:** Passed. Location dropdowns accurately cleared and repopulated based on the active City.
