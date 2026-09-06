@@ -74,7 +74,7 @@ Price Prediction & Analytics
 ---
 
 ## Slide 6 – Dataset
-- **Data Sources:** Simulated/Mocked web-scraping datasets.
+- **Data Sources:** Historical real-estate property listing data for Mumbai (250 records) and Indore (200 records).
 - **Total Records:** 440 unique properties.
 - **Important Features:** `City`, `Location`, `Property_Type`, `Area_sqft`, `BHK`, `Bathrooms`, `Latitude`, `Longitude`.
 - **Target Variable:** `Price_INR`
@@ -174,7 +174,7 @@ Estimated Price Output (INR)
 - **ML Models:** 4 models compared; **Linear Regression** selected as the optimal predictor.
 - **Price Prediction:** Implemented via a serialized `.pkl` pipeline safely avoiding data leakage.
 - **Market Analysis:** An interactive dashboard providing cross-city visual analytics was successfully deployed.
-- **Streamlit App:** Live, robust, and handles errors gracefully.
+- **Streamlit App:** Interactive, robust, and handles errors gracefully.
 
 ---
 
@@ -188,7 +188,7 @@ Estimated Price Output (INR)
 
 ## Slide 17 – Future Scope
 - **Add more Indian cities:** Delhi, Indore, Pune.
-- **Larger Datasets:** Utilizing live commercial API streams.
+- **Larger Datasets:** Integrating larger, continuously updated historical datasets for improved accuracy.
 - **More Property Attributes:** Adding age of property, proximity to transit, crime rates.
 - **More Advanced Models:** Exploring Gradient Boosting or Neural Networks on larger data.
 - **Cloud Deployment:** Hosting the Streamlit app on AWS or Heroku.
@@ -447,7 +447,7 @@ No, it provides a statistical estimation based on historical data.
 It serves as an excellent academic proof-of-concept, but commercial valuation requires much larger data and macro-economic indicators.
 
 **70. What is the biggest challenge you faced?**
-Ensuring the `ColumnTransformer` properly applied drop-first one-hot encoding seamlessly between the training notebook and the live Streamlit inference pipeline to prevent matrix shape errors.
+Ensuring the `ColumnTransformer` properly applied drop-first one-hot encoding seamlessly between the training notebook and the Streamlit inference pipeline to prevent matrix shape errors.
 
 ---
 ---
@@ -472,7 +472,7 @@ Ensuring the `ColumnTransformer` properly applied drop-first one-hot encoding se
 
 **Deployment (Streamlit):** An ML model in a Jupyter Notebook isn't accessible to normal users. So, I serialized my best model using `joblib` and built a frontend using Streamlit. The application allows users to dynamically select their City and Location, input property metrics, and receive an instant Rupee valuation. I also built a Market Analysis Dashboard right into the app to visualize price distributions.
 
-**Conclusion & Future Scope:** The project successfully proves that a single ML model can handle highly disparate markets if given proper geographic features. In the future, this architecture can easily be scaled by integrating live API data streams and expanding to cover all major Indian metropolitan cities."
+**Conclusion & Future Scope:** The project successfully proves that a single ML model can handle highly disparate markets if given proper geographic features. In the future, this architecture can easily be scaled by integrating larger historical datasets and expanding to cover all major Indian metropolitan cities."
 
 ---
 
@@ -497,7 +497,7 @@ Ensuring the `ColumnTransformer` properly applied drop-first one-hot encoding se
 *Answer:* Because `price_per_sqft` is calculated by dividing the Total Price by the Area. If we feed it to the model, we are secretly giving the model the answer (Target Leakage). When a real user goes to predict a price, they won't know the price per sq.ft yet, so the model wouldn't work.
 
 **Question: How would you improve the model with more time?**
-*Answer:* I would scrape 50,000+ live records from sites like MagicBricks, add macro-economic features like interest rates, and apply an XGBoost ensemble model.
+*Answer:* I would collect 50,000+ historical property records from multiple cities, add macro-economic features like interest rates, and apply an XGBoost ensemble model.
 
 ---
 

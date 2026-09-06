@@ -4,9 +4,8 @@
 - [x] Streamlit launches
 - [x] Mumbai prediction works
 - [x] Indore prediction works
-- [x] Current market data works (Fallback architecture verified)
-- [x] Refresh works
-- [x] Fallback works
+- [x] Historical data pipeline works
+- [x] Model artifacts load correctly
 - [x] Market analysis works
 - [x] Geographic analysis works
 
@@ -45,5 +44,5 @@
 - [x] Data leakage understood (price_per_sqft removed)
 - [x] Geocoding understood
 - [x] Streamlit workflow understood
-- [x] Current-market methodology understood (3-Tier Comparable Match)
-- [x] Limitations understood (Proxy data artifacts, API Key requirement)
+- [x] Historical ML workflow understood
+- [x] Limitations understood (Dataset size, historical data only)

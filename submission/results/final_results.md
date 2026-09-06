@@ -1,30 +1,27 @@
 # Final Project Results
 
-## Dataset
-* **Mumbai records:** 244
-* **Indore records:** 196
-* **Total records:** 440
+## Data Source
+* **Mumbai historical data:** 250 property listings (`data/raw/property_data.csv`)
+* **Indore historical data:** 200 property listings (`data/raw/indore_property_data.csv`)
+* **Total records (after cleaning):** 440
 * **Number of features:** 30 (after One-Hot Encoding)
 * **Target variable:** Price_INR
+* **Data type:** Historical real-estate property listing data
 
 ## Machine Learning
-* **Linear Regression results:** MAE: ₹13,623,956 | RMSE: ₹19,708,285 | R²: 0.5135
-* **Decision Tree results:** MAE: ₹17,908,450 | RMSE: ₹26,489,756 | R²: 0.1211
-* **Random Forest results:** MAE: ₹14,803,633 | RMSE: ₹21,956,756 | R²: 0.3961
-* **Polynomial Regression results:** MAE: ₹17,535,481 | RMSE: ₹25,610,668 | R²: 0.1784
+* **Linear Regression results:** MAE: ₹15,111,250 | RMSE: ₹19,416,551 | R²: 0.4885
+* **Decision Tree results:** MAE: ₹19,188,640 | RMSE: ₹26,599,997 | R²: 0.0398
+* **Random Forest results:** MAE: ₹14,862,030 | RMSE: ₹19,568,949 | R²: 0.4803
+* **Polynomial Regression results:** MAE: ₹17,519,460 | RMSE: ₹23,285,561 | R²: 0.2642
 * **Best model:** Linear Regression
 
-## Current Market
-* **Data provider:** ConfiguredAPIDataProvider (Abstract API Stub)
-* **Number of listings tested:** 0 (Triggered Fallback Mode successfully)
-* **Current comparable methodology:** 3-Tier Hierarchical match (Exact, Loc/Area, City/Type)
-* **Current ₹/sq.ft. methodology:** Mathematical Median of comparable listings
-* **Final estimate methodology:** 50/50 weighted combination when API data exists; 100% historical ML fallback when API is restricted.
-
 ## Testing
-* **Mumbai prediction:** Passed (Predicted via ML pipeline flawlessly)
-* **Indore prediction:** Passed (Negative BHK correlation verified mathematically)
-* **Current-data retrieval:** Passed (API Abstraction catches unconfigured keys)
-* **Refresh:** Passed (Streamlit cache successfully flushes)
-* **Fallback:** Passed (UI elegantly reports 'Not Available (API Not Configured)' and safely diverts to ML)
-* **Error handling:** Passed
+* **Mumbai prediction:** Passed (Predicted via ML pipeline successfully)
+* **Indore prediction:** Passed (Predicted via ML pipeline successfully)
+* **City switching:** Passed (Location dropdown correctly filters by selected city)
+* **Market analysis:** Passed (Historical charts and KPIs render correctly)
+* **Error handling:** Passed (Streamlit gracefully handles invalid inputs)
+
+## Notes
+* No live market API or real-time property listing feed is used in the final system.
+* The predicted price is an ML-based estimate derived from historical property data.

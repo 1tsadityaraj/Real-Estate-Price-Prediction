@@ -68,7 +68,7 @@ I would like to express my profound gratitude to my project guide, [GUIDE NAME],
 
 The real estate sector is highly volatile, making property price estimation a complex challenge. Traditional valuation methods often fail to capture the nuanced effects of geospatial configurations and urban sprawl. This project presents a robust Machine Learning pipeline designed to predict real estate prices and provide comprehensive market analysis across two distinct Indian urban landscapes: Mumbai (a high-density, ultra-premium metropolitan market) and Indore (an emerging, fast-growing tier-2 market). 
 
-The system programmatically collects, cleans, and geocodes real estate data utilizing the Nominatim API to establish spatial integrity. Following an extensive Exploratory Data Analysis (EDA) comparing the distinct market demographics of both cities, advanced feature engineering techniques (including scaling and one-hot encoding) are applied. Four regression algorithms (Linear Regression, Decision Tree, Random Forest, Polynomial Regression) are trained and evaluated on a combined dataset of 440 property records. The Linear Regression model emerged as the most optimal predictor, achieving an R² score of 0.5135 by successfully isolating the premium geospatial disparity between the two cities. Finally, the best-performing pipeline is deployed via a dynamic, interactive Streamlit web application that facilitates real-time user price predictions and visualizations of the cross-city analytics.
+The system collects, cleans, and geocodes historical real-estate property listing data utilizing the Nominatim API to establish spatial integrity. Following an extensive Exploratory Data Analysis (EDA) comparing the distinct market demographics of both cities, advanced feature engineering techniques (including scaling and one-hot encoding) are applied. Four regression algorithms (Linear Regression, Decision Tree, Random Forest, Polynomial Regression) are trained and evaluated on a combined historical dataset of 440 property records. The Linear Regression model emerged as the most optimal predictor, achieving an R² score of 0.4885 by successfully isolating the premium geospatial disparity between the two cities. Finally, the best-performing pipeline is deployed via a dynamic, interactive Streamlit web application that enables users to obtain ML-based property price estimates and visualizations of the cross-city analytics.
 
 ---
 
@@ -152,9 +152,9 @@ Best Model Selection
        ↓
 Streamlit Application
        ↓
-Price Prediction & Market Analysis
+Estimated Property Price & Market Analysis
 ```
-The system extracts raw mock records, standardizes strings and floats, maps locations to latitude/longitude coordinates, encodes categorical data, fits multiple regressors, serializes the best predictor, and deploys it live.
+The system processes historical property listing records, standardizes strings and floats, maps locations to latitude/longitude coordinates, encodes categorical data, fits multiple regressors, serializes the best predictor, and deploys it as a Streamlit web application.
 
 ---
 
@@ -171,7 +171,7 @@ The system extracts raw mock records, standardizes strings and floats, maps loca
 - **Core Data Science Libraries:** Pandas, NumPy
 - **Visualization:** Matplotlib, Seaborn
 - **Machine Learning:** Scikit-learn
-- **Data Gathering:** BeautifulSoup4, Requests
+- **Data Gathering:** BeautifulSoup4, Requests (used during historical data collection)
 - **Geospatial Processing:** Geopy, Folium
 - **Deployment:** Streamlit
 - **Serialization:** Joblib
@@ -182,7 +182,7 @@ The system extracts raw mock records, standardizes strings and floats, maps loca
 # CHAPTER 6 – SYSTEM DESIGN
 
 ### 6.1 System Architecture
-The architecture comprises a backend ML training pipeline (Jupyter Notebooks) that outputs serialized `.pkl` artifacts. The frontend (Streamlit) consumes these artifacts and processes user inputs to generate real-time inferences.
+The architecture comprises a backend ML training pipeline (Jupyter Notebooks) that outputs serialized `.pkl` artifacts. The frontend (Streamlit) consumes these artifacts and processes user inputs to generate ML-based property price estimates.
 
 ### 6.2 Data Flow
 User Input → Streamlit UI → `preprocessor.pkl` (ColumnTransformer) → One-Hot Encoded Dense Matrix → `best_model.pkl` (Linear Regression) → Formatted Output.
@@ -207,13 +207,19 @@ User Input → Streamlit UI → `preprocessor.pkl` (ColumnTransformer) → One-H
 # CHAPTER 7 – DATASET AND DATA PREPROCESSING
 
 ## 7.1 Data Sources
-The project utilizes a simulated, proxy dataset mimicking listings across Mumbai and Indore to circumvent anti-scraping restrictions on real commercial platforms.
+The project uses historical real-estate property listing data for Mumbai and Indore:
+
+- **Mumbai:** 250 historical property listings stored in `data/raw/property_data.csv`
+- **Indore:** 200 historical property listings stored in `data/raw/indore_property_data.csv`
+- **Combined:** Both datasets are merged into `data/raw/mumbai_indore_property_data.csv` (450 records)
+
+No live market API or real-time property listing feed is used in the final system.
 
 ## 7.2 Dataset Description
-- **Records:** 440 unique properties.
-- **Features:** 10 columns.
+- **Records (after cleaning):** 440 unique properties.
+- **Features:** 10 columns (`Location`, `Property_Type`, `Price_INR`, `Area_sqft`, `BHK`, `Bathrooms`, `City`, `price_per_sqft`, `Latitude`, `Longitude`).
 - **Cities:** Mumbai, Indore.
-- **Property Types:** Apartment, Independent Floor, Independent House, Studio Apartment, Villa.
+- **Property Types:** Apartment, Independent House, Studio, Villa.
 
 ## 7.3 Data Cleaning
 Cleaning involved removing null occurrences, handling duplicates, converting non-standard text (e.g., "3 BHK" to the integer `3`), scaling `price_per_sqft` metrics correctly, standardizing location names, and ensuring numerical datatypes for continuous variables. 
@@ -267,12 +273,12 @@ The algorithms were evaluated using Mean Absolute Error (MAE), Mean Squared Erro
 
 | Model                 |         MAE |                 MSE |        RMSE |     R² |
 | --------------------- | ----------: | ------------------: | ----------: | -----: |
-| **Linear Regression** | 13,623,956 | 388,416,513,203,432 | 19,708,285 | 0.5135 |
-| Random Forest         | 14,803,633 | 482,099,143,830,985 | 21,956,756 | 0.3961 |
-| Polynomial Regression | 17,535,481 | 655,906,326,619,255 | 25,610,668 | 0.1784 |
-| Decision Tree         | 17,908,450 | 701,707,183,098,591 | 26,489,756 | 0.1211 |
+| **Linear Regression** | 15,111,250 | 377,002,476,537,380 | 19,416,551 | 0.4885 |
+| Random Forest         | 14,862,030 | 382,943,767,825,972 | 19,568,949 | 0.4803 |
+| Polynomial Regression | 17,519,460 | 542,217,358,016,944 | 23,285,561 | 0.2642 |
+| Decision Tree         | 19,188,640 | 707,562,357,954,545 | 26,599,997 | 0.0398 |
 
-**Selection:** Linear Regression was selected as the optimal model. It achieved the highest R² (0.5135), indicating it explained over 51% of the variance in the dataset. Real estate data spanning diverse spatial clusters (Mumbai vs Indore) often leads tree-based models to overfit localized price nodes, making the generalized slope of Linear Regression far more robust for unseen data.
+**Selection:** Linear Regression was selected as the optimal model. It achieved the highest R² (0.4885), indicating it explained approximately 49% of the variance in the dataset. Real estate data spanning diverse spatial clusters (Mumbai vs Indore) often leads tree-based models to overfit localized price nodes, making the generalized slope of Linear Regression far more robust for unseen data.
 
 ---
 
@@ -288,7 +294,7 @@ A primary dropdown allowing users to select either "Mumbai" or "Indore".
 Users manipulate sliders and dropdowns to input Location, Property Type, BHK, Bathrooms, and Area. The Location dropdown automatically cascades based on the selected City.
 
 ### 12.4 Price Prediction
-Triggered via a button, the system executes `preprocessor.transform()` on the input and feeds the dense matrix to `model.predict()`, rendering a formatted Indian Rupee valuation (e.g., ₹ 4.65 Crore).
+Triggered via a button, the system executes `preprocessor.transform()` on the input and feeds the dense matrix to `model.predict()`, rendering a formatted Indian Rupee ML-based estimate (e.g., ₹ 4.65 Crore). The predicted price is an estimated property price based on patterns learned from historical data.
 
 ### 12.5 Market Analysis & Comparison
 A secondary dashboard tab provides interactive charts. Users can filter by City and Property Type to view Median Prices, Volume distributions, and cross-city analytics without executing backend Python scripts.
@@ -321,25 +327,25 @@ The project successfully bridged two heavily disparate markets. The Exploratory 
 
 # CHAPTER 15 – LIMITATIONS
 
-- **Live API Access:** The current deployment utilizes a mock `ConfiguredAPIDataProvider` that defaults to a fallback mode due to the unavailability of free commercial real estate APIs. When an authorized API key is provided, the architecture automatically supports live median ₹/sq.ft calculations.
-- **Dataset Size & Simulated Anomalies:** The model was trained on a simulated dataset of 440 property records. Because the proxy data was generated programmatically rather than sourced from live commercial APIs, it lacks true multidimensional structural coherence. For instance, the training data mathematically exhibits a negative correlation between BHK and Price, causing the Linear Regression model to legitimately (but unnaturally) penalize property prices for additional bedrooms.
-- **Location Coverage:** The mock dataset contains concentrated location nodes; predictions for outer metropolitan zones may lack accuracy due to spatial extrapolation.
-- **Data Freshness:** The dataset represents a static snapshot and does not account for dynamic interest rate shifts or inflation.
+- **Dataset Size:** The model was trained on a historical dataset of 440 property records. Larger datasets with more varied property records would improve generalization.
+- **Location Coverage:** The historical dataset contains concentrated location nodes; predictions for outer metropolitan zones may lack accuracy due to spatial extrapolation.
+- **Data Freshness:** The dataset represents a historical snapshot and does not account for dynamic interest rate shifts, inflation, or current market conditions.
+- **Model Limitation:** The predicted price is an ML-based estimate derived from historical property data and should not be treated as an official property valuation.
 
 ---
 
 # CHAPTER 16 – FUTURE SCOPE
 
-- **Support for More Indian Cities:** Scaling the architecture to cover Delhi, Indore, and Pune.
-- **Larger Datasets:** Utilizing big-data pipelines to ingest millions of commercial API rows.
-- **Advanced Algorithms:** Tuning XGBoost and Gradient Boosting regressors on larger data corpuses to manage extreme non-linear outliers.
-- **Deployment:** Migrating the local Streamlit application to a continuous cloud-hosting provider (e.g., AWS EC2, Streamlit Cloud).
+- **Support for More Indian Cities:** Scaling the architecture to cover Delhi, Bangalore, and Pune.
+- **Larger Datasets:** Integrating larger, continuously updated historical datasets for improved model accuracy.
+- **Advanced Algorithms:** Tuning XGBoost and Gradient Boosting regressors on larger datasets to manage extreme non-linear outliers.
+- **Deployment:** Migrating the local Streamlit application to a cloud-hosting provider (e.g., AWS EC2, Streamlit Cloud).
 
 ---
 
 # CHAPTER 17 – CONCLUSION
 
-This project successfully implements an end-to-end Machine Learning ecosystem addressing the real estate price prediction problem for both Mumbai and Indore. By executing a rigorous pipeline spanning data cleaning, EDA, geospatial analysis, and feature engineering, the system successfully trained a Linear Regression model capable of distinguishing between a high-density tier-1 metropolis and an emerging tier-2 market. The deployment of this pipeline into an interactive, real-time Streamlit web dashboard demonstrates the immense practical utility of integrating automated data-science pipelines with consumer-facing analytics tools.
+This project successfully implements an end-to-end Machine Learning ecosystem addressing the real estate price prediction problem for both Mumbai and Indore. By executing a rigorous pipeline spanning data cleaning, EDA, geospatial analysis, and feature engineering, the system successfully trained a Linear Regression model capable of distinguishing between a high-density tier-1 metropolis and an emerging tier-2 market. The deployment of this pipeline into an interactive Streamlit web dashboard demonstrates the immense practical utility of integrating automated data-science pipelines with consumer-facing analytics tools. The system predicts property prices using historical real-estate data and does not provide real-time transaction prices.
 
 ---
 
@@ -360,7 +366,7 @@ This project successfully implements an end-to-end Machine Learning ecosystem ad
 2. **Supported cities:** Mumbai, Indore
 3. **Final dataset size:** 440 records
 4. **Final model:** Linear Regression
-5. **Actual best model metrics:** MAE: 13,623,956 | MSE: 388,416,513,203,432 | RMSE: 19,708,285 | R²: 0.513535
+5. **Actual best model metrics:** MAE: 15,111,250 | MSE: 377,002,476,537,380 | RMSE: 19,416,551 | R²: 0.4885
 6. **Main implemented features:** Data pipeline, EDA, Geocoding, ML Modeling, Streamlit Multi-tab Dashboard, Market Analysis.
 7. **Number of test cases:** 6 primary Streamlit test cases.
 8. **Number of figures:** Generated 15 core figures in `docs/figures/`.

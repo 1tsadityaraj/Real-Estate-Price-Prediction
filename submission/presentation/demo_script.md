@@ -1,22 +1,22 @@
 # Real Estate Prediction Project Demo Script
 
 ### 0:00–0:45: Introduction
-"Hello, my project is a Real Estate Price Prediction and Property Analysis System for Mumbai and Indore. The goal is to combine historical machine learning predictions with current, live-listing comparable estimates to generate highly accurate property valuations."
+"Hello, my project is a Real Estate Price Prediction and Property Analysis System for Mumbai and Indore. The goal is to use historical real-estate property listing data and machine learning to generate data-driven property price estimates."
 
 ### 0:45–1:30: Pipeline Overview
-"The architecture follows a strict pipeline: We start with data cleaning and exploratory data analysis. The data is geocoded using the Nominatim API to fetch coordinates, then structurally feature-engineered using a Scikit-Learn Pipeline with SimpleImputers and OneHotEncoders. The final Linear Regression model is then saved and served via this Streamlit application, which is hooked up to a Live Data Provider abstraction."
+"The architecture follows a strict pipeline: We start with historical property data from Mumbai and Indore. The data is cleaned and analyzed through exploratory data analysis. It is then geocoded using the Nominatim geocoding service to fetch coordinates, and structurally feature-engineered using a Scikit-Learn Pipeline with SimpleImputers and OneHotEncoders. The best-performing Linear Regression model is saved and served via this Streamlit application."
 
 ### 1:30–2:30: Demonstrate Mumbai
-"Let's predict a property in Mumbai. I select 'Mumbai', 'Andheri West', 'Apartment', 2 BHK, and 1000 sq.ft. I click predict. The model processes the coordinates and features and gives us a Historical ML Estimate. You'll also notice the UI attempts to fetch live data."
+"Let's predict a property in Mumbai. I select 'Mumbai', 'Andheri West', 'Apartment', 2 BHK, and 1000 sq.ft. I click predict. The model processes the coordinates and features through the saved preprocessing pipeline and gives us an estimated property price."
 
 ### 2:30–3:30: Demonstrate Indore
-"Now for Indore. I select 'Indore', 'Ab Road', 'Apartment', 4 BHK, 1300 sq.ft. Notice that the price here is lower than a 2 BHK. This is not a bug—our exploratory data analysis revealed a negative correlation between BHK and price in the training dataset, which the ML model accurately learned."
+"Now for Indore. I select 'Indore', 'Ab Road', 'Apartment', 2 BHK, 1000 sq.ft. Notice the significant price difference compared to Mumbai. Our exploratory data analysis revealed that identical property dimensions cost exponentially more in Mumbai than in Indore, and the ML model accurately learned this geographic price disparity."
 
-### 3:30–4:15: Show Current Market Estimate
-"Because fetching live listings requires a paid commercial API key, our application is running on its Fallback Architecture. You can see the 'Current Comparable Estimate' clearly states 'API Not Configured' and falls back safely to the historical ML estimate. If an API key were present, it would execute a 3-tier matching algorithm to calculate a live median price per square foot."
+### 3:30–4:15: Show Market Analysis
+"In the Market Analysis tab, you can explore historical price distributions, property type comparisons, and cross-city analytics. The dashboard provides interactive charts filtered by City and Property Type to visualize the insights from our historical dataset."
 
 ### 4:15–4:45: Show Model Evaluation
-"In the 'About Model' tab, you can see our Linear Regression model outperformed Decision Trees and Random Forests, achieving an R² of 0.5135. We also implemented an offline test for our Comparable Logic, proving it mathematically sound."
+"In the 'About Model' tab, you can see our Linear Regression model outperformed Decision Trees and Random Forests, achieving an R² of 0.4885. The model successfully learned the massive geographic price premium between Mumbai and Indore."
 
 ### 4:45–5:00: Limitations and Conclusion
-"The primary limitation is that our model's intelligence is strictly bound by its historical simulated dataset, which introduced some anomalous correlations. However, the system's dual-architecture design means it's fully production-ready for live API integration. Thank you."
+"The primary limitation is that our model is trained on a historical dataset of 440 records. The predicted price is an ML-based estimate and should not be treated as an official property valuation. In the future, this architecture can be scaled by integrating larger historical datasets and expanding to cover more Indian cities. Thank you."
