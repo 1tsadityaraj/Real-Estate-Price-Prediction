@@ -189,10 +189,6 @@ with tab1:
                 try:
                     lat = coord_map.get(location, {}).get('Latitude', float('nan'))
                     lon = coord_map.get(location, {}).get('Longitude', float('nan'))
-                    
-                    if pd.isna(lat) or pd.isna(lon):
-                        st.warning("Please select a location available in the historical dataset.")
-                        st.stop()
                         
                     input_data = pd.DataFrame([{
                         'City': city,
