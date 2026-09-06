@@ -33,6 +33,12 @@ The project directory successfully matches the requirements:
 | T10     | City Switching     | Locations update      | Location dropdown successfully filters per city | PASS |
 | T11     | Invalid input test | Graceful handling     | Simulated invalid location triggers prediction error gracefully | PASS |
 | T12     | Predict Consistency| Consistent results    | Same parameters yielded identical predictions across runs | PASS |
+| T13     | Mumbai Analysis    | Dashboard loads       | Mumbai metrics and charts load correctly via Streamlit logic | PASS |
+| T14     | Indore Analysis    | Dashboard loads       | Indore metrics and charts load correctly via Streamlit logic | PASS |
+| T15     | Both-City Analytics| Comparison loads      | Cross-city aggregations successfully render side-by-side | PASS |
+| T16     | UI Filtering logic | Filters update charts | Changing city/BHK/ptype successfully updates `filtered_df` | PASS |
+| T17     | Empty Filter State | Graceful handling     | "No properties match" warning displayed; no exceptions thrown | PASS |
+| T18     | Model Independence | No retraining trigger | Prediction caches strictly fetch models without calling `.fit` | PASS |
 
 ## 5. Cross-Platform Paths & Requirements
 **Status: PASS**

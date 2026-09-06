@@ -1,0 +1,3301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2fc82dead0351dbf42e2988195ad20d9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2fc82dead0351dbf42e2988195ad20d9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2fc82dead0351dbf42e2988195ad20d9 = L.map(
+                "map_2fc82dead0351dbf42e2988195ad20d9",
+                {
+                    center: [20.61813070422535, 74.1046166197183],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a34bf68c8c38f2d8f724c8b80eae314 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0a34bf68c8c38f2d8f724c8b80eae314.addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            var circle_marker_e16770f568750121251cb527f693a70b = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e16770f568750121251cb527f693a70b.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹2,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04ff458547b65e46403520bb2acd7f37 = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_04ff458547b65e46403520bb2acd7f37.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹3,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9cac39c9becea8ac520b6c1e962fd6e3 = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_9cac39c9becea8ac520b6c1e962fd6e3.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹4,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8bb5fd95bc8fb2e5eab35a036b6d29a = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c8bb5fd95bc8fb2e5eab35a036b6d29a.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹14,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23548972af6bcb219276ef6e46b2a78c = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_23548972af6bcb219276ef6e46b2a78c.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹9,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c287d156eafd075abdbbbd9d9ace8290 = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c287d156eafd075abdbbbd9d9ace8290.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹9,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1d4fdc889a1eabbbe0a131044704b75 = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_b1d4fdc889a1eabbbe0a131044704b75.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹3,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2bdf8dea242f30ad5213de2e5e50722 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c2bdf8dea242f30ad5213de2e5e50722.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹8,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33c3cce1166cd9fabc34a9b4163633bc = L.circleMarker(
+                [22.7244, 75.8856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_33c3cce1166cd9fabc34a9b4163633bc.bindTooltip(
+                `<div>
+                     Indore - Palasia: ₹7,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_772fc14d3d2bb85a5349fb5d1f293466 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_772fc14d3d2bb85a5349fb5d1f293466.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹11,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd236b516d2e321b25cef4d2f7d1e497 = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_bd236b516d2e321b25cef4d2f7d1e497.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹2,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6af33121e101a1c3d6e1cdc84b21a565 = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_6af33121e101a1c3d6e1cdc84b21a565.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹9,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e82fe5c88c7caadfb256f2b6a7c5b93 = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_2e82fe5c88c7caadfb256f2b6a7c5b93.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹7,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17761e6e3c51d6761050cb2e47ffbf26 = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_17761e6e3c51d6761050cb2e47ffbf26.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹12,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b2dc0de7e4790a25782c64d3acc14e2 = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_7b2dc0de7e4790a25782c64d3acc14e2.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹4,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_937d91a5d9c33d5453781523f6869ab4 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_937d91a5d9c33d5453781523f6869ab4.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹14,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27f16a28d0aa9c22fe5366b1dff7b648 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_27f16a28d0aa9c22fe5366b1dff7b648.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹12,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c5583d863f658dc42bb29f5c74b6af5 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_7c5583d863f658dc42bb29f5c74b6af5.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹6,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf806c86475bc5fb1e1b4cb20491c312 = L.circleMarker(
+                [22.7244, 75.8856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_bf806c86475bc5fb1e1b4cb20491c312.bindTooltip(
+                `<div>
+                     Indore - Palasia: ₹10,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05f026474a72fe4b5315469ccdfa40cf = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_05f026474a72fe4b5315469ccdfa40cf.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹5,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82f5d3f2d233bad6b0f0fb7053e2bfa2 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_82f5d3f2d233bad6b0f0fb7053e2bfa2.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹11,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e35612653fb438a70a9403f33e50093b = L.circleMarker(
+                [22.7244, 75.8856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e35612653fb438a70a9403f33e50093b.bindTooltip(
+                `<div>
+                     Indore - Palasia: ₹9,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_497ffc17c8f987254cbed527ae57f794 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_497ffc17c8f987254cbed527ae57f794.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹10,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1385c6329a671a239783c1704002db98 = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_1385c6329a671a239783c1704002db98.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹6,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0789a1645711ed0ccc3fe009bb5e4ab = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a0789a1645711ed0ccc3fe009bb5e4ab.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹6,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d73690e82409da33ef85f6f6afb2f39 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_2d73690e82409da33ef85f6f6afb2f39.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹12,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0916fdc2906ccd8c60254c765ddb7198 = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_0916fdc2906ccd8c60254c765ddb7198.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹7,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18c93312b0afb1928aa83b318272146b = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_18c93312b0afb1928aa83b318272146b.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹10,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d0e94d3639626fee38e96b564f28985 = L.circleMarker(
+                [22.7244, 75.8856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_1d0e94d3639626fee38e96b564f28985.bindTooltip(
+                `<div>
+                     Indore - Palasia: ₹3,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5e5d8c3678e69311ae1fe6001c6eba7 = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e5e5d8c3678e69311ae1fe6001c6eba7.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹13,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8656280f84b25681c72ab61998612cf7 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_8656280f84b25681c72ab61998612cf7.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹7,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3c278c74d8a0954b9e674300ae5dd5b = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c3c278c74d8a0954b9e674300ae5dd5b.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹10,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbbc81148b4f90135e4fb8dfe7d912c0 = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_fbbc81148b4f90135e4fb8dfe7d912c0.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹6,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e07cca5b1b74357cfde4f74a16bb705c = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e07cca5b1b74357cfde4f74a16bb705c.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹7,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52b01ab216d6c056afd4171adbc2a8a6 = L.circleMarker(
+                [22.7244, 75.8856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_52b01ab216d6c056afd4171adbc2a8a6.bindTooltip(
+                `<div>
+                     Indore - Palasia: ₹2,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ed10a09ace02b5292516edb35bc7b42 = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_9ed10a09ace02b5292516edb35bc7b42.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹10,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79aca3f64bd3bf33f32384b4af1fc81c = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_79aca3f64bd3bf33f32384b4af1fc81c.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹10,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fdd0c6a15bfbf2b04018ec7784cfa0d = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_9fdd0c6a15bfbf2b04018ec7784cfa0d.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹13,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4791d2c731f07a665daa6b3520ddbc37 = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_4791d2c731f07a665daa6b3520ddbc37.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹9,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7f31a63160d1272936b86acd967dd24 = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_d7f31a63160d1272936b86acd967dd24.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹9,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f8090bffa82c3e9cdfd946179e9ebf9 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_7f8090bffa82c3e9cdfd946179e9ebf9.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹6,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9897f1785002e0a51b3393290304411 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_b9897f1785002e0a51b3393290304411.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹3,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_efeea666dc3e3ec1baa97ece0bef0593 = L.circleMarker(
+                [22.7244, 75.8856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_efeea666dc3e3ec1baa97ece0bef0593.bindTooltip(
+                `<div>
+                     Indore - Palasia: ₹5,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e35d4d908bf746569c648203164881ca = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e35d4d908bf746569c648203164881ca.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹7,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_030c46fbd2d79b488c33d8bae262a957 = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_030c46fbd2d79b488c33d8bae262a957.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹4,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e61d0feaf306b9787d5a17674980a680 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e61d0feaf306b9787d5a17674980a680.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹2,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5455258023397188e465b12bc17bd0ab = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_5455258023397188e465b12bc17bd0ab.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹4,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44320e6e14bab21e46f6bb9a4351752e = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_44320e6e14bab21e46f6bb9a4351752e.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹7,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c328799e728d56b45bece28dd070fe5 = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_8c328799e728d56b45bece28dd070fe5.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹5,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_817a66c6b1fa8036e1c76ec298c719c1 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_817a66c6b1fa8036e1c76ec298c719c1.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹9,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22ebf0a51ebb5fb09538a50447f39031 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_22ebf0a51ebb5fb09538a50447f39031.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹14,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65411738ed6efe654420bb7f3bec9df9 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_65411738ed6efe654420bb7f3bec9df9.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹10,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_557a972f50a16a7a86b3cfc0c9f61774 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_557a972f50a16a7a86b3cfc0c9f61774.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹10,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c94a8393a0dbc539b963fd3e891608e6 = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c94a8393a0dbc539b963fd3e891608e6.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹13,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5e3bc416ac2bf02a63006e01a3d05df = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e5e3bc416ac2bf02a63006e01a3d05df.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹6,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c682c7520a141f31f69b2301a556f92d = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c682c7520a141f31f69b2301a556f92d.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹13,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0078de91daf8d035df7f122ec3d8bb50 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_0078de91daf8d035df7f122ec3d8bb50.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹4,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7aa889d59a5a68daebe0c6f4fd0c5526 = L.circleMarker(
+                [22.7244, 75.8856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_7aa889d59a5a68daebe0c6f4fd0c5526.bindTooltip(
+                `<div>
+                     Indore - Palasia: ₹13,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b4fa836e6f7b7ffb8d385a6490556be = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_1b4fa836e6f7b7ffb8d385a6490556be.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹2,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2bf6760e7b99035466dca9aa0f6f21a = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c2bf6760e7b99035466dca9aa0f6f21a.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹12,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0ec883375c413b8cad4b4db82c02606 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a0ec883375c413b8cad4b4db82c02606.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹14,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2deb9f6761543d1cc9764fdc20459b2c = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_2deb9f6761543d1cc9764fdc20459b2c.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹14,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52bdb39a7e44a19f5c59bfe980a06269 = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_52bdb39a7e44a19f5c59bfe980a06269.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹7,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bad201a79b93ccddd76f0f01affc01ed = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_bad201a79b93ccddd76f0f01affc01ed.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹9,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8656d815a2093fb6f4fa14e6ffe85010 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_8656d815a2093fb6f4fa14e6ffe85010.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹8,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df6db44d534baee324e82085a6bfb0da = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_df6db44d534baee324e82085a6bfb0da.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹7,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16460be9a7ed3298bd83f41f1963037c = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_16460be9a7ed3298bd83f41f1963037c.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹6,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b9665af4cdb47a5396dd70beadafd21 = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_7b9665af4cdb47a5396dd70beadafd21.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹7,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70eac83b72162ba76345a1b24e94d446 = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_70eac83b72162ba76345a1b24e94d446.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹5,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68e79fa90012ef451191848fa94b6e93 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_68e79fa90012ef451191848fa94b6e93.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹7,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9be1af56b467bbec6648c73bdf6da9c = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_f9be1af56b467bbec6648c73bdf6da9c.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹9,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4fd9dd60ea57ac2a102931e7391138a2 = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_4fd9dd60ea57ac2a102931e7391138a2.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹11,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a90bfa99940e4e70bba3960a6a464df2 = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a90bfa99940e4e70bba3960a6a464df2.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹4,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_028dd3db84ad4b040d037d551250a8bf = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_028dd3db84ad4b040d037d551250a8bf.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹9,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_136a870442e5b28f4be38ebcba942c28 = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_136a870442e5b28f4be38ebcba942c28.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹4,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e807c7b525ee23c2818d8d0699de7438 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e807c7b525ee23c2818d8d0699de7438.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹10,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_493ddbbe8503cab6f856d921e5d6afa4 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_493ddbbe8503cab6f856d921e5d6afa4.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹4,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e17aed47d0ba7cdfd10532ef36975a3c = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e17aed47d0ba7cdfd10532ef36975a3c.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹5,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe6b8350667cb3ae8e3a08d2e134fa4d = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_fe6b8350667cb3ae8e3a08d2e134fa4d.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹8,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eca58a41b4ff03e0dd813e5c9bd6f649 = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_eca58a41b4ff03e0dd813e5c9bd6f649.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹9,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4405177ab130468797a4cc8f52e15818 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_4405177ab130468797a4cc8f52e15818.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹8,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d49f825ab5cf3059ed9a9101b1dfc94f = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_d49f825ab5cf3059ed9a9101b1dfc94f.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹7,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf874e2df9028dcc7515fbf583f62567 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_cf874e2df9028dcc7515fbf583f62567.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹12,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d913c0039ea6f5fc44f1bc31167f182 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_3d913c0039ea6f5fc44f1bc31167f182.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹13,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0d41ccc9e42d6c9f19a9ab31f783645 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_d0d41ccc9e42d6c9f19a9ab31f783645.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹6,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ccd15fb01328c92aee8ff80df6f5966 = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_6ccd15fb01328c92aee8ff80df6f5966.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹6,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_212219473b51e9152724dfe3f3e46980 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_212219473b51e9152724dfe3f3e46980.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹4,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_507ed4a6116df1ecc85a3f18b2d836f8 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_507ed4a6116df1ecc85a3f18b2d836f8.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹12,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a4551afbe8446e0e34435f07fb5faa7 = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_2a4551afbe8446e0e34435f07fb5faa7.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹2,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a48bfef6872a18601104d691307a6987 = L.circleMarker(
+                [22.7589, 75.8364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a48bfef6872a18601104d691307a6987.bindTooltip(
+                `<div>
+                     Indore - Super Corridor: ₹6,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dfab6937ee8edfb6d9cfda8fabacbc03 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_dfab6937ee8edfb6d9cfda8fabacbc03.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹12,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56994ce89dfe3001fc225da15d182bd0 = L.circleMarker(
+                [22.723, 75.932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_56994ce89dfe3001fc225da15d182bd0.bindTooltip(
+                `<div>
+                     Indore - Bypass Road: ₹14,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3569c20a205ca644176703fb1ecb4b3 = L.circleMarker(
+                [22.7244, 75.8856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a3569c20a205ca644176703fb1ecb4b3.bindTooltip(
+                `<div>
+                     Indore - Palasia: ₹5,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f4ab7ae0e1423dfd848744f429c29e0 = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_4f4ab7ae0e1423dfd848744f429c29e0.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹5,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c40b21ba40ffe6ae160344265785632e = L.circleMarker(
+                [22.6333, 75.8167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c40b21ba40ffe6ae160344265785632e.bindTooltip(
+                `<div>
+                     Indore - Rau: ₹14,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c224858ffeb618cc2a5cdc0ecdc0c5fc = L.circleMarker(
+                [22.7533, 75.8937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c224858ffeb618cc2a5cdc0ecdc0c5fc.bindTooltip(
+                `<div>
+                     Indore - Vijay Nagar: ₹9,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_150df59cbb5bcf5d189187c42dfb6c84 = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_150df59cbb5bcf5d189187c42dfb6c84.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹8,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_060f727795d03d9705fbc5f9446e05ea = L.circleMarker(
+                [22.6953, 75.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_060f727795d03d9705fbc5f9446e05ea.bindTooltip(
+                `<div>
+                     Indore - Sudama Nagar: ₹4,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f57a639ed5e282851d393a164da8fe80 = L.circleMarker(
+                [22.7667, 75.9167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_f57a639ed5e282851d393a164da8fe80.bindTooltip(
+                `<div>
+                     Indore - Nipania: ₹13,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70babe4f8c4183881b82eb10e0190806 = L.circleMarker(
+                [22.6916, 75.8672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_70babe4f8c4183881b82eb10e0190806.bindTooltip(
+                `<div>
+                     Indore - Bhawarkua: ₹8,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94cd995f04ccaf84e4add299fac6f4c6 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_94cd995f04ccaf84e4add299fac6f4c6.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹50,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_913eaf8a42677f8e2c2621a026050c25 = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_913eaf8a42677f8e2c2621a026050c25.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹13,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63cff5ffecd108a2f63124dcd7047693 = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_63cff5ffecd108a2f63124dcd7047693.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹66,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63453e8937b9ae2ea48971c27ed2d6db = L.circleMarker(
+                [19.06, 72.8544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_63453e8937b9ae2ea48971c27ed2d6db.bindTooltip(
+                `<div>
+                     Mumbai - Bandra East: ₹82,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b347b044eb391b3df6fdeea760f2cc00 = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_b347b044eb391b3df6fdeea760f2cc00.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹87,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_639eeb67166ceb11bc2b3b1b5bfe3ff7 = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_639eeb67166ceb11bc2b3b1b5bfe3ff7.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹86,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a621d6562ce41c6b845d821783b4343 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_0a621d6562ce41c6b845d821783b4343.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹98,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07a69e3d765102cdc0c4e3a9e61ea29b = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_07a69e3d765102cdc0c4e3a9e61ea29b.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹80,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53de5d54aeff24ab3ee4d7dc35adf739 = L.circleMarker(
+                [19.06, 72.8544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_53de5d54aeff24ab3ee4d7dc35adf739.bindTooltip(
+                `<div>
+                     Mumbai - Bandra East: ₹61,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b31bcb82dfc150d830178990ed9c94c = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_2b31bcb82dfc150d830178990ed9c94c.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹30,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14d5ab3aca937bbec4ca70d4a3e6a0ee = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_14d5ab3aca937bbec4ca70d4a3e6a0ee.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹83,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_249369c6c7b9fddcecbe598ecfb3d19c = L.circleMarker(
+                [19.1693, 72.8596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_249369c6c7b9fddcecbe598ecfb3d19c.bindTooltip(
+                `<div>
+                     Mumbai - Goregaon East: ₹26,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f794dc76f63bc93b377377867ba4367c = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_f794dc76f63bc93b377377867ba4367c.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹60,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_906217b49bff40bc2e9de283c4486a7b = L.circleMarker(
+                [19.1693, 72.8596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_906217b49bff40bc2e9de283c4486a7b.bindTooltip(
+                `<div>
+                     Mumbai - Goregaon East: ₹7,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91151493162bde3be7d7309d385512b7 = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_91151493162bde3be7d7309d385512b7.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹56,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f5a80974083a531f1b3307c94dcb428 = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_3f5a80974083a531f1b3307c94dcb428.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹18,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_101f96783aa5c5d9c3b8311063877f4c = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_101f96783aa5c5d9c3b8311063877f4c.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹56,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c23995503151b4191fe2a84f3d60df0 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_6c23995503151b4191fe2a84f3d60df0.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹71,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9588f84be8760053098f9978c0786e94 = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_9588f84be8760053098f9978c0786e94.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹68,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d2777014c1b5ae08e48c93b6377dd9d = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_5d2777014c1b5ae08e48c93b6377dd9d.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹84,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5dcd798ee8945fc2c1ec9f86f0b4d5cf = L.circleMarker(
+                [19.1693, 72.8596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_5dcd798ee8945fc2c1ec9f86f0b4d5cf.bindTooltip(
+                `<div>
+                     Mumbai - Goregaon East: ₹73,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3573514bd90003af72f7e9c86f9bf85 = L.circleMarker(
+                [19.2066, 72.8687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_d3573514bd90003af72f7e9c86f9bf85.bindTooltip(
+                `<div>
+                     Mumbai - Kandivali East: ₹68,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66ffbe541ad349d875bd941ed10b72d4 = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_66ffbe541ad349d875bd941ed10b72d4.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹37,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91177af88880f57b459b466802312347 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_91177af88880f57b459b466802312347.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹8,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06a8c0b833cbccbf71014c357f1cd382 = L.circleMarker(
+                [19.1693, 72.8596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_06a8c0b833cbccbf71014c357f1cd382.bindTooltip(
+                `<div>
+                     Mumbai - Goregaon East: ₹28,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9245b002a95b14d4cf2be1bbb43fd063 = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_9245b002a95b14d4cf2be1bbb43fd063.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹92,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_515657165f536e2c5b29901c4f5b7b34 = L.circleMarker(
+                [19.2066, 72.8687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_515657165f536e2c5b29901c4f5b7b34.bindTooltip(
+                `<div>
+                     Mumbai - Kandivali East: ₹62,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd820ac5e9b9bccf244f00c811185087 = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_fd820ac5e9b9bccf244f00c811185087.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹6,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f98360172e223c52a789d900d86b906f = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_f98360172e223c52a789d900d86b906f.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹61,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d875595e98792c38ed9f775c7d3d5255 = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_d875595e98792c38ed9f775c7d3d5255.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹24,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_803343bbab82872324d0ff7092ddfde3 = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_803343bbab82872324d0ff7092ddfde3.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹39,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a16533ea48c6110e00c7966cd89fcd20 = L.circleMarker(
+                [18.9953, 72.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a16533ea48c6110e00c7966cd89fcd20.bindTooltip(
+                `<div>
+                     Mumbai - Lower Parel: ₹41,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_120b311101eb2de7794dd34a2915609a = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_120b311101eb2de7794dd34a2915609a.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹64,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd42032e32047766b13f3bf58abd0f30 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_bd42032e32047766b13f3bf58abd0f30.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹8,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2883c866f0a2b13fa84edad47d1dbd01 = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_2883c866f0a2b13fa84edad47d1dbd01.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹75,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc5fb7bd2ff16c11bb0c36973f221f6d = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_bc5fb7bd2ff16c11bb0c36973f221f6d.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹46,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b18af6802e6b52e8e6d80c030d05216e = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_b18af6802e6b52e8e6d80c030d05216e.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹58,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8e0e0107583884ad9e9dedf75df89bb = L.circleMarker(
+                [19.06, 72.8544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_b8e0e0107583884ad9e9dedf75df89bb.bindTooltip(
+                `<div>
+                     Mumbai - Bandra East: ₹18,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c99a7544eeaf01337c7c630827a3348c = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c99a7544eeaf01337c7c630827a3348c.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹5,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a808ac56aacf66ef894659b72b2f9f1 = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_1a808ac56aacf66ef894659b72b2f9f1.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹21,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51f165bcaf91e28a5da0f0dcaedbef57 = L.circleMarker(
+                [18.9953, 72.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_51f165bcaf91e28a5da0f0dcaedbef57.bindTooltip(
+                `<div>
+                     Mumbai - Lower Parel: ₹28,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95ad1948f1bfc96e8009751ee9992f58 = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_95ad1948f1bfc96e8009751ee9992f58.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹19,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34c593e9f413319d9d61b39a393cd519 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_34c593e9f413319d9d61b39a393cd519.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹62,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_649a819e61c6197c078ab7e39915493c = L.circleMarker(
+                [19.2066, 72.8687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_649a819e61c6197c078ab7e39915493c.bindTooltip(
+                `<div>
+                     Mumbai - Kandivali East: ₹28,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d260e8980132cf330d58f4e0670d2afc = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_d260e8980132cf330d58f4e0670d2afc.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹78,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb3754f05f7c2772ff04bcf6cc87e210 = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_bb3754f05f7c2772ff04bcf6cc87e210.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹37,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9eaa98f9ddc2535633ac1047c39148b6 = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_9eaa98f9ddc2535633ac1047c39148b6.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹7,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a52ab31c5e52091af2c57f3cfc9ec626 = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a52ab31c5e52091af2c57f3cfc9ec626.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹35,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8647f86997ec367e16da908f95a320a0 = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_8647f86997ec367e16da908f95a320a0.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹67,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4326a2577e68196a47278c72528f2eec = L.circleMarker(
+                [19.2066, 72.8687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_4326a2577e68196a47278c72528f2eec.bindTooltip(
+                `<div>
+                     Mumbai - Kandivali East: ₹38,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1225baea4b3134fe8d35fad06f8d0a54 = L.circleMarker(
+                [19.06, 72.8544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_1225baea4b3134fe8d35fad06f8d0a54.bindTooltip(
+                `<div>
+                     Mumbai - Bandra East: ₹66,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0837e399c6599fa0feec0c3f3be0b44 = L.circleMarker(
+                [19.06, 72.8544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a0837e399c6599fa0feec0c3f3be0b44.bindTooltip(
+                `<div>
+                     Mumbai - Bandra East: ₹81,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5444132e9ed07468a32e491775345f5b = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_5444132e9ed07468a32e491775345f5b.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹24,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9583c422d5707085bb32c63c9aa4b77 = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_d9583c422d5707085bb32c63c9aa4b77.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹49,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39ccdd002a47748f03a1bd43f6b3f9d4 = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_39ccdd002a47748f03a1bd43f6b3f9d4.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹30,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abc90b407a8fa54c09b2ca13700de44f = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_abc90b407a8fa54c09b2ca13700de44f.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹11,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_134b16523e394851af0029d9c4c9652c = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_134b16523e394851af0029d9c4c9652c.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹82,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dcc98f29328cb5d07fc916b1b7b849ed = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_dcc98f29328cb5d07fc916b1b7b849ed.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹9,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e25c2ede90777fa06b6d31af457b02c7 = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_e25c2ede90777fa06b6d31af457b02c7.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹92,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f743af7465e9710bd09bea868f30f0c = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_8f743af7465e9710bd09bea868f30f0c.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹93,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54ce41fe589bc00a14f9d72fa33ec147 = L.circleMarker(
+                [19.06, 72.8544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_54ce41fe589bc00a14f9d72fa33ec147.bindTooltip(
+                `<div>
+                     Mumbai - Bandra East: ₹6,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_405744ee3a21d9df21370b47d6b0ff7b = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_405744ee3a21d9df21370b47d6b0ff7b.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹24,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3712794217f284bd33c1fe25d360c1fe = L.circleMarker(
+                [19.06, 72.8544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_3712794217f284bd33c1fe25d360c1fe.bindTooltip(
+                `<div>
+                     Mumbai - Bandra East: ₹43,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c770c3910dbdfda8df2aabcf11f8f93d = L.circleMarker(
+                [19.1693, 72.8596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c770c3910dbdfda8df2aabcf11f8f93d.bindTooltip(
+                `<div>
+                     Mumbai - Goregaon East: ₹68,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2ce36b1b9936563bb9105d15ec65b95 = L.circleMarker(
+                [18.9953, 72.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_b2ce36b1b9936563bb9105d15ec65b95.bindTooltip(
+                `<div>
+                     Mumbai - Lower Parel: ₹73,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1aee1471a2e4e507b7cdafa0909b291f = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_1aee1471a2e4e507b7cdafa0909b291f.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹8,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb92accef4582831107a47cf331d2094 = L.circleMarker(
+                [18.9953, 72.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_cb92accef4582831107a47cf331d2094.bindTooltip(
+                `<div>
+                     Mumbai - Lower Parel: ₹46,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c60d5c9b75be25a6ca7c95c73edaace3 = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_c60d5c9b75be25a6ca7c95c73edaace3.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹47,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7c66f72dba41a1a7970bd0fbec0f397 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a7c66f72dba41a1a7970bd0fbec0f397.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹28,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2b1b2e7adfbabf8790b8e7a9e1cf07a = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_b2b1b2e7adfbabf8790b8e7a9e1cf07a.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹60,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee8ac16760a777e1525518e9831ef475 = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_ee8ac16760a777e1525518e9831ef475.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹6,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_850449b6a4ab0d133caa1a5cf9677efb = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_850449b6a4ab0d133caa1a5cf9677efb.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹88,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1704242527454e31e9d7b01bb1e404d = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_f1704242527454e31e9d7b01bb1e404d.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹61,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ed036bd46d6e03dde1cf9a701f21c7a = L.circleMarker(
+                [19.2066, 72.8687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_8ed036bd46d6e03dde1cf9a701f21c7a.bindTooltip(
+                `<div>
+                     Mumbai - Kandivali East: ₹81,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_195c74ec003bb51af79693e71f54cccd = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_195c74ec003bb51af79693e71f54cccd.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹90,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cde3d27587a79abf7faa3be89b0adb18 = L.circleMarker(
+                [19.06, 72.8544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_cde3d27587a79abf7faa3be89b0adb18.bindTooltip(
+                `<div>
+                     Mumbai - Bandra East: ₹27,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3357a897f676add808fad971cdedded6 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_3357a897f676add808fad971cdedded6.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹74,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ce85abb8596a3632f7673ddf0ac236c = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_4ce85abb8596a3632f7673ddf0ac236c.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹78,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64348e7202f580de894efff828f0c938 = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_64348e7202f580de894efff828f0c938.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹92,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f018c67046113d7e2b67c72018f9f91f = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_f018c67046113d7e2b67c72018f9f91f.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹6,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_324ceff3b40055f8f687664f17643f46 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_324ceff3b40055f8f687664f17643f46.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹32,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4cb59654bbe88af9e0f7855510d679d = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a4cb59654bbe88af9e0f7855510d679d.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹57,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5794a4ff3e73f647ed8dab31e0b9b4e7 = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_5794a4ff3e73f647ed8dab31e0b9b4e7.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹24,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83122e2c6046c04ed334fe2edad21056 = L.circleMarker(
+                [18.9953, 72.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_83122e2c6046c04ed334fe2edad21056.bindTooltip(
+                `<div>
+                     Mumbai - Lower Parel: ₹19,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c32342469c0001bb15dce4ed136e0d0 = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_3c32342469c0001bb15dce4ed136e0d0.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹71,300,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f280c79485cc1c291032a11a5dbbc95 = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_3f280c79485cc1c291032a11a5dbbc95.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹52,200,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e02c55493c2b57c400099c34b1dc3c7 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_2e02c55493c2b57c400099c34b1dc3c7.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹61,600,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_187f53685f71763df50e2b2e64345619 = L.circleMarker(
+                [19.0069, 72.8156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_187f53685f71763df50e2b2e64345619.bindTooltip(
+                `<div>
+                     Mumbai - Worli: ₹51,500,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33d85bae71ffcf0260694a3721bdf90f = L.circleMarker(
+                [18.9953, 72.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_33d85bae71ffcf0260694a3721bdf90f.bindTooltip(
+                `<div>
+                     Mumbai - Lower Parel: ₹43,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74b273d98cf128c211ed30d0efe4bf34 = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_74b273d98cf128c211ed30d0efe4bf34.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹48,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3379b060aba55ff222559ad11d72a783 = L.circleMarker(
+                [18.9953, 72.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_3379b060aba55ff222559ad11d72a783.bindTooltip(
+                `<div>
+                     Mumbai - Lower Parel: ₹94,000,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad66ca55d4f051dadae94d84c31cf9a9 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_ad66ca55d4f051dadae94d84c31cf9a9.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹54,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60811d0a9364ff72444946b53b690d03 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_60811d0a9364ff72444946b53b690d03.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹11,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa0afa7879398dcdd23fd71d60b672ea = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_aa0afa7879398dcdd23fd71d60b672ea.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹93,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2ef25feee32eb8e4bffec9dacc85a11 = L.circleMarker(
+                [19.2372, 72.8441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_a2ef25feee32eb8e4bffec9dacc85a11.bindTooltip(
+                `<div>
+                     Mumbai - Borivali West: ₹14,400,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ce2c9c76fda320b1075fe7077c03ba4 = L.circleMarker(
+                [19.1843, 72.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_9ce2c9c76fda320b1075fe7077c03ba4.bindTooltip(
+                `<div>
+                     Mumbai - Malad West: ₹36,800,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f784dd3500d4718f6b75269c01ff9a3 = L.circleMarker(
+                [19.1176, 72.906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_0f784dd3500d4718f6b75269c01ff9a3.bindTooltip(
+                `<div>
+                     Mumbai - Powai: ₹13,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10ca1c02800940aeb8edf2ea09687d56 = L.circleMarker(
+                [19.1363, 72.8277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_10ca1c02800940aeb8edf2ea09687d56.bindTooltip(
+                `<div>
+                     Mumbai - Andheri West: ₹42,700,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06bb7e7286aa99ae94c827e7667c99f0 = L.circleMarker(
+                [19.1048, 72.8267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_06bb7e7286aa99ae94c827e7667c99f0.bindTooltip(
+                `<div>
+                     Mumbai - Juhu: ₹80,900,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e750d4dbf77ec897e40a3620a89b4e0 = L.circleMarker(
+                [18.9953, 72.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2fc82dead0351dbf42e2988195ad20d9);
+        
+    
+            circle_marker_8e750d4dbf77ec897e40a3620a89b4e0.bindTooltip(
+                `<div>
+                     Mumbai - Lower Parel: ₹53,100,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

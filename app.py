@@ -4,9 +4,11 @@ import numpy as np
 import joblib
 import os
 import json
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # --- Page Config ---
-st.set_page_config(page_title="Real Estate Price Prediction", page_icon="🏠", layout="wide")
+st.set_page_config(page_title="Real Estate Analytics & Prediction", page_icon="🏠", layout="wide")
 
 # --- Custom Styling ---
 st.markdown("""
@@ -22,7 +24,7 @@ st.markdown("""
         text-align: center;
         font-size: 1.2rem;
         color: #5D6D7E;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .price-display {
         font-size: 2.5rem;
@@ -43,14 +45,17 @@ def load_artifacts():
     try:
         model = joblib.load('model/best_model.pkl')
         preprocessor = joblib.load('model/preprocessor.pkl')
-        
-        # Load unique locations and property types from the combined geocoded data
-        df = pd.read_csv('data/processed/geocoded_mumbai_indore_property_data.csv')
-        
-        return model, preprocessor, df
+        return model, preprocessor
     except Exception as e:
-        st.error(f"Error loading required files: {e}")
-        return None, None, pd.DataFrame()
+        return None, None
+
+@st.cache_data
+def load_data():
+    try:
+        df = pd.read_csv('data/processed/geocoded_mumbai_indore_property_data.csv')
+        return df
+    except Exception as e:
+        return pd.DataFrame()
 
 @st.cache_data
 def get_model_info():
@@ -58,14 +63,12 @@ def get_model_info():
         with open('model_summary.json', 'r') as f:
             data = json.load(f)
             best_model_name = data.get('best_model', 'Unknown')
-            # Extract metrics for best model
             metrics = next((item for item in data.get('results', []) if item["Model"] == best_model_name), None)
             return best_model_name, metrics
     except Exception:
         return "Unknown", None
 
 def format_indian_currency(num):
-    # Simple formatter for Crores/Lakhs
     if num >= 1_00_00_000:
         return f"₹ {num / 1_00_00_000:.2f} Crore"
     elif num >= 1_00_000:
@@ -74,113 +77,198 @@ def format_indian_currency(num):
         return f"₹ {num:,.0f}"
 
 # Load artifacts
-model, preprocessor, df = load_artifacts()
+model, preprocessor = load_artifacts()
+df = load_data()
 best_model_name, metrics = get_model_info()
 
 # --- Main App ---
-st.markdown('<div class="main-title">REAL ESTATE PRICE PREDICTION</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-title">Predict property prices for Mumbai and Indore using Machine Learning.</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">REAL ESTATE ANALYTICS & PREDICTION</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-title">Mumbai and Indore Property Markets</div>', unsafe_allow_html=True)
 
-if model is None or preprocessor is None or df.empty:
-    st.warning("Application is down: Missing model artifacts or dataset.")
+if df.empty:
+    st.error("Dataset not found. Please ensure the data pipeline is complete.")
     st.stop()
 
-# --- Input Form ---
-with st.container():
-    st.subheader("Property Details")
+# --- Tabs ---
+tab1, tab2, tab3 = st.tabs(["🏠 Property Price Prediction", "📊 Market Analysis Dashboard", "ℹ️ About Model"])
+
+# ==========================================
+# TAB 1: PREDICTION
+# ==========================================
+with tab1:
+    st.subheader("Estimate Property Price")
+    if model is None or preprocessor is None:
+        st.warning("Model artifacts are missing. Prediction is unavailable.")
+    else:
+        with st.container():
+            # Extract unique cities
+            cities = sorted(df['City'].dropna().unique().tolist())
+            col_city, col_empty = st.columns(2)
+            with col_city:
+                city = st.selectbox("Select City", cities, key="pred_city")
+            
+            # Dynamically filter locations based on selected city
+            city_df = df[df['City'] == city]
+            locations = sorted(city_df['Location'].dropna().unique().tolist())
+            
+            # Coordinate Map
+            coord_map = city_df.drop_duplicates(subset=['Location']).set_index('Location')[['Latitude', 'Longitude']].to_dict('index')
+            property_types = sorted(df['Property_Type'].dropna().unique().tolist())
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                location = st.selectbox("Location", locations, key="pred_loc")
+                bhk = st.number_input("BHK (Bedrooms)", min_value=1, max_value=10, value=2, step=1, key="pred_bhk")
+                bathrooms = st.number_input("Bathrooms", min_value=1, max_value=10, value=2, step=1, key="pred_bath")
+                
+            with col2:
+                property_type = st.selectbox("Property Type", property_types, key="pred_ptype")
+                area = st.number_input("Area (sq.ft)", min_value=100.0, max_value=20000.0, value=1000.0, step=50.0, key="pred_area")
+
+        # Prediction Action
+        st.markdown("---")
+        predict_col1, predict_col2, predict_col3 = st.columns([1, 1, 1])
+        with predict_col2:
+            predict_btn = st.button("Predict Property Price", use_container_width=True, type="primary")
+
+        if predict_btn:
+            with st.spinner("Calculating estimate..."):
+                try:
+                    lat = coord_map.get(location, {}).get('Latitude', 0)
+                    lon = coord_map.get(location, {}).get('Longitude', 0)
+                    
+                    input_data = pd.DataFrame([{
+                        'City': city,
+                        'Location': location,
+                        'Property_Type': property_type,
+                        'Area_sqft': area,
+                        'BHK': bhk,
+                        'Bathrooms': bathrooms,
+                        'Latitude': lat,
+                        'Longitude': lon
+                    }])
+                    
+                    input_processed = preprocessor.transform(input_data)
+                    prediction = model.predict(input_processed)[0]
+                    
+                    st.markdown("### Prediction Result")
+                    st.markdown(f'<div class="price-display">{format_indian_currency(prediction)}</div>', unsafe_allow_html=True)
+                    st.write(f"**Based on:** {bhk} BHK {property_type} in {location}, {city} ({area} sq.ft.)")
+                    
+                except Exception as e:
+                    st.error(f"An error occurred during prediction: {e}")
+
+# ==========================================
+# TAB 2: MARKET ANALYSIS DASHBOARD
+# ==========================================
+with tab2:
+    st.subheader("Market Analysis")
     
-    # Extract unique cities
-    cities = sorted(df['City'].dropna().unique().tolist())
-    city = st.selectbox("City", cities)
-    
-    # Dynamically filter locations based on selected city
-    city_df = df[df['City'] == city]
-    locations = sorted(city_df['Location'].dropna().unique().tolist())
-    
-    # Coordinate Map for Latitude/Longitude specific to the selected city and location
-    coord_map = city_df.drop_duplicates(subset=['Location']).set_index('Location')[['Latitude', 'Longitude']].to_dict('index')
-    property_types = sorted(df['Property_Type'].dropna().unique().tolist())
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        location = st.selectbox("Location", locations)
-        bhk = st.number_input("BHK (Bedrooms)", min_value=1, max_value=10, value=2, step=1)
-        bathrooms = st.number_input("Bathrooms", min_value=1, max_value=10, value=2, step=1)
+    # --- Filters ---
+    st.markdown("##### Filter Data")
+    f_col1, f_col2, f_col3, f_col4 = st.columns(4)
+    with f_col1:
+        f_city = st.selectbox("City", ["All"] + sorted(df['City'].dropna().unique().tolist()))
+    with f_col2:
+        f_ptype = st.selectbox("Property Type", ["All"] + sorted(df['Property_Type'].dropna().unique().tolist()))
+    with f_col3:
+        bhk_options = ["All"] + sorted(df['BHK'].dropna().unique().astype(str).tolist())
+        f_bhk = st.selectbox("BHK", bhk_options)
+    with f_col4:
+        # Dynamic location based on City filter
+        if f_city == "All":
+            loc_options = ["All"] + sorted(df['Location'].dropna().unique().tolist())
+        else:
+            loc_options = ["All"] + sorted(df[df['City'] == f_city]['Location'].dropna().unique().tolist())
+        f_loc = st.selectbox("Location", loc_options)
+
+    # Apply Filters
+    filtered_df = df.copy()
+    if f_city != "All":
+        filtered_df = filtered_df[filtered_df['City'] == f_city]
+    if f_ptype != "All":
+        filtered_df = filtered_df[filtered_df['Property_Type'] == f_ptype]
+    if f_bhk != "All":
+        filtered_df = filtered_df[filtered_df['BHK'] == int(f_bhk)]
+    if f_loc != "All":
+        filtered_df = filtered_df[filtered_df['Location'] == f_loc]
         
-    with col2:
-        property_type = st.selectbox("Property Type", property_types)
-        area = st.number_input("Area (sq.ft)", min_value=100.0, max_value=20000.0, value=1000.0, step=50.0)
+    if filtered_df.empty:
+        st.warning("No properties match the selected filters. Please adjust your criteria.")
+    else:
+        # --- Market Overview Metrics ---
+        st.markdown("---")
+        m_col1, m_col2, m_col3, m_col4 = st.columns(4)
+        m_col1.metric("Total Properties", len(filtered_df))
+        m_col2.metric("Median Price", format_indian_currency(filtered_df['Price_INR'].median()))
+        m_col3.metric("Average Price", format_indian_currency(filtered_df['Price_INR'].mean()))
+        m_col4.metric("Average Area", f"{filtered_df['Area_sqft'].mean():,.0f} sq.ft")
 
-# --- Prediction Action ---
-st.markdown("---")
-predict_col1, predict_col2, predict_col3 = st.columns([1, 1, 1])
-
-with predict_col2:
-    predict_btn = st.button("Predict Property Price", use_container_width=True, type="primary")
-
-if predict_btn:
-    with st.spinner("Calculating estimate..."):
-        try:
-            # 1. Fetch Coordinates for selected location
-            lat = coord_map.get(location, {}).get('Latitude', 0)
-            lon = coord_map.get(location, {}).get('Longitude', 0)
-            
-            # 2. Build input dataframe exactly as expected by the preprocessor
-            input_data = pd.DataFrame([{
-                'City': city,
-                'Location': location,
-                'Property_Type': property_type,
-                'Area_sqft': area,
-                'BHK': bhk,
-                'Bathrooms': bathrooms,
-                'Latitude': lat,
-                'Longitude': lon
-            }])
-            
-            # 3. Apply preprocessing
-            input_processed = preprocessor.transform(input_data)
-            
-            # 4. Predict
-            prediction = model.predict(input_processed)[0]
-            
-            # Display Result
-            st.markdown("### Prediction Result")
-            st.markdown(f'<div class="price-display">{format_indian_currency(prediction)}</div>', unsafe_allow_html=True)
-            
-            st.write(f"**Based on:** {bhk} BHK {property_type} in {location}, {city} ({area} sq.ft.)")
-            
-        except Exception as e:
-            st.error(f"An error occurred during prediction: {e}")
-
-# --- Expandable Info Sections ---
-st.markdown("---")
-
-with st.expander("📊 Market Analysis"):
-    st.write(f"### {city} Market Overview")
-    st.write("Overview based on the dataset used to train the model.")
-    col_a, col_b, col_c = st.columns(3)
-    
-    with col_a:
-        st.metric("Total Properties Analyzed", len(city_df))
-    with col_b:
-        st.metric("Median Price", format_indian_currency(city_df['Price_INR'].median()))
-    with col_c:
-        st.metric("Average Area (sq.ft)", f"{city_df['Area_sqft'].mean():,.0f}")
+        # --- Visualizations ---
+        st.markdown("---")
         
-with st.expander("⚖️ Mumbai vs Indore Comparison"):
-    st.write("### Cross-City Analytics")
-    comp_df = df.groupby('City').agg(
-        Total_Properties=('Price_INR', 'count'),
-        Median_Price=('Price_INR', 'median'),
-        Avg_Area_Sqft=('Area_sqft', 'mean'),
-    ).reset_index()
-    
-    comp_df['Median_Price_Fmt'] = comp_df['Median_Price'].apply(format_indian_currency)
-    comp_df['Avg_Area_Sqft'] = comp_df['Avg_Area_Sqft'].round(0)
-    st.dataframe(comp_df[['City', 'Total_Properties', 'Median_Price_Fmt', 'Avg_Area_Sqft']], use_container_width=True)
+        # 1. Price Distribution & Mumbai vs Indore (if All cities selected)
+        row1_col1, row1_col2 = st.columns(2)
+        
+        with row1_col1:
+            st.markdown("##### 📈 Price Distribution")
+            fig, ax = plt.subplots(figsize=(8, 4))
+            sns.histplot(filtered_df['Price_INR'], kde=True, ax=ax, color='teal')
+            ax.set_xscale('log')
+            ax.set_xlabel('Price (INR) - Log Scale')
+            st.pyplot(fig)
+            
+        with row1_col2:
+            if f_city == "All":
+                st.markdown("##### 🏙️ Mumbai vs Indore (Median Price)")
+                comp_df = filtered_df.groupby('City')['Price_INR'].median().reset_index()
+                fig, ax = plt.subplots(figsize=(8, 4))
+                sns.barplot(data=comp_df, x='City', y='Price_INR', palette='viridis', ax=ax)
+                ax.set_yscale('log')
+                ax.set_ylabel('Median Price (INR) - Log Scale')
+                st.pyplot(fig)
+            else:
+                st.markdown(f"##### 🏙️ Median Prices by Property Type in {f_city}")
+                ptype_df = filtered_df.groupby('Property_Type')['Price_INR'].median().reset_index()
+                fig, ax = plt.subplots(figsize=(8, 4))
+                sns.barplot(data=ptype_df, y='Property_Type', x='Price_INR', palette='Set2', ax=ax)
+                ax.set_xlabel('Median Price (INR)')
+                st.pyplot(fig)
 
-with st.expander("ℹ️ About the Model"):
+        # 2. Area vs Price Scatter
+        st.markdown("---")
+        st.markdown("##### 📐 Area vs Price Relationship")
+        fig, ax = plt.subplots(figsize=(10, 5))
+        if f_city == "All":
+            sns.scatterplot(data=filtered_df, x='Area_sqft', y='Price_INR', hue='City', palette='Set1', alpha=0.7, ax=ax)
+        else:
+            sns.scatterplot(data=filtered_df, x='Area_sqft', y='Price_INR', hue='BHK', palette='coolwarm', alpha=0.7, ax=ax)
+        ax.set_xscale('log')
+        ax.set_yscale('log')
+        ax.set_xlabel('Area (sq.ft) - Log Scale')
+        ax.set_ylabel('Price (INR) - Log Scale')
+        st.pyplot(fig)
+        
+        # 3. Location Analysis
+        st.markdown("---")
+        st.markdown("##### 📍 Location Analysis (Top 10 by Volume)")
+        top_locs = filtered_df['Location'].value_counts().nlargest(10).index
+        loc_df = filtered_df[filtered_df['Location'].isin(top_locs)]
+        
+        if not loc_df.empty:
+            loc_price = loc_df.groupby('Location')['Price_INR'].median().sort_values(ascending=False).reset_index()
+            fig, ax = plt.subplots(figsize=(10, 5))
+            sns.barplot(data=loc_price, y='Location', x='Price_INR', palette='Reds_d', ax=ax)
+            ax.set_xlabel('Median Price (INR)')
+            ax.set_title('Median Price of Most Common Locations')
+            st.pyplot(fig)
+
+
+# ==========================================
+# TAB 3: MODEL INFO
+# ==========================================
+with tab3:
+    st.subheader("Model Information")
     st.write(f"**Algorithm Used:** {best_model_name}")
     if metrics:
         st.write("### Model Evaluation Metrics (Test Set)")
@@ -189,3 +277,6 @@ with st.expander("ℹ️ About the Model"):
         st.write(f"- **RMSE:** ₹ {metrics.get('RMSE', 0):,.2f}")
     else:
         st.write("Evaluation metrics are currently unavailable.")
+    
+    st.write("### Data Source")
+    st.write("The models are trained strictly on the extracted and geocoded dataset containing properties from Mumbai and Indore.")
